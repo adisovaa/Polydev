@@ -1,0 +1,139 @@
+.brief_block {
+    width: 100%;
+    height: 750px;
+    margin-top: 200px;
+    background: #6002FD;
+}
+.brief_text {
+    width: 75%;
+    display: flex;
+}
+.brief_text h1 a{
+    font-size: 96px;
+    text-transform: uppercase;
+    font-family: "ALS Gorizont Expanded";
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.brief_block_item {
+    padding-top: 60px;
+}
+
+.block_title h3 {
+    width: 80%;
+    line-height: 1.5;
+}
+
+.brief_bottom {
+    margin-top: 10%;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 1294px) {
+    .brief_text h1 a{
+        font-size: 80px;
+    }
+    .block_title h3 {
+        width: 80%;
+        font-size: 20px;
+    }
+    .brief_bottom {
+        margin-top: 20%;
+    }
+    .brief_text img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .brief_block {
+        height: 650px;
+    }
+    .brief_text h1 a{
+        font-size: 60px;
+    }
+    .block_title h3 {
+        font-size: 20px;
+    }
+
+    .brief_bottom {
+        margin-top: 20%;
+    }
+    .brief_text img {
+        width: 125px;
+    }
+}
+
+@media (max-width: 880px) {
+    .brief_block {
+        height: 560px;
+        margin-top: 170px
+    }
+    .brief_text h1 a{
+        font-size: 50px;
+    }
+    .block_title h3 {
+        font-size: 17px;
+    }
+    .brief_bottom {
+        margin-top: 25%;
+    }
+    .brief_text img {
+        width: 95px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 735px) {
+    .brief_block {
+        height: 460px;
+    }
+    .brief_text h1 a{
+        font-size: 37px;
+    }
+    .block_title h3 {
+        font-size: 13px;
+    }
+    .brief_bottom {
+        margin-top: 25%;
+        font-size: 10px;
+    }
+    .brief_bottom img {
+        width: 20px;
+    }
+    .brief_text img {
+        width: 70px;
+        margin-bottom: 19px;
+    }
+}
+
+@media (max-width: 630px) {
+    .brief_block {
+        height: 450px;
+    }
+    .brief_text h1 a{
+        font-size: 31px;
+    }
+    .block_title h3 {
+        font-size: 10px;
+    }
+    .brief_bottom {
+        margin-top: 25%;
+        font-size: 10px;
+    }
+    .brief_text img {
+        width: 60px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 481px) {
+    .wrapper {
+        width: 391px;
+    }
+}

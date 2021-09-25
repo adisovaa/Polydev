@@ -1,0 +1,155 @@
+.review {
+    width: 78%;
+    float: right;
+    margin-top: 190px;
+}
+
+.slick-slide.slick-active.slick-current {
+    width: 770px!important;
+    border-right: 1px solid #000;
+    margin-right: 1%;
+}
+
+.review_heading h2 {
+    font-size: 64px;
+    line-height: 1.4;
+    font-family: "ALS Gorizont Expanded";
+    text-transform: uppercase;
+    width: 35%;
+}
+
+.review_text p {
+    font-size: 32px;
+    width: 90%;
+}
+
+.reviewer {
+    display: flex;
+}
+
+.userInfo {
+    padding: 23px 20px;
+}
+.userInfo h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.userInfo p {
+    font-size: 18px;
+    color: #6002FD;
+}
+
+.review_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review_items .logo {
+    margin-right: 5%;
+}
+
+@media (max-width: 1294px) {
+    .slick-slide.slick-active.slick-current {
+        width: 670px!important;
+    }
+    .review_text p {
+        font-size: 27px;
+        width: 90%;
+    }
+    .review_heading h2 {
+        font-size: 50px;
+    }
+    .userInfo h3 {
+        font-size: 18px;
+    }
+
+    .userInfo p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .review {
+        width: 70%;
+        margin-top: 120px;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 470px!important;
+    }
+    .review_text p {
+        font-size: 20px;
+    }
+    .review_heading h2 {
+        font-size: 50px;
+    }
+    .userInfo h3 {
+        font-size: 15px;
+    }
+    .userInfo p {
+        font-size: 11px;
+    }
+    .user_logo{
+        width: 90px;
+    }
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 880px) {
+    .review {
+        width: 73%;
+        margin-top: 100px;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 350px!important;
+    }
+    .review_text p {
+        font-size: 14px;
+    }
+    .review_heading h2 {
+        font-size: 34px;
+    }
+    .userInfo h3 {
+        font-size: 14px;
+    }
+    .userInfo p {
+        font-size: 11px;
+    }
+    .user_logo{
+        width: 50px;
+    }
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 630px) {
+    .review {
+        width: 77%;
+        margin-top: 100px;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 250px!important;
+    }
+    .review_text p {
+        font-size: 11px;
+    }
+    .review_heading h2 {
+        font-size: 20px;
+    }
+    .userInfo h3 {
+        font-size: 10px;
+    }
+    .userInfo p {
+        font-size: 7px;
+    }
+    .user_logo{
+        width: 40px;
+    }
+    .logo {
+        width: 80px;
+    }
+}
+

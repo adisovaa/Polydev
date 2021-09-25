@@ -1,0 +1,230 @@
+footer {
+    width: 100%;
+    height: 752px;
+    background: #000;
+    margin-top: 200px;
+}
+
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 106px;
+}
+
+.circle button {
+    width: 270px;
+    height: 270px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+}
+
+.footer_content {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_item {
+    border-top: 1px solid #fff;
+    width: 45%;
+}
+
+.footer_item h3 {
+    font-size: 30px;
+    color: #fff;
+    font-family: "ALS Gorizont Expanded";
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+
+.footer_item ul {
+    padding: 0;
+    margin-bottom: 56px;
+}
+
+.footer_item ul li {
+    list-style-type: none;
+    color: #9a9a9a;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.5;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin-top: 30px;
+}
+
+.footer_text_security {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 24px;
+    line-height: 1;
+}
+
+.message_button {
+    width: 80px;
+    height: 80px;
+    background: #6002FD;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 30px;
+    right: 7%;
+}
+
+.message_button img {
+    width: 32px;
+    height: 28px;
+    margin: 30px 24px;
+}
+
+@media (max-width: 1294px) {
+    .circle button {
+        width: 250px;
+        height: 250px;
+        font-size: 16px;
+    }
+
+    .footer_content {
+        width: 66%
+    }
+
+    .footer_item ul li {
+        font-size: 15px;
+    }
+
+    .footer_item h3 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .circle button {
+        width: 230px;
+        height: 230px;
+        font-size: 14px;
+    }
+
+    .footer_content {
+        width: 66%
+    }
+
+    .footer_item ul li {
+        font-size: 14px;
+    }
+
+    .footer_item h3 {
+        font-size: 24px;
+    }
+
+    .security_text p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 880px) {
+    .circle button {
+        width: 200px;
+        height: 200px;
+    }
+
+    .footer_item ul li {
+        font-size: 14px;
+    }
+
+    .footer_item h3 {
+        font-size: 20px;
+    }
+
+    .security_text p {
+        font-size: 14px;
+    }
+    .line {
+        margin: 0;
+    }
+    .message_button {
+        width: 70px;
+        height: 70px;
+        bottom: 30px;
+        right: 10%;
+    }
+
+    .message_button img {
+        width: 25px;
+        height: 25px;
+        margin: 25px 23px;
+    }
+}
+
+@media (max-width: 735px) {
+    footer {
+        height: 642px;
+    }
+    .circle button {
+        width: 180px;
+        height: 180px;
+        font-size: 12px;
+    }
+
+    .footer_item ul li {
+        font-size: 11px;
+    }
+
+    .footer_item h3 {
+        font-size: 17px;
+    }
+
+    .security_text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 630px) {
+    footer {
+        height: 590px;
+    }
+    .circle button {
+        width: 140px;
+        height: 140px;
+        font-size: 10px;
+    }
+
+    .footer_item ul li {
+        font-size: 9px;
+    }
+
+    .footer_item h3 {
+        font-size: 15px;
+    }
+
+    .security_text p {
+        font-size: 12px;
+    }
+    .message_button {
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 7%;
+    }
+
+    .message_button img {
+        width: 20px;
+        height: 20px;
+        margin: 22px 21px;
+    }
+}
+
+@media (max-width: 481px) {
+    .wrapper {
+        width: 391px;
+    }
+}

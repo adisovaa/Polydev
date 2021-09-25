@@ -1,0 +1,84 @@
+.text_block {
+    margin: 187px 304px;
+}
+
+.text_block h1 {
+    font-family: "ALS Gorizont Expanded";
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text_block p {
+    margin: 0 -110px
+}
+
+.text_block span {
+    color: #6002FD;
+}
+
+@media screen and (max-width: 1294px) {
+    .text_block {
+        margin: 85px 220px;
+    }
+
+    .text_block h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .text_block p {
+        margin: 0 -83px;
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .text_block {
+        margin-left: 240px;
+    }
+    .text_block h1 {
+        font-size: 30px;
+    }
+
+    .text_block p {
+        margin: 0 -65px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .text_block {
+        margin-left: 180px;
+    }
+    .text_block p {
+        margin: 0 -55px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .text_block {
+        margin: 57px 145px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .text_block {
+        margin: 57px 110px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .text_block {
+        margin: 57px 83px;
+    }
+
+    .text_block h1 {
+        font-size: 19px;
+    }
+
+    .text_block p {
+        margin: 0 -24px;
+        font-size: 19px;
+    }
+}

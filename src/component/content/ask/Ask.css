@@ -1,0 +1,86 @@
+.askAnswer {
+    width: 75%;
+    float: right;
+    margin-top: 190px;
+}
+
+.askAnswerBlock {
+    display: none;
+}
+
+.askAnswerBlock.show {
+    display: block;
+    width: 76%;
+    margin: 15px auto;
+    font-size: 17px;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #6002FD;
+}
+
+.askButtonAnswer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border-top: 1px solid #7C7C7C;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-size: 40px;
+    color: #334059;
+    line-height: 2.5;
+}
+.askButtonAnswer img {
+    width: 65px;
+    margin: 17px 0;
+}
+
+button .askButtonAnswer:last-child {
+    border-bottom: 1px solid #7C7C7C!important;
+}
+
+@media (max-width: 1294px) {
+    .askAnswer {
+        width: 78%
+    }
+    .askButtonAnswer {
+        font-size: 27px;
+        line-height: 3;
+    }
+    .askButtonAnswer img {
+        margin: 13px 0;
+    }
+}
+
+@media (max-width: 1025px) {
+    .askButtonAnswer {
+        font-size: 20px;
+    }
+    .askButtonAnswer img {
+        margin: 13px 0;
+        width: 40px;
+    }
+}
+
+@media (max-width: 735px) {
+    .askButtonAnswer {
+        font-size: 16px;
+    }
+    .askButtonAnswer img {
+        margin: 10px 0;
+        width: 30px;
+    }
+}
+
+@media (max-width: 481px) {
+    .askButtonAnswer {
+        font-size: 12px;
+    }
+    .askButtonAnswer img {
+        margin: 10px 0;
+        width: 20px;
+    }
+}

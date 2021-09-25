@@ -19,7 +19,7 @@ const Heading = () => {
 
                 <div className="blocks">
                     <div className="block">
-                        <h4>LOLLO</h4>
+                        <h4>Лендинги</h4>
                         <p>На конструкторе Tilda/Wordpress <br/> или самописные</p>
                     </div>
 

@@ -36,7 +36,7 @@ const Header = () => {
         }
         return (
             <div className='container'>
-                <div className="header_mobile mobile_wrapper">
+                <div className="header_mobile wrapper">
                     <div className="logo" onClick={mainPage}>
                         <img src={logo_mobile} alt="logo"/>
                     </div>
@@ -48,12 +48,12 @@ const Header = () => {
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
                     <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
-                        <div className="navBar item_wrapper">
+                        <div className="navBar wrapper">
                             {
                                 showTextMobile
                             }
                         </div>
-                        <div className="headerNavLink mobile_wrapper">
+                        <div className="headerNavLink wrapper">
                             <div className="headerLink">
                                 <a href="#">Instagram</a>
                                 <a href="#">Dribble</a>

@@ -40,7 +40,7 @@
     }
 
     .mobile_wrapper {
-        width: 93%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -144,7 +144,7 @@
     .navBar p {
         border-top: 1px solid #fff;
         line-height: 3;
-        margin: 6px 27px;
+
     }
 
     .navBar p:last-of-type {

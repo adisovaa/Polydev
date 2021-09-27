@@ -1,5 +1,5 @@
 .askAnswer {
-    width: 75%;
+    width: 77%;
     float: right;
     margin-top: 190px;
 }
@@ -13,6 +13,15 @@
     width: 76%;
     margin: 15px auto;
     font-size: 17px;
+}
+
+.ask_heading h2{
+    font-size: 64px;
+    line-height: 1.4;
+    font-weight: 900;
+    font-family: "ALS Gorizont Expanded";
+    text-transform: uppercase;
+    width: 35%;
 }
 
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {

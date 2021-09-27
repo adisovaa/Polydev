@@ -30,6 +30,13 @@ class Review extends Component {
                 name: 'Иван Андреев',
                 position: 'Front-End developer',
                 company: userImg
+            },
+            {
+                img: user,
+                title: 'Мы делаем проекты не для наград в нашем портфолио, а для бизнеса клиента: учитываем требования рынка в функционале, создаём актуальный и понятный пользователю дизайн, делаем проект от А до Я и оказываем поддержку. И всё по адекватным цена и по договору',
+                name: 'Иван Андреев',
+                position: 'Front-End developer',
+                company: userImg
             }
         ],
     };
@@ -40,13 +47,15 @@ class Review extends Component {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
-            className: 'eventSlides',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            className: 'eventSlides'
         };
 
         return (
-            <div className="wrapper">
+            <div className="carousel">
                 <div className="review">
                     <div className="review_heading">
                         <h2>Отзывы</h2>

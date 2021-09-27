@@ -83,7 +83,7 @@ class Ask extends Component {
     render() {
         return (
             <div className="wrapper">
-                <div className="askAnswer review_heading">
+                <div className="askAnswer ask_heading">
                     <h2>Частые вопросы</h2>
                     {
                         this.renderAnswer()

@@ -22,7 +22,7 @@ footer {
 }
 
 .footer_content {
-    width: 75%;
+    width: 77%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -220,11 +220,5 @@ footer {
         width: 20px;
         height: 20px;
         margin: 22px 21px;
-    }
-}
-
-@media (max-width: 481px) {
-    .wrapper {
-        width: 391px;
     }
 }

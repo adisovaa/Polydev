@@ -18,7 +18,7 @@
 
 .heading_text h1 {
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 900;
     font-family: "ALS Gorizont Expanded";
     text-transform: uppercase;
     text-align: left;
@@ -37,6 +37,7 @@
     font-size: 16px;
     background: transparent;
     font-weight: bold;
+    margin-top: -47px;
 }
 
 .blocks {
@@ -63,30 +64,53 @@
     line-height: 1.4;
 }
 
+
+@media not all and (min-resolution:.001dpcm) { @media {
+    .heading_block {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .blocks {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .heading_text h1 {
+        font-weight: 900;
+    }
+}}
+
 @media (max-width: 1294px) {
     .logo img {
         width: 150px;
     }
+
     .heading_button button {
         width: 160px;
         height: 160px;
     }
+
     .heading_text {
         margin: 35px
     }
+
     .heading_text h1 {
         font-size: 50px;
     }
+
     .blocks {
         margin-left: 175px;
     }
+
     .block {
         width: 35%;
         margin-left: 50px;
     }
+
     .block h4 {
         font-size: 20px;
     }
+
     .block p {
         width: 150px;
         font-size: 13px;
@@ -97,18 +121,22 @@
     .heading_text {
         padding-left: 8%;
     }
+
     .heading_text h1 {
         font-size: 30px;
         line-height: 1.2;
     }
+
     .heading_text p {
         margin: 0 -70px;
     }
+
     .heading_button button {
         width: 120px;
         height: 120px;
         font-size: 12px;
     }
+
     .blocks {
         margin-left: 24%;
     }
@@ -118,35 +146,44 @@
     .logo img {
         width: 100px;
     }
+
     .heading_block {
         margin-top: 30px;
     }
+
     .heading_button button {
         width: 80px;
         height: 80px;
         font-size: 9px;
     }
+
     .heading_text {
         margin: 10px;
         padding: 0;
     }
+
     .heading_text p {
         margin: 0 -59px;
     }
+
     .heading_text h1 {
         font-size: 25px;
     }
+
     .blocks {
         margin-left: 45px;
         margin-top: 30px;
     }
+
     .block {
         width: 20.8%;
     }
+
     .block h4 {
         font-size: 11px;
         margin: 10px 0;
     }
+
     .block p {
         width: 72px;
         font-size: 9px;
@@ -157,16 +194,20 @@
     .heading_block {
         display: inline-block;
     }
+
     .heading_text {
         width: 75%;
         margin: 0
     }
+
     .heading_text p {
         margin: 0
     }
+
     .heading_text h1 {
         font-size: 30px;
     }
+
     .heading_button button {
         width: 160px;
         height: 160px;
@@ -175,21 +216,23 @@
         position: absolute;
         font-family: 'Manrope', sans-serif;
         margin: 340px 100px;
-
     }
-    .blocks{
-        width: 100%;
+
+    .blocks {
         margin: 20px 0;
         display: inline-block;
     }
-    .block h4{
+
+    .block h4 {
         font-size: 18px;
         width: 50%;
     }
-    .block p{
+
+    .block p {
         font-size: 14px;
         width: 50%;
     }
+
     .block {
         width: 100%;
         margin: 0;

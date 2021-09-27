@@ -1,26 +1,40 @@
-.review {
-    width: 78%;
-    float: right;
-    margin-top: 190px;
+.carousel {
+    width: 1520px;
+    margin: 0 auto;
+    position: relative;
+    display: flow-root;
+    min-height: auto;
 }
 
-.slick-slide.slick-active.slick-current {
-    width: 770px!important;
+
+.review {
+    width: 100%;
+    margin: 170px 0 200px;
+    display: flow-root;
+}
+
+.slick-slide {
+    width: 720px !important;
     border-right: 1px solid #000;
-    margin-right: 1%;
 }
 
 .review_heading h2 {
     font-size: 64px;
     line-height: 1.4;
+    font-weight: 900;
     font-family: "ALS Gorizont Expanded";
     text-transform: uppercase;
     width: 35%;
+    margin: 4% 26%
+}
+
+.review_container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .review_text p {
-    font-size: 32px;
-    width: 90%;
+    font-size: 23px
 }
 
 .reviewer {
@@ -43,10 +57,6 @@
 .review_items {
     display: flex;
     justify-content: space-between;
-}
-
-.review_items .logo {
-    margin-right: 5%;
 }
 
 @media (max-width: 1294px) {

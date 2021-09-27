@@ -32,10 +32,12 @@
 
 .studio_heading h2 {
     font-size: 64px;
+    font-weight: 900;
     line-height: 1.4;
     font-family: "ALS Gorizont Expanded";
     text-transform: uppercase;
     margin-left: 23%;
+    width: 30%;
 }
 
 .count {

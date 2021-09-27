@@ -154,21 +154,47 @@
 }
 
 @media (max-width: 481px) {
-    .heading_text h1 {
-        font-size: 15px;
+    .heading_block {
+        display: inline-block;
     }
-    .heading_button button {
-        width: 60px;
-        height: 60px;
-        font-size: 5px;
-    }
-    .blocks{
-        margin-left: 60px;
-    }
-    .block h4{
-        font-size: 9px;
+    .heading_text {
+        width: 75%;
+        margin: 0
     }
     .heading_text p {
-        margin: 0 -26px;
+        margin: 0
+    }
+    .heading_text h1 {
+        font-size: 30px;
+    }
+    .heading_button button {
+        width: 160px;
+        height: 160px;
+        font-size: 14px;
+        font-weight: 700;
+        position: absolute;
+        font-family: 'Manrope', sans-serif;
+        margin: 340px 100px;
+
+    }
+    .blocks{
+        width: 100%;
+        margin: 20px 0;
+        display: inline-block;
+    }
+    .block h4{
+        font-size: 18px;
+        width: 50%;
+    }
+    .block p{
+        font-size: 14px;
+        width: 50%;
+    }
+    .block {
+        width: 100%;
+        margin: 0;
+        padding: 17px 0;
+        border-top: 1px solid gray;
+        display: flex;
     }
 }

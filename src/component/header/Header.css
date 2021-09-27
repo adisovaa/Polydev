@@ -1,4 +1,4 @@
-header {
+.header {
     margin-top: 40px;
     display: flex;
 }
@@ -6,7 +6,7 @@ header {
 .navBar {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 110px;
+    margin-left: 129px;
 }
 
 .navBar p {
@@ -16,17 +16,37 @@ header {
 .navBar a {
     text-decoration: none;
     color: #000;
-    font-weight: 600
+    font-weight: 600;
+    font-size: 16px;
 }
 
-@media (max-width: 850px) {
-    header {
+.navBar a:hover {
+    color: #6002FD!important;
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .logo {
+        z-index: 3;
+    }
+
+    .header_mobile {
         display: flex;
         justify-content: space-between;
     }
 
-    .header_wrapper {
-        justify-content: space-between;
+    .mobile_wrapper {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .item_wrapper {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .burger {
@@ -34,18 +54,20 @@ header {
         width: 30px;
         height: 20px;
         position: relative;
+        float: right;
         z-index: 5;
-        margin-left: 170px;
     }
 
     .burger span {
         width: 100%;
         height: 2px;
-
         position: absolute;
         background-color: #000;
         left: 0;
         top: 9px;
+    }
+    .burger span:last-of-type {
+        margin-top: 6px;
     }
 
     .burger:before,
@@ -54,7 +76,7 @@ header {
         width: 100%;
         height: 2px;
 
-        background-color: #000;
+        background-color: #fff;
         position: absolute;
         left: 0;
         transition: all 0.3s ease 0s;
@@ -83,23 +105,97 @@ header {
     }
 
     .menu-burger {
+        display: none;
+    }
+
+    .menu-burger.active {
+        display: block;
+        width: 100%;
+        height: 76%;
+        margin: 0;
+        padding: 72px 0 0 0;
+
+        position: fixed;
+        background-color: #000;
+        transition: all 0.3s ease 0s;
+    }
+
+    .wallpaper {
         width: 100%;
         height: 100%;
         margin: 0;
-        padding: 100px 0 0 0;
 
         position: fixed;
         display: block;
         top: -150%;
-        background-color: #fff;
-        transition: all 0.3s ease 0s;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
     }
 
-    .menu-burger.active {
+    .wallpaper.active {
         top: 0;
     }
 
     .navBar {
         display: block;
+        margin-left: 0;
     }
+
+    .navBar p {
+        border-top: 1px solid #fff;
+        line-height: 3;
+        margin: 6px 27px;
+    }
+
+    .navBar p:last-of-type {
+        border-bottom: 1px solid #fff!important;
+    }
+
+    .navBar a {
+        margin: 7px 0;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerLink a:hover {
+        color: #6002FD!important;
+    }
+
+    .headerLink {
+        margin-top: 50px;
+    }
+
+    .headerLink a {
+        margin-top: 50px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .headerLink a:last-of-type{
+        margin-left: 30px;
+    }
+
+    .mobile_button {
+        height: 80px;
+        background: #6002FD;
+        margin-top: 138px;
+    }
+
+    .mobile_button button {
+        width: 100%;
+        height: 48px;
+        border-radius: 24px;
+        border: 1px solid #fff;
+        background: transparent;
+        margin-top: 16px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
 }

@@ -1,46 +1,98 @@
-import React, {useState} from 'react'
-import logo from '../../images/POLYDEV.svg'
-import './Header.css'
+import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
+import {useDispatch, useSelector} from 'react-redux';
+import './Header.css';
+import logo from './../../images/POLYDEV.svg';
+import logo_mobile from './../../images/Logo_mobile.svg';
+import arrow from './../../images/arrow.svg'
+import {openHandle} from "./../../redux/sliceReducer";
 
 const Header = () => {
-    let history = useHistory()
-    const [active, setActive] = useState(true);
+    const active = useSelector(state => state.slice.active);
+    let history = useHistory();
     const navText = ['О студии', 'Кейсы', 'Контакты']
-    const showText = navText.map((text, i) => <p key={i}><a href="#">{text}</a></p>)
+    const navTextMobile = ['Главная', 'О студии', 'Портфолио', 'Контакты']
+    const [screen, setScreen] = useState(window.matchMedia('(max-width: 880px)').matches);
+    const dispatch = useDispatch();
+
+    let showText = navText.map((text, i) => <p key={i}><a href={`#${i}`}>{text}</a></p>);
+    let showTextMobile = navTextMobile.map((text, i) => <p key={i}><a href={`#${i}`}>{text}<img src={arrow} alt=""/></a>
+    </p>);
+
+    useEffect(() => {
+        const handler = e => setScreen(e.matches);
+        window.matchMedia('(max-width: 880px)').addListener(handler)
+    });
 
     const mainPage = () => {
         history.push('/')
-    }
+    };
 
-    let showNavBar = e => {
-        e.preventDefault();
+    const adaptiveHeader = () => {
         if (active) {
-            setActive(false)
+            document.body.style.overflow = 'visible'
         } else {
-            setActive(true)
+            document.body.style.overflow = 'hidden'
         }
+        return (
+            <div className='container'>
+                <div className="header_mobile mobile_wrapper">
+                    <div className="logo" onClick={mainPage}>
+                        <img src={logo_mobile} alt="logo"/>
+                    </div>
+                    <div className={active ? "burger" : "burger".concat(' active')}
+                         onClick={() => dispatch(openHandle())}>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
+                    <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                        <div className="navBar item_wrapper">
+                            {
+                                showTextMobile
+                            }
+                        </div>
+                        <div className="headerNavLink mobile_wrapper">
+                            <div className="headerLink">
+                                <a href="#">Instagram</a>
+                                <a href="#">Dribble</a>
+                            </div>
+                        </div>
+                        <div className="mobile_button">
+                            <div className="mobile_wrapper">
+                                <button>Заполнить бриф</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
     };
 
     return (
-        <div className="wrapper">
-            <header>
-                <div className="logo" onClick={mainPage}>
-                    <img src={logo} alt=""/>
-                </div>
-                <div className={active ? "burger" : "burger".concat(' active')} onClick={showNavBar}>
-                    <span></span>
-                </div>
-                <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
-                    <div className="navBar">
-                        {
-                            showText
-                        }
+        <div>
+            {
+                screen ? adaptiveHeader()
+                    :
+                    <div className="header wrapper">
+                        <div className="logo" onClick={mainPage}>
+                            <img src={logo} alt="logo"/>
+                        </div>
+                        <div className={active ? "burger" : "burger".concat(' active')} onClick={() => openHandle()}>
+                            <span></span>
+                        </div>
+                        <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                            <div className="navBar">
+                                {
+                                    showText
+                                }
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </header>
+            }
         </div>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

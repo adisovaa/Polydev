@@ -69,16 +69,18 @@
 }
 
 @media screen and (max-width: 481px) {
+    .text {
+        margin-top: 300px
+    }
     .text_block {
-        margin: 57px 83px;
+        margin: 0;
+        line-height: 1.2;
     }
 
     .text_block h1 {
-        font-size: 19px;
+        font-size: 30px;
     }
-
     .text_block p {
-        margin: 0 -24px;
-        font-size: 19px;
+        margin: 0;
     }
 }

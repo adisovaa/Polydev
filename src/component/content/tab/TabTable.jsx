@@ -1,6 +1,6 @@
 import React from 'react'
 import './Tab.css'
-import down from '../../images/Down.svg'
+import down from '../../../images/Down.svg'
 
 export const Landing = () => {
     return (

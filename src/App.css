@@ -1,41 +1,47 @@
 .App {
-  font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
+
 .wrapper {
-  width: 1320px;
-  margin: 0 auto;
-  position: relative;
-  display: flow-root;
-  min-height: auto;
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    display: flow-root;
+    min-height: auto;
 }
 
 @media (max-width: 1294px) {
-  .wrapper {
-    width: 1050px;
-  }
+    .wrapper {
+        width: 1050px;
+    }
 }
+
 @media (max-width: 1025px) {
-  .wrapper {
-    width: 825px;
-  }
+    .wrapper {
+        width: 825px;
+    }
 }
+
 @media (max-width: 880px) {
-  .wrapper {
-    width: 680px;
-  }
+    .wrapper {
+        width: 680px;
+    }
 }
+
 @media (max-width: 735px) {
-  .wrapper {
-    width: 585px;
-  }
+    .wrapper {
+        width: 585px;
+    }
 }
+
 @media (max-width: 630px) {
-  .wrapper {
-    width: 500px;
-  }
+    .wrapper {
+        width: 500px;
+    }
 }
+
 @media (max-width: 481px) {
-  .wrapper {
-    width: 391px;
-  }
+    .wrapper {
+        width: 341px;
+    }
 }

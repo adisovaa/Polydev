@@ -1,165 +1,84 @@
-.carousel {
-    width: 1520px;
-    margin: 0 auto;
-    position: relative;
-    display: flow-root;
-    min-height: auto;
-}
-
-
 .review {
-    width: 100%;
-    margin: 170px 0 200px;
-    display: flow-root;
+    margin-top: 80px;
 }
 
-.slick-slide {
-    width: 720px !important;
-    border-right: 1px solid #000;
-}
-
-.review_heading h2 {
-    font-size: 64px;
-    line-height: 1.4;
-    font-weight: 900;
-    font-family: "ALS Gorizont Expanded";
-    text-transform: uppercase;
-    width: 35%;
-    margin: 4% 26%
-}
-
-.review_container {
-    width: 90%;
+.reviewContainer {
     margin: 0 auto;
+    padding-bottom: 180px;
+    max-width: 1640px;
 }
 
-.review_text p {
-    font-size: 23px
+.reviewTitle h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    margin: 9% 26% 2%;
+    font-family: "ALS Gorizont Expanded";
 }
 
-.reviewer {
+.reviewCard {
+    margin: 0 -40px;
+    width: 94%;
+    border-right: 1px solid gray;
+}
+
+.reviewBlock {
     display: flex;
-}
-
-.userInfo {
-    padding: 23px 20px;
-}
-.userInfo h3 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.userInfo p {
-    font-size: 18px;
-    color: #6002FD;
-}
-
-.review_items {
-    display: flex;
+    margin-top: 30px;
     justify-content: space-between;
 }
 
-@media (max-width: 1294px) {
-    .slick-slide.slick-active.slick-current {
-        width: 670px!important;
-    }
-    .review_text p {
-        font-size: 27px;
-        width: 90%;
-    }
-    .review_heading h2 {
-        font-size: 50px;
-    }
-    .userInfo h3 {
-        font-size: 18px;
-    }
-
-    .userInfo p {
-        font-size: 15px;
-    }
+.reviewTitleCard {
+    padding: 15px 20px;
 }
 
-@media (max-width: 1025px) {
-    .review {
-        width: 70%;
-        margin-top: 120px;
-    }
-    .slick-slide.slick-active.slick-current {
-        width: 470px!important;
-    }
-    .review_text p {
-        font-size: 20px;
-    }
-    .review_heading h2 {
-        font-size: 50px;
-    }
-    .userInfo h3 {
-        font-size: 15px;
-    }
-    .userInfo p {
-        font-size: 11px;
-    }
-    .user_logo{
-        width: 90px;
-    }
-    .logo {
-        width: 150px;
-    }
+.reviewTitleCard p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 19px;
 }
 
-@media (max-width: 880px) {
-    .review {
-        width: 73%;
-        margin-top: 100px;
-    }
-    .slick-slide.slick-active.slick-current {
-        width: 350px!important;
-    }
-    .review_text p {
+.reviewText {
+    margin: 33px 8px;
+}
+
+.reviewBlock .companyImg {
+    width: 120px;
+}
+
+.reviewParameters {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+}
+
+.reviewParameters h3 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.reviewParameters p {
+    font-size: 15px;
+    color: #6002FD;
+}
+
+@media screen and (max-width: 650px) {
+    .reviewTitleCard h1 {
         font-size: 14px;
     }
-    .review_heading h2 {
-        font-size: 34px;
-    }
-    .userInfo h3 {
-        font-size: 14px;
-    }
-    .userInfo p {
-        font-size: 11px;
-    }
-    .user_logo{
-        width: 50px;
-    }
-    .logo {
-        width: 100px;
+
+    .reviewParameters {
+        display: flex;
+        font-size: 13px;
     }
 }
 
-@media (max-width: 630px) {
-    .review {
-        width: 77%;
-        margin-top: 100px;
+@media screen and (max-width: 420px) {
+    .reviewParameters {
+        font-size: 13px;
     }
-    .slick-slide.slick-active.slick-current {
-        width: 250px!important;
-    }
-    .review_text p {
-        font-size: 11px;
-    }
-    .review_heading h2 {
-        font-size: 20px;
-    }
-    .userInfo h3 {
-        font-size: 10px;
-    }
-    .userInfo p {
-        font-size: 7px;
-    }
-    .user_logo{
-        width: 40px;
-    }
-    .logo {
-        width: 80px;
+
+    .reviewTime:last-child {
+        margin-left: 15px;
     }
 }
-

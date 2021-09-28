@@ -1,53 +1,66 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import Slider from 'react-slick';
+import {useHistory} from "react-router";
+import {useDispatch, useSelector} from "react-redux";
+import './Review.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Review.css'
-import user from "../../../images/user.svg"
-import userImg from '../../../images/3.svg'
 
+const Review = () => {
+    const review = useSelector(state => state.slice.items.reviews);
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const [screen9, setScreen9] = useState(false);
+    const [screen6, setScreen6] = useState(window.matchMedia('(max-width: 650px)').matches);
+    const [screen4, setScreen4] = useState(window.matchMedia('(max-width: 450px)').matches);
+    const [screen3, setScreen3] = useState(window.matchMedia('(max-width: 420px)').matches);
 
-class Review extends Component {
-    state = {
-        reviews: [
-            {
-                img: user,
-                title: 'Мы делаем проекты не для наград в нашем портфолио, а для бизнеса клиента: учитываем требования рынка в функционале, создаём актуальный и понятный пользователю дизайн, делаем проект от А до Я и оказываем поддержку. И всё по адекватным цена и по договору',
-                name: 'Иван Андреев',
-                position: 'Front-End developer',
-                company: userImg
-            },
-            {
-                img: user,
-                title: 'Мы делаем проекты не для наград в нашем портфолио, а для бизнеса клиента: учитываем требования рынка в функционале, создаём актуальный и понятный пользователю дизайн, делаем проект от А до Я и оказываем поддержку. И всё по адекватным цена и по договору',
-                name: 'Иван Андреев',
-                position: 'Front-End developer',
-                company: userImg
-            },
-            {
-                img: user,
-                title: 'Мы делаем проекты не для наград в нашем портфолио, а для бизнеса клиента: учитываем требования рынка в функционале, создаём актуальный и понятный пользователю дизайн, делаем проект от А до Я и оказываем поддержку. И всё по адекватным цена и по договору',
-                name: 'Иван Андреев',
-                position: 'Front-End developer',
-                company: userImg
-            },
-            {
-                img: user,
-                title: 'Мы делаем проекты не для наград в нашем портфолио, а для бизнеса клиента: учитываем требования рынка в функционале, создаём актуальный и понятный пользователю дизайн, делаем проект от А до Я и оказываем поддержку. И всё по адекватным цена и по договору',
-                name: 'Иван Андреев',
-                position: 'Front-End developer',
-                company: userImg
-            }
-        ],
-    };
+    useEffect(() => {
+        const handler = e => setScreen9(e.matches);
+        const screenHandler = e => setScreen6(e.matches);
+        const screen4Handler = e => setScreen4(e.matches);
+        const screen3Handler = e => setScreen3(e.matches);
+        window.matchMedia("(max-width: 900px)").addListener(handler);
+        window.matchMedia("(max-width: 650px)").addListener(screenHandler);
+        window.matchMedia("(max-width: 450px)").addListener(screen4Handler);
+        window.matchMedia("(max-width: 420px)").addListener(screen3Handler);
+    });
 
-    render() {
-        const {reviews} = this.state;
+    //
+    // function SampleNextArrow(props) {
+    //     const {className, style, onClick} = props;
+    //     return (
+    //         <div
+    //             id={'eventContainer'}
+    //             className={"icon " + className}
+    //             style={{
+    //                 ...style,
+    //                 marginRight: !screen6 ? "45px" : "52px",
+    //                 marginTop: !screen6 ? '-20px' : '65px' || !screen4 ? '5px' : '35px' || !screen3 ? '5px' : '5px',
+    //                 display: "flex"
+    //             }}
+    //             onClick={onClick}
+    //         />
+    //     );
+    // }
+    //
+    // function SamplePrevArrow(props) {
+    //     const {className, style, onClick} = props;
+    //     return (
+    //         <div
+    //             className={className}
+    //             style={{...style, display: "none", background: "green"}}
+    //             onClick={onClick}
+    //         />
+    //     );
+    // }
+
+    const showOneSlides = () => {
         const settings = {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 2,
+            slidesToShow: screen6 ? 1 : 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -55,33 +68,70 @@ class Review extends Component {
         };
 
         return (
-            <div className="carousel">
-                <div className="review">
-                    <div className="review_heading">
-                        <h2>Отзывы</h2>
-                    </div>
+            <Slider {...settings}>
+                {
+                    review.map((review, i) => {
+                        return (
+                            <div key={i}>
+                                <div className="reviewCard">
+                                    <div className="reviewTitleCard">
+                                        <h1>{review.title}</h1>
+                                        <div className="reviewParameters">
+                                            <div className="reviewTime">
+                                                <img className="reviewImg" src={review.img} alt=""/>
+                                                <div className="reviewText">
+                                                    <h3>{review.name}</h3>
+                                                    <p>{review.position}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </Slider>
+        )
+    };
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: !screen9 ? 3 : 2,
+        slidesToScroll: 1,
+        className: 'eventSlides',
+        autoplay: true,
+        autoplaySpeed: 2000
+    };
+
+    return (
+        <div className="review" id='2'>
+            <div className="reviewContainer">
+                <div className="reviewTitle">
+                    <h1>Отзывы</h1>
+                </div>
+                {screen6 ?
+                    showOneSlides() :
                     <Slider {...settings}>
                         {
-                            reviews.map((reviews, i) => {
+                            review.map((review, i) => {
                                 return (
                                     <div key={i}>
-                                        <div className="review_container">
-                                            <div className="review_text">
-                                                <p>Мы делаем проекты не для наград в нашем портфолио, а для бизнеса
-                                                    клиента: учитываем требования рынка в функционале, создаём
-                                                    актуальный и понятный пользователю дизайн, делаем проект от А до Я и
-                                                    оказываем поддержку. И всё по адекватным цена и по договору</p>
-                                            </div>
-                                            <div className="review_items">
-                                                <div className="reviewer">
-                                                    <img className='user_logo' src={user} alt=""/>
-                                                    <div className="userInfo">
-                                                        <h3>{reviews.name}</h3>
-                                                        <p>{reviews.position}</p>
+                                        <div className="reviewCard">
+                                            <div className="reviewTitleCard">
+                                                <p>{review.title}</p>
+                                                <div className="reviewBlock">
+                                                    <div className="reviewParameters">
+                                                        <img className="reviewImg" src={review.img} alt=""/>
+                                                        <div className="reviewText">
+                                                            <h3>{review.name}</h3>
+                                                            <p>{review.position}</p>
+                                                        </div>
                                                     </div>
+                                                    <img className='companyImg' src={review.company} alt=""/>
                                                 </div>
-
-                                                <img className='logo' src={userImg} alt=""/>
                                             </div>
                                         </div>
                                     </div>
@@ -89,10 +139,11 @@ class Review extends Component {
                             })
                         }
                     </Slider>
-                </div>
+                }
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
+
 
 export default Review;

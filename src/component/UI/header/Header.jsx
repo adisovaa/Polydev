@@ -15,12 +15,14 @@ const Header = () => {
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 880px)').matches);
     const dispatch = useDispatch();
 
-    const clickHeader = e =>{
+    const clickHeader = e => {
         dispatch(openHandle());
-        if (e.target.textContent === 'О нас') {
+        if (e.target.textContent === 'О студии') {
             history.push('/about-us')
-        }if(e.target.textContent === 'Форум'){
-            history.push('/forum')
+        } else if (e.target.textContent === 'Кейсы') {
+            history.push('/case')
+        } if (e.target.textContent === 'Контакты') {
+            history.push('/contact')
         }
     };
 

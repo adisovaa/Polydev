@@ -112,7 +112,7 @@
 
 @media (max-width: 800px) {
     .projectCard {
-        width: 100%;
+        width: 97%!important;
         height: 320px;
     }
 

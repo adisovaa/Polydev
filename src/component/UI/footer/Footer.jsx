@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.css'
-import message from '../../images/message.png'
+import message from '../../../images/message.png'
 
 const Footer = () => {
     return (

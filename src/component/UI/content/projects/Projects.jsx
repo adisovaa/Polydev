@@ -4,8 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {useDispatch, useSelector} from "react-redux";
-import left from './../../../images/left.svg'
-import right from './../../../images/right.svg'
 
 const Project = () => {
     const project = useSelector(state => state.slice.items.project);

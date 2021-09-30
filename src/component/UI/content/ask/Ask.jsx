@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import down from '../../../images/Down.svg'
+import down from '../../../../images/Down.svg'
 import './Ask.css'
 
 function AskAnswer(props) {

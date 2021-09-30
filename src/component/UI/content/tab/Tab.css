@@ -180,4 +180,9 @@ div#rc-tabs-0-panel-1 {
     .table_row_icon img {
         margin-top: 24px
     }
+    @media not all and (min-resolution:.001dpcm) { @media {
+        .ant-tabs-tab {
+            padding: 4px 5px!important;
+        }
+    }}
 }

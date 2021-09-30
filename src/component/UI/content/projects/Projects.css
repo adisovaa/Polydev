@@ -157,7 +157,7 @@
     }
 
     button.slick-arrow.slick-prev {
-        background-image: url("./../../../images/left.svg") !important;
+        background-image: url("../../../../images/left.svg") !important;
         width: 70px;
         height: 70px;
         position: absolute;
@@ -170,7 +170,7 @@
     }
 
     button.slick-arrow.slick-next {
-        background-image: url("./../../../images/right.svg") !important;
+        background-image: url("../../../../images/right.svg") !important;
         width: 70px;
         height: 70px;
         position: absolute;

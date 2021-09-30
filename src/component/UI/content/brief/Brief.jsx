@@ -1,6 +1,6 @@
 import React from "react";
 import './Brief.css'
-import vector from '../../../images/vector_big.svg'
+import vector from '../../../../images/vector_big.svg'
 
 export const Brief = () => {
     return (

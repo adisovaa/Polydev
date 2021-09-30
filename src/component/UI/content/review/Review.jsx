@@ -68,8 +68,8 @@ const Review = () => {
         };
 
         return (
-            <>
-                <div className="review_items_title wrapper">
+            <div className="wrapper">
+                <div className="review_items_title">
                     <h1>Клиенты о работе с нами</h1>
                 </div>
                 <Slider {...settings}>
@@ -97,7 +97,7 @@ const Review = () => {
                         })
                     }
                 </Slider>
-            </>
+            </div>
         )
     };
 
@@ -113,7 +113,7 @@ const Review = () => {
     };
 
     return (
-        <div className="review" id='2'>
+        <div className="review" >
             <div className="reviewContainer">
                 <div className="reviewTitle">
                     <h1>Отзывы</h1>

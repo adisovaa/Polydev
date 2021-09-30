@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux';
 import './Header.css';
-import logo from './../../images/POLYDEV.svg';
-import logo_mobile from './../../images/Logo_mobile.svg';
-import arrow from './../../images/arrow.svg'
-import {openHandle} from "./../../redux/sliceReducer";
+import logo from '../../../images/POLYDEV.svg';
+import logo_mobile from '../../../images/Logo_mobile.svg';
+import arrow from '../../../images/arrow.svg'
+import {openHandle} from "../../../redux/sliceReducer";
 
 const Header = () => {
     const active = useSelector(state => state.slice.active);
@@ -15,9 +15,26 @@ const Header = () => {
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 880px)').matches);
     const dispatch = useDispatch();
 
-    let showText = navText.map((text, i) => <p key={i}><a href={`#${i}`}>{text}</a></p>);
-    let showTextMobile = navTextMobile.map((text, i) => <p key={i}><a href={`#${i}`}>{text}<img src={arrow} alt=""/></a>
-    </p>);
+    const clickHeader = e =>{
+        dispatch(openHandle());
+        if (e.target.textContent === 'О нас') {
+            history.push('/about-us')
+        }if(e.target.textContent === 'Форум'){
+            history.push('/forum')
+        }
+    };
+
+    let showText = navText.map((text, i) => {
+        return (
+            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text}</a></p>
+        )
+    });
+
+    let showTextMobile = navTextMobile.map((text, i) => {
+        return (
+            <p key={i}><a href={`#${i}`}>{text}</a></p>
+        )
+    });
 
     useEffect(() => {
         const handler = e => setScreen(e.matches);

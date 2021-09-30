@@ -106,9 +106,6 @@
     .grid-block:last-of-type:after {
         border-bottom: none!important;
     }
-    .grid-block:last-of-type:after{
-
-    }
 
     .tech_box {
         margin-top: 62px;

@@ -118,4 +118,15 @@
     .slick-slide.slick-active.slick-current {
         width: 333px!important;
     }
+    @media not all and (min-resolution:.001dpcm) { @media {
+        .reviewTitle {
+            margin: -18% 2%;
+        }
+        .review_items_title h1 {
+            width: 40%;
+        }
+        .review{
+            margin-top: 170px;
+        }
+    }}
 }

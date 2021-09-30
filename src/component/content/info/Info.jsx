@@ -26,8 +26,8 @@ export const StudioInfo = () => {
                     <h2>О студии</h2>
                 </div>
                 <div className="studio_block">
-                    <div className="clients_block">
-                        <div className="block_title">
+                    <div className="studio_item">
+                        <div className="studio_title">
                             <h3>Помогаем бизнесу</h3>
                         </div>
                         <div className="block_text">

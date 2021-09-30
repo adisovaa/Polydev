@@ -120,67 +120,64 @@ div#rc-tabs-0-panel-1 {
     }
 }
 
-@media (max-width: 735px) {
-    .ant-tabs-nav {
-        width: 26%;
-    }
-    .ant-tabs-tab-btn {
-        font-size: 11px!important;
-    }
-
-    .tab_table_text p {
-        font-size: 15px!important;
-    }
-    .table_row_text {
-        width: 47%;
-        font-size: 16px;
-        margin-top: 15px;
-    }
-    .table_row_icon img {
-        width: 30px;
-        margin-top: 14px;
-    }
-    .table_row_red {
-        margin-left: 50%;
-    }
-    .table_row_time p {
-        font-size: 13px;
-        margin-top: 20px;
-    }
-    .tab_table_text p {
-        margin-bottom: 30px;
-    }
-}
-
 @media (max-width: 481px) {
+    .ant-tabs {
+        display: block;
+    }
+    .ant-tabs-tab {
+        color: #000!important;
+        width: auto;
+        height: 43px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 4px 10px!important;
+        margin: 0 0 30px!important
+    }
+    .ant-tabs-nav-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row!important
+    }
     .ant-tabs-nav {
-        width: 23%;
+        width: 100%;
+    }
+    div#rc-tabs-0-panel-1,
+    div#rc-tabs-0-panel-2,
+    div#rc-tabs-0-panel-3 {
+        padding-left: 1px;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #fff!important;
+        font-weight: bold;
+    }
+    .tab_table_text p {
+        font-size: 16px!important;
+        width: 100%;
     }
     .ant-tabs-tab-btn {
-        font-size: 8px!important;
-    }
-
-    .tab_table_text p {
         font-size: 12px!important;
+        font-weight: bold;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active{
+        background: #6002FD;
+        border: 1px solid #6002FD;
+    }
+    .table_row_text h4 {
+        font-size: 18px;
+        font-weight: 400;
     }
     .table_row_text {
-        width: 47%;
+        margin: 21px 0 30px;
+        width: 90%;
+    }
+    .table_row_time {
+        position: absolute;
+        width: 40%;
+        margin-top: 30px;
         font-size: 14px;
-        margin-top: 15px;
+        font-weight: bold;
     }
     .table_row_icon img {
-        width: 20px;
-        margin-top: 16px;
-    }
-    .table_row_red {
-        margin-left: 35%;
-        font-size: 11px ;
-    }
-    .table_row_time p {
-        font-size: 11px;
-        margin-top: 20px;
-    }
-    .tab_table_text p {
-        margin-bottom: 30px;
+        margin-top: 24px
     }
 }

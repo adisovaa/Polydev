@@ -53,6 +53,7 @@
 
 .box_title h3 {
     font-size: 24px;
+    font-weight: 500;
     color: gray;
     width: 35%;
 }
@@ -81,89 +82,49 @@
 }
 
 @media (max-width: 880px) {
-    .box_title h3{
-        font-size: 17px;
-    }
-    .box_title {
-        padding: 60px 0 30px;
-    }
-    .vertical_line::before{
-        height: 60px;
-        margin-top: -1.4%;
-    }
-    .underline::after {
-        width: 25%;
-        margin-left: -19%;
-    }
     .grid-container {
-        height: 200px;
-    }
-    .grid-block img {
-        width: 100px;
-        height: 27px;
+        width: 100%;
+        display: inline-table;
     }
     .grid-container > div {
-        padding: 30px 0;
+        padding: 14px 0;
     }
-    .underline::after {
-        width: 27%;
-        margin-left: -22%;
-    }
+    .underline::after,
     .vertical_line::before{
-        height: 60px;
-        margin-top: -2%;
-        margin-left: -7.8%;
+        display: none;
     }
-    .grid-block img {
-        width: 120px;
-        height: 30px;
-    }
-}
 
-@media (max-width: 735px) {
-    .grid-block img {
-        width: 100px;
+    .grid-block::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid gray!important;
+        width: 90%;
+        top: auto;
+        position: initial;
     }
-}
+    .grid-block:last-of-type:after {
+        border-bottom: none!important;
+    }
+    .grid-block:last-of-type:after{
 
-@media (max-width: 630px) {
-    .grid-block img {
-        width: 90px;
-        height: 25px;
     }
-    .grid-container {
-        height: 150px;
-    }
-    .vertical_line::before{
-        height: 50px;
-    }
-}
 
-@media (max-width: 481px) {
-    .box {
-        margin-top: 50px;
+    .tech_box {
+        margin-top: 62px;
+    }
+    .box_title h3 {
+        font-size: 18px;
+        font-weight: 600;
+        width: 70%;
     }
     .box_title {
-        padding: 40px 0 20px;
-    }
-    .box_title h3{
-        font-size: 17px;
-    }
-    .vertical_line::before{
-        height: 43px;
-    }
-    .grid-container {
-        height: 150px;
+        padding-bottom: 25px;
     }
     .grid-block img {
-        width: 60px;
-        height: 20px;
+        margin-bottom: 15px;
     }
-    .grid-container > div {
-        padding: 25px 0;
-    }
-    .underline::after {
-        width: 26%;
-        margin-left: -19%;
+    .grid-block.underline.first {
+        padding-top: 25px;
     }
 }

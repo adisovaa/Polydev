@@ -11,6 +11,7 @@
 .reviewTitle h1 {
     text-transform: uppercase;
     font-size: 64px;
+    font-weight: bold;
     margin: 9% 26% 2%;
     font-family: "ALS Gorizont Expanded";
 }
@@ -66,19 +67,52 @@
     .reviewTitleCard h1 {
         font-size: 14px;
     }
-
     .reviewParameters {
         display: flex;
         font-size: 13px;
     }
-}
-
-@media screen and (max-width: 420px) {
+    .reviewTitle {
+        position: absolute;
+        margin: -40% -5%;
+    }
+    .reviewTitle h1 {
+        font-size: 30px;
+    }
     .reviewParameters {
         font-size: 13px;
     }
-
     .reviewTime:last-child {
         margin-left: 15px;
+    }
+    .reviewCard {
+        margin: 0 -40px;
+        width: 94%;
+        border: 1px solid gray;
+    }
+    .review {
+        margin-top: 230px;
+    }
+    .review_items_title h1 {
+        font-size: 18px;
+        font-weight: 600;
+        color: gray;
+        width: 39%;
+        margin-bottom: 17%;
+    }
+    .reviewImg {
+        width: 50px;
+    }
+    .reviewTime {
+        display: flex;
+    }
+    .reviewText h3,
+    .reviewText p {
+        font-size: 14px;
+    }
+    .companyImg{
+        margin: 0 10px 10px
+    }
+    .slick-dots li {
+        width: auto;
     }
 }

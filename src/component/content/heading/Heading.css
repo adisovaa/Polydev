@@ -18,7 +18,7 @@
 
 .heading_text h1 {
     font-size: 64px;
-    font-weight: 900;
+    font-weight: bold;
     font-family: "ALS Gorizont Expanded";
     text-transform: uppercase;
     text-align: left;
@@ -190,7 +190,7 @@
     }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 800px) {
     .heading_block {
         display: inline-block;
     }
@@ -215,12 +215,13 @@
         font-weight: 700;
         position: absolute;
         font-family: 'Manrope', sans-serif;
-        margin: 340px 100px;
+        margin: 355px 89px;
     }
 
     .blocks {
         margin: 20px 0;
         display: inline-block;
+        width: 100%;
     }
 
     .block h4 {

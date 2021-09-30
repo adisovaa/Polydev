@@ -20,11 +20,13 @@
     width: 760px;
     height: 400px;
 }
+
 .b {
-    grid-column:  3;
+    grid-column: 3;
     grid-row: 3 / 2;
     background: #000;
 }
+
 .c {
     grid-column: 2;
     grid-row: 2;
@@ -39,7 +41,7 @@
     background: #6002FD;
 }
 
-.heading h3{
+.heading h3 {
     font-size: 24px;
     color: gray;
 }
@@ -58,11 +60,15 @@
     font-family: "ALS Gorizont Expanded";
 }
 
-.show_more {
-    margin-top: 80px;
+.projectTitle {
+    display: none;
 }
 
-.show_more .btn{
+.show_more {
+    margin-top: 60px;
+}
+
+.show_more .btn {
     width: 180px;
     height: 180px;
     border: 1px solid #000;
@@ -74,22 +80,29 @@
     margin-left: 23%;
 }
 
+.show_more_mobile {
+    display: none;
+}
 
 @media (max-width: 1294px) {
     .item {
         width: 420px;
         height: 350px
     }
+
     .a {
         width: 570px;
         height: 350px;
     }
+
     .c {
         width: 342px;
     }
+
     .item_text {
         padding-top: 220px;
     }
+
     .show_more .btn {
         width: 160px;
         height: 160px;
@@ -97,141 +110,112 @@
     }
 }
 
-@media (max-width: 1025px) {
-    .projects_blocks {
-        grid-gap: 35px;
+@media (max-width: 800px) {
+    .projectCard {
+        width: 100%;
+        height: 320px;
     }
-    .item {
-        width: 280px;
-        height: 330px
-    }
-    .a {
-        width: 503px;
-        height: 330px;
-    }
-    .c {
-        width: 262px;
-    }
-    .item_text {
-        padding-top: 200px;
-    }
-    .show_more .btn {
-        width: 120px;
-        height: 120px;
-        font-size: 12px;
-        margin-left: 29%;
-    }
-}
 
-@media (max-width: 880px) {
-    .projects_blocks {
-        grid-gap: 30px;
+    .projectTitle {
+        display: block;
     }
-    .item {
-        width: 255px;
-        height: 270px
-    }
-    .a {
-        width: 395px;
-        height: 270px;
-    }
-    .c {
-        width: 212px;
-    }
-    .item_text {
-        padding-top: 170px;
-    }
-    .item_text h2 {
-        font-size: 15px;
-    }
-    .item_text p {
-        font-size: 10px;
-    }
-    .heading h3{
-        font-size: 18px;
-    }
-    .show_more .btn {
-        width: 80px;
-        height: 80px;
-        font-size: 9px;
-        margin-left: 27%
-    }
-}
 
-@media (max-width: 735px) {
-    .projects_blocks {
-        grid-gap: 20px;
-    }
-    .item {
-        width: 225px;
-        height: 230px
-    }
-    .a {
-        width: 340px;
-        height: 230px;
-    }
-    .c {
-        width: 195px;
-    }
-    .item_text {
-        padding-top: 150px;
-    }
-    .show_more .btn {
-        margin-left: 25%
-    }
-}
-
-@media (max-width: 630px) {
-    .projects_blocks {
-        grid-gap: 15px;
-    }
-    .item {
-        width: 185px;
-        height: 200px
-    }
-    .a {
-        width: 300px;
-        height: 200px;
-    }
-    .item_text {
-        padding-top: 120px;
-    }
-    .show_more .btn {
-        margin-left: 22%
-    }
-}
-
-@media (max-width: 481px) {
-    .projects_blocks {
-        grid-gap: 10px;
-    }
-    .item {
-        width: 115px;
-        height: 150px
-    }
-    .a {
-        width: 220px;
-        height: 150px;
-    }
-    .c {
-        width: 135px;
-    }
-    .item_text {
-        padding-top: 90px;
-    }
-    .item_text h2 {
-        font-size: 10px;
-    }
-    .item_text p {
-        font-size: 7px;
-    }
-    .heading h3{
-        font-size: 18px;
-        margin-bottom: -40px;
-    }
     .show_more button {
         width: 60px;
         height: 60px;
         font-size: 5px;
+    }
+
+    .projectTitleCard {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 60%;
+    }
+
+    .projectTitle h1 {
+        font-size: 18px;
+        color: gray;
+        font-weight: 600;
+        line-height: 4;
+    }
+
+    .projectTitleCard h2 {
+        color: #fff;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: "ALS Gorizont Expanded";
+    }
+
+    .projectTitleCard p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .projectTitle {
+        margin: 35px 0;
+    }
+
+    button.slick-arrow.slick-prev {
+        background-image: url("./../../../images/left.svg") !important;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: -22%;
+        left: 55%;
+    }
+
+    .slick-prev:before {
+        content: '' !important;
+    }
+
+    button.slick-arrow.slick-next {
+        background-image: url("./../../../images/right.svg") !important;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: -22%;
+        left: 79%;
+    }
+
+    .slick-next:before {
+        content: '' !important;
+    }
+
+    .slick-dots li {
+        margin: -8px 5px!important;
+    }
+
+    .slick-dots li button {
+        width: 10px!important;
+        height: 10px!important;
+        border: 1px solid black!important;
+        border-radius: 20px;
+    }
+    .slick-dots li button:before {
+        content: ''!important;
+    }
+    .slick-dots li.slick-active {
+        background: #6002FD;
+        width: 11px!important;
+        height: 11px!important;
+        border-radius: 20px;
+    }
+    .show_more_mobile {
+        display: block;
+        margin-top: 80px;
+    }
+    .show_more_mobile .btn {
+        margin-left: 23%;
+        width: 180px;
+        height: 180px;
+        border: 1px solid #000;
+        border-radius: 100px;
+        font-size: 16px;
+        font-weight: bold;
+        background: transparent
+    }
+    .show_more .btn {
+        margin-left: 25%
     }
 }

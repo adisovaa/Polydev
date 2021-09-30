@@ -31,7 +31,7 @@
     }
 
     .logo {
-        z-index: 3;
+        z-index: 2;
     }
 
     .header_mobile {
@@ -138,13 +138,14 @@
 
     .navBar {
         display: block;
-        margin-left: 0;
+        margin: 0 auto  ;
     }
 
     .navBar p {
         border-top: 1px solid #fff;
         line-height: 3;
-
+        width: 100% ;
+        margin: 0;
     }
 
     .navBar p:last-of-type {
@@ -160,10 +161,6 @@
         justify-content: space-between;
     }
 
-    .headerLink a:hover {
-        color: #6002FD!important;
-    }
-
     .headerLink {
         margin-top: 50px;
     }
@@ -173,7 +170,11 @@
         color: #fff;
         font-size: 14px;
         font-weight: 700;
-        text-decoration: underline;
+        border-bottom: 1px solid #fff;
+    }
+
+    .headerLink a:hover {
+        color: #6002FD!important;
     }
 
     .headerLink a:last-of-type{

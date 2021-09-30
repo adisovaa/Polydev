@@ -38,7 +38,7 @@ const Header = () => {
             <div className='container'>
                 <div className="header_mobile wrapper">
                     <div className="logo" onClick={mainPage}>
-                        <img src={logo_mobile} alt="logo"/>
+                        <img src={active ? logo : logo_mobile} alt="logo"/>
                     </div>
                     <div className={active ? "burger" : "burger".concat(' active')}
                          onClick={() => dispatch(openHandle())}>

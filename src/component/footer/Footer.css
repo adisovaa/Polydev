@@ -17,6 +17,7 @@ footer {
     border: 1px solid #fff;
     border-radius: 50%;
     font-size: 16px;
+    font-weight: bold;
     color: #fff;
     background: transparent;
 }
@@ -148,9 +149,11 @@ footer {
     .security_text p {
         font-size: 14px;
     }
+
     .line {
         margin: 0;
     }
+
     .message_button {
         width: 70px;
         height: 70px;
@@ -165,60 +168,58 @@ footer {
     }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 600px) {
     footer {
-        height: 642px;
+        height:auto;
+        margin-top: 100px;
+    }
+    .footer_items,
+    .footer_content {
+        display: block;
+        margin: 0;
+    }
+    .footer_item,
+    .footer_content {
+        width: 100%;
+    }
+    .circle {
+        margin: 40px 0;
     }
     .circle button {
-        width: 180px;
-        height: 180px;
-        font-size: 12px;
+        width: 160px;
+        height: 160px;
+        font-size: 14px
     }
 
     .footer_item ul li {
-        font-size: 11px;
+        font-size: 14px;
+        line-height: 3;
     }
 
     .footer_item h3 {
-        font-size: 17px;
+        font-size: 18px;
+    }
+    .footer_item ul {
+        margin-bottom: 10px;
     }
 
     .security_text p {
         font-size: 14px;
     }
-}
 
-@media (max-width: 630px) {
-    footer {
-        height: 590px;
-    }
-    .circle button {
-        width: 140px;
-        height: 140px;
-        font-size: 10px;
-    }
-
-    .footer_item ul li {
-        font-size: 9px;
-    }
-
-    .footer_item h3 {
-        font-size: 15px;
-    }
-
-    .security_text p {
-        font-size: 12px;
-    }
     .message_button {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         bottom: 30px;
         right: 7%;
     }
 
     .message_button img {
-        width: 20px;
-        height: 20px;
-        margin: 22px 21px;
+        width: 32px;
+        height: 30px;
+        margin: 28px 24px;
+    }
+    .security_text {
+        margin: 40px 0;
     }
 }

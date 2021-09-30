@@ -2,15 +2,18 @@
     margin-top: 110px;
 }
 
-.clients_block {
+.clients_block,
+.studio_item {
     display: flex;
 }
 
+.studio_title,
 .block_title {
     width: 23%;
 }
 
-.block_title h3{
+.studio_title h3,
+.block_title h3 {
     font-size: 24px;
     color: gray;
     line-height: 3;
@@ -37,7 +40,6 @@
     font-family: "ALS Gorizont Expanded";
     text-transform: uppercase;
     margin-left: 23%;
-    width: 30%;
 }
 
 .count {
@@ -61,7 +63,6 @@
     margin: 30px 0;
 }
 .clients_count p {
-    text-transform: uppercase;
     margin: 20% 8%;
 }
 
@@ -76,80 +77,55 @@
     }
 }
 
-@media (max-width: 1025px) {
-    .block_title {
-        width: 30%;
+@media (max-width: 880px) {
+    .clients_block {
+        display: none;
     }
-    .block_text p {
-        font-size: 23px;
+    .studio_heading {
+        margin-top: 140px;
     }
     .studio_heading h2 {
-        font-size: 50px;
-        margin-left: 22%;
+        font-size: 30px;
+        margin: 0;
+        width: 70%;
     }
-}
-
-@media (max-width: 880px) {
-    .studio_heading {
-        margin-top: 110px;
+    .studio_item {
+        display: block;
     }
-    .clients_block {
-        margin-top: 50px;
+    .block_text {
+        width: 100%;
     }
-    .block_title h3{
-        font-size: 17px;
-    }
-    .block_text p {
+    .block_text p{
         font-size: 16px;
     }
-    .clients_count h1 {
-        font-size: 60px;
+    .studio_title {
+        width: auto;
     }
-    .clients_count p {
-        font-size: 10px;
-        margin: 28% 6%;
+    .studio_title h3{
+        font-size: 18px;
+        font-weight: 600;
     }
-    .block_title {
-        width: 27%;
+    .count {
+        display: block;
+        width: 100%;
     }
-    .studio_heading h2 {
-        font-size: 50px;
-        margin-left: 26%;
+    .clients_count {
+        width: 100%;
     }
-}
-
-@media (max-width: 735px) {
-    .block_title {
-        width: 25%;
+    .clients_count h1{
+        font-size: 48px;
+        font-weight: bold;
+        margin: 12px 0;
     }
-}
-
-@media (max-width: 630px) {
-    .block_title {
-        width: 23%;
-    }
-    .studio_heading h2 {
-        font-size: 25px;
-        margin-left: 23%;
+    .clients_count p{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 6% 6%;
     }
 }
 
-@media (max-width: 481px) {
-    .clients_count h1 {
-        font-size: 30px;
-    }
-    .clients_count p {
-        font-size: 8px;
-        margin: 28% 8%;
-    }
-    .block_title {
-        width: 22%;
-    }
-    .block_title p {
-        font-size: 11px;
-    }
-    .studio_heading h2 {
-        font-size: 19px;
-        margin-left: 23%;
+@media (max-width: 450px) {
+    .clients_count p{
+        margin: 12% 6%;
     }
 }

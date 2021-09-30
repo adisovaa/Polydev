@@ -57,7 +57,7 @@ const Review = () => {
 
     const showOneSlides = () => {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: screen6 ? 1 : 2,
@@ -68,30 +68,36 @@ const Review = () => {
         };
 
         return (
-            <Slider {...settings}>
-                {
-                    review.map((review, i) => {
-                        return (
-                            <div key={i}>
-                                <div className="reviewCard">
-                                    <div className="reviewTitleCard">
-                                        <h1>{review.title}</h1>
-                                        <div className="reviewParameters">
-                                            <div className="reviewTime">
-                                                <img className="reviewImg" src={review.img} alt=""/>
-                                                <div className="reviewText">
-                                                    <h3>{review.name}</h3>
-                                                    <p>{review.position}</p>
+            <>
+                <div className="review_items_title wrapper">
+                    <h1>Клиенты о работе с нами</h1>
+                </div>
+                <Slider {...settings}>
+                    {
+                        review.map((review, i) => {
+                            return (
+                                <div key={i}>
+                                    <div className="reviewCard">
+                                        <div className="reviewTitleCard">
+                                            <div className="reviewParameters">
+                                                <div className="reviewTime">
+                                                    <img className="reviewImg" src={review.img} alt=""/>
+                                                    <div className="reviewText">
+                                                        <h3>{review.name}</h3>
+                                                        <p>{review.position}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                             </div>
+                                            <h1>{review.title}</h1>
                                         </div>
+                                        <img className='companyImg' src={review.company} alt=""/>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
-            </Slider>
+                            )
+                        })
+                    }
+                </Slider>
+            </>
         )
     };
 

@@ -43,6 +43,28 @@ const slice = createSlice({
                     position: 'Front-End developer',
                     company: companyImg
                 },
+            ],
+            project: [
+                {
+                    title: 'Хранение драг.металлов',
+                    text: 'Логотип, брендинг, лендинг, многостраничный сайт для SwiftGlobal',
+                    background: '#000'
+                },
+                {
+                    title: 'Leastly',
+                    text: 'Приложение под iOS с подпиской',
+                    background: '#6002FD'
+                },
+                {
+                    title: 'Tempria',
+                    text: 'Приложение-органайзер',
+                    background: '#000'
+                },
+                {
+                    title: 'Guard Line',
+                    text: 'Хранилище паролей для iOS',
+                    background: '#6002FD'
+                },
             ]
         }
     },

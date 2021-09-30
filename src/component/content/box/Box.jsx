@@ -18,7 +18,7 @@ export const Box = () => {
         <div className='wrapper'>
             <div className="box">
                 <div className="grid-container">
-                    <div className="grid-block underline">
+                    <div className="grid-block underline first">
                         <img src={logo_1} alt=""/>
                     </div>
                     <div className="grid-block underline vertical_line">
@@ -42,6 +42,7 @@ export const Box = () => {
     );
 }
 
+
 export const BoxTechnologies = () => {
     return (
         <div className="tech_box wrapper">
@@ -49,7 +50,7 @@ export const BoxTechnologies = () => {
                 <h3>Используем современные инструменты работы</h3>
             </div>
             <div className="grid-container">
-                <div className="grid-block underline">
+                <div className="grid-block underline first">
                     <img src={tech1} alt=""/>
                 </div>
                 <div className="grid-block underline vertical_line">

@@ -198,5 +198,9 @@
         font-size: 14px;
         font-weight: 700;
     }
-
+    @media not all and (min-resolution:.001dpcm) { @media {
+        .mobile_button {
+            margin-top: 162px;
+        }
+    }}
 }

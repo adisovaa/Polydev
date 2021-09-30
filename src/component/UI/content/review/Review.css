@@ -73,7 +73,7 @@
     }
     .reviewTitle {
         position: absolute;
-        margin: -40% -5%;
+        margin: -20% -5%;
     }
     .reviewTitle h1 {
         font-size: 30px;
@@ -90,7 +90,7 @@
         border: 1px solid gray;
     }
     .review {
-        margin-top: 230px;
+        margin-top: 180px;
     }
     .review_items_title h1 {
         font-size: 18px;
@@ -120,7 +120,7 @@
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .reviewTitle {
-            margin: -18% 2%;
+            margin: -16% 2%;
         }
         .review_items_title h1 {
             width: 40%;

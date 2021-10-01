@@ -1,0 +1,101 @@
+.error {
+    display: flex;
+    margin: -20px 0
+}
+
+.error_btn {
+    position: absolute;
+    right: 0;
+    top: -47px;
+}
+
+.error_btn button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.reason_one h1 {
+    font-size: 260px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+    color: #6002FD;
+    margin-bottom: 0;
+}
+.reason_one h3 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+    margin-top: -73px;
+}
+
+.error_buttons {
+    display: flex;
+    margin: 20% 0
+}
+
+.reason_two{
+    border-top: 1px solid gray;
+    margin: 96px 55px;
+}
+
+.reason_two h1{
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+    color: #6002FD;
+    margin-top: 10px;
+}
+
+.reason_two p {
+    font-size: 16px;
+}
+
+.white_btn button {
+    border-color: #000;
+}
+
+.purple_btn button {
+    color: #6002FD;
+    border-color: #6002FD;
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .error {
+        display: block;
+        margin: -5px 0
+    }
+    .error_btn {
+        display: none;
+    }
+    .reason_one h1 {
+        font-size: 160px;
+    }
+    .reason_one h3 {
+        font-size: 33px;
+        margin: -18% 55%;
+    }
+    .reason_two{
+        margin: 20% 0;
+        border-top: none;
+    }
+    .reason_two h1 {
+        font-size: 21px;
+    }
+    .purple_btn button,
+    .white_btn button {
+        position: initial!important;
+        margin: 0!important;
+    }
+    .purple_btn {
+        padding-left: 20px;
+    }
+    .error_buttons {
+        margin: 12% 0
+    }
+}

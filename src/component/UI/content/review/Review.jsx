@@ -87,7 +87,7 @@ const Review = () => {
                                                         <p>{review.position}</p>
                                                     </div>
                                                 </div>
-                                             </div>
+                                            </div>
                                             <h1>{review.title}</h1>
                                         </div>
                                         <img className='companyImg' src={review.company} alt=""/>
@@ -113,7 +113,7 @@ const Review = () => {
     };
 
     return (
-        <div className="review" >
+        <div className="review">
             <div className="reviewContainer">
                 <div className="reviewTitle">
                     <h1>Отзывы</h1>

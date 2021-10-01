@@ -1,0 +1,137 @@
+.caseContainer {
+    margin: 0 auto;
+    padding-bottom: 180px;
+    max-width: 1740px;
+}
+.case_title {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.case_text {
+    margin: 8% 48% 9% 23%;
+}
+.case_text p {
+    font-size: 16px;
+}
+.case_title h1 {
+    font-size: 96px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+    text-transform: uppercase;
+    padding-left: 60px;
+    color: #6002FD;
+    margin: 0;
+}
+.case_agency, .case_tech {
+    width: 77%;
+    float: right;
+    margin-top: 4%;
+}
+.case_agency h1,
+.case_tech h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+    line-height: 1.1;
+}
+.agency_items{
+    display: flex;
+    justify-content: space-between;
+}
+.agency_text {
+    width: 74%;
+}
+.case_block_text h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+}
+.agency_text p {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.agency_links {
+    width: 20%;
+    margin-top: 13px;
+}
+.agency_link {
+    border-top: 1px solid gray;
+    padding: 15px 0
+}
+.agency_link p {
+    color: #6002FD;
+    font-size: 16px;
+    font-weight: 600;
+}
+.agency_btn button {
+    margin: 60px 0 110px;
+}
+.case_tech_blocks {
+    margin-top: 60px;
+}
+.case_block {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.case_block_text {
+    width: 40%;
+}
+
+.case_block_text p,
+.case_count_item p,
+.case_count p {
+    font-size: 16px;
+}
+.case_tech_banner {
+    width: 550px;
+    height: 350px;
+    background: #6002FD;
+}
+.case_tech_banner img {
+    margin-top: 23px;
+}
+.case_tools {
+    margin-top: 41%;
+}
+.case_tools button {
+    width: auto;
+    padding: 10px 24px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+.btn_right {
+    margin-left: 13px;
+}
+
+.case_item {
+    float: left;
+}
+
+.case_item h1 {
+    color: #fff;
+}
+.case_contact {
+    width: 90%;
+}
+.case_count {
+    width: 46%;
+    color: #fff;
+}
+.case_count_item {
+    width: 100%;
+}
+.case_count_item h1 {
+    color: #fff!important;
+}
+.casepage_block {
+    top: 115px;
+}

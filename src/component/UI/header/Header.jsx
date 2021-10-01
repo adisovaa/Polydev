@@ -4,7 +4,6 @@ import {useDispatch, useSelector} from 'react-redux';
 import './Header.css';
 import logo from '../../../images/POLYDEV.svg';
 import logo_mobile from '../../../images/Logo_mobile.svg';
-import arrow from '../../../images/arrow.svg'
 import {openHandle} from "../../../redux/sliceReducer";
 
 const Header = () => {
@@ -21,8 +20,12 @@ const Header = () => {
             history.push('/about-us')
         } else if (e.target.textContent === 'Кейсы') {
             history.push('/case')
-        } if (e.target.textContent === 'Контакты') {
+        } else if (e.target.textContent === 'Контакты') {
             history.push('/contact')
+        } else if (e.target.textContent === 'Error') {
+            history.push('/error')
+        } else if (e.target.textContent === 'Главная') {
+            history.push('/')
         }
     };
 
@@ -34,7 +37,7 @@ const Header = () => {
 
     let showTextMobile = navTextMobile.map((text, i) => {
         return (
-            <p key={i}><a href={`#${i}`}>{text}</a></p>
+            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text}</a></p>
         )
     });
 

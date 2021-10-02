@@ -26,35 +26,6 @@ const Review = () => {
         window.matchMedia("(max-width: 420px)").addListener(screen3Handler);
     });
 
-    //
-    // function SampleNextArrow(props) {
-    //     const {className, style, onClick} = props;
-    //     return (
-    //         <div
-    //             id={'eventContainer'}
-    //             className={"icon " + className}
-    //             style={{
-    //                 ...style,
-    //                 marginRight: !screen6 ? "45px" : "52px",
-    //                 marginTop: !screen6 ? '-20px' : '65px' || !screen4 ? '5px' : '35px' || !screen3 ? '5px' : '5px',
-    //                 display: "flex"
-    //             }}
-    //             onClick={onClick}
-    //         />
-    //     );
-    // }
-    //
-    // function SamplePrevArrow(props) {
-    //     const {className, style, onClick} = props;
-    //     return (
-    //         <div
-    //             className={className}
-    //             style={{...style, display: "none", background: "green"}}
-    //             onClick={onClick}
-    //         />
-    //     );
-    // }
-
     const showOneSlides = () => {
         const settings = {
             dots: true,

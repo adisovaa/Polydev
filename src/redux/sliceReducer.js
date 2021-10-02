@@ -65,7 +65,7 @@ const slice = createSlice({
                     text: 'Хранилище паролей для iOS',
                     background: '#6002FD'
                 },
-            ]
+            ],
         }
     },
     reducers: {

@@ -1,12 +1,45 @@
 import React from 'react'
 import './Case.css'
-import vector from "../../../images/vector_big.svg";
 import about1 from './../../../images/about1.svg'
 import about2 from './../../../images/about2.svg'
 import about3 from './../../../images/about3.svg'
 import about4 from './../../../images/about4.svg'
 
 const CasePage = () => {
+    const cases = [
+        {
+            title: 'Работа с клиентом и управление',
+            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
+            button1: 'Trello',
+            button2: 'Jira',
+            button3: 'Miro',
+            images: about1
+        },
+        {
+            title: 'Работа с клиентом и управление',
+            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
+            button1: 'Trello',
+            button2: 'Jira',
+            button3: 'Miro',
+            images: about2
+        },
+        {
+            title: 'Работа с клиентом и управление',
+            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
+            button1: 'Trello',
+            button2: 'Jira',
+            button3: 'Miro',
+            images: about3
+        },
+        {
+            title: 'Работа с клиентом и управление',
+            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
+            button1: 'Trello',
+            button2: 'Jira',
+            button3: 'Miro',
+            images: about4
+        }
+    ]
     return (
         <>
             <div className="wrapper">
@@ -15,16 +48,15 @@ const CasePage = () => {
                         <div className="case_text">
                             <p>Мы делаем современные Digital-продукты на пользу бизнесу</p>
                         </div>
-                        <div className="heading_button">
+                        <div className="case_button">
                             <button>Оставить заявку</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div className="caseContainer">
                 <div className="case_title">
-                    <h1>Дизайн. Верстка. Разраб</h1>
+                    <h1>Дизайн. Верстка. Разра</h1>
                 </div>
             </div>
 
@@ -47,73 +79,33 @@ const CasePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="heading_button agency_btn">
+                    <div className="casepage_button">
                         <button>Смотреть портфолио</button>
                     </div>
                 </div>
                 <div className="case_tech">
                     <h1>Процессы <br/> и технологии</h1>
                     <div className="case_tech_blocks">
-                        <div className="case_block">
-                            <div className="case_block_text">
-                                <h1>Работа с клиентом и управление</h1>
-                                <p> Мы используем нативные языки программирования и умеем работать с
-                                    фремворками/библиотеками</p>
-                                <div className="case_tools">
-                                    <button>Trello</button>
-                                    <button className='btn_right'>Jira</button>
-                                    <button className='btn_right'>Miro</button>
-                                </div>
-                            </div>
-                            <div className="case_tech_banner">
-                                <img src={about1} alt=""/>
-                            </div>
-                        </div>
-                        <div className="case_block">
-                            <div className="case_block_text">
-                                <h1>Дизайн</h1>
-                                <p>Мы используем нативные языки программирования и умеем работать с
-                                    фремворками/библиотеками</p>
-                                <div className="case_tools">
-                                    <button>Figma</button>
-                                    <button className='btn_right'>Adobe Photoshop</button>
-                                    <button className='btn_right'>Miro</button>
-                                </div>
-                            </div>
-                            <div className="case_tech_banner">
-                                <img src={about2} alt=""/>
-                            </div>
-                        </div>
-                        <div className="case_block">
-                            <div className="case_block_text">
-                                <h1>Вёрстка и разработка</h1>
-                                <p>Мы используем нативные языки программирования и умеем работать с
-                                    фремворками/библиотеками</p>
-                                <div className="case_tools">
-                                    <button>CSS</button>
-                                    <button className='btn_right'>HTML</button>
-                                    <button className='btn_right'>React</button>
-                                </div>
-                            </div>
-                            <div className="case_tech_banner">
-                                <img src={about3} alt=""/>
-                            </div>
-                        </div>
-                        <div className="case_block">
-                            <div className="case_block_text">
-                                <h1>Работа с контентом</h1>
-                                <p>Мы используем нативные языки программирования и умеем работать с
-                                    фремворками/библиотеками</p>
-                                <div className="case_tools">
-                                    <button>Trello</button>
-                                    <button className='btn_right'>Jira</button>
-                                    <button className='btn_right'>Miro</button>
-                                </div>
-                            </div>
-                            <div className="case_tech_banner">
-                                <img src={about4} alt=""/>
-                            </div>
-                        </div>
+                        {
+                            cases.map((cases, i) => {
+                                return (
+                                    <div className="case_block" key={i}>
+                                        <div className="case_block_text">
+                                            <h1>{cases.title}</h1>
+                                            <p>{cases.text}</p>
+                                            <div className="case_tools">
+                                                <button>{cases.button1}</button>
+                                                <button className='btn_right'>{cases.button2}</button>
+                                                <button className='btn_right'>{cases.button3}</button>
+                                            </div>
+                                        </div>
+                                        <div className="case_tech_banner">
+                                            <img src={cases.images} alt=""/>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
 
@@ -125,31 +117,29 @@ const CasePage = () => {
 
                         <div className="brief_text case_process_text case_contact">
                             <div className="count contacts">
-
-                               <div className="case_count">
-                                   <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и портфолио</p>
-                                   <div className="clients_count contact_count case_count_item">
-                                       <p>Email нашего HR</p>
-                                       <h1>HR@polydev.io</h1>
-                                   </div>
-                               </div>
-
                                 <div className="case_count">
-                                    <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и портфолио</p>
+                                    <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
+                                        портфолио</p>
+                                    <div className="clients_count contact_count case_count_item">
+                                        <p>Email нашего HR</p>
+                                        <h1>HR@polydev.io</h1>
+                                    </div>
+                                </div>
+                                <div className="case_count">
+                                    <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
+                                        портфолио</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Телеграм нашего CEO</p>
                                         <h1>@polydev.io</h1>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </>
     )
-}
 
+}
 export default CasePage

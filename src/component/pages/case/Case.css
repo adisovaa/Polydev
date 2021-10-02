@@ -10,8 +10,16 @@
 .case_text {
     margin: 8% 48% 9% 23%;
 }
-.case_text p {
+.case_button button,
+.casepage_button button {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 100px;
     font-size: 16px;
+    background: transparent;
+    font-weight: bold;
+    margin-top: -47px;
 }
 .case_title h1 {
     font-size: 96px;
@@ -65,7 +73,7 @@
     font-size: 16px;
     font-weight: 600;
 }
-.agency_btn button {
+.casepage_button button {
     margin: 60px 0 110px;
 }
 .case_tech_blocks {
@@ -80,14 +88,14 @@
 .case_block_text {
     width: 40%;
 }
-
 .case_block_text p,
 .case_count_item p,
-.case_count p {
+.case_count p,
+.case_text p {
     font-size: 16px;
 }
 .case_tech_banner {
-    width: 550px;
+    width: 54%;
     height: 350px;
     background: #6002FD;
 }
@@ -134,4 +142,89 @@
 }
 .casepage_block {
     top: 115px;
+    margin-bottom: 200px;
+}
+
+@media (max-width: 650px) {
+    .case_text {
+        margin: 20% 0 17% 45%;
+    }
+    .case_title {
+        width: 200%;
+    }
+    .case_title h1 {
+        font-size: 36px;
+        padding-left: 18px;
+    }
+    .case_agency h1,
+    .case_tech h1 {
+        font-size: 30px;
+    }
+    .agency_text p {
+        font-size: 16px;
+    }
+    .agency_items,
+    .case_block {
+        display: block;
+        padding: 30px 0
+    }
+    .case_agency,
+    .case_tech,
+    .agency_text,
+    .case_block_text,
+    .case_count{
+        width: 100%;
+    }
+    .caseContainer {
+        margin-bottom: -60px;
+    }
+    .agency_links {
+        float: right;
+        width: 51%;
+    }
+    .agency_link p,
+    .case_count p{
+        font-size: 14px;
+    }
+    .case_button {
+        display: none;
+    }
+    .casepage_button button {
+        margin: 44px 80px 86px
+    }
+    .case_block_text h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .case_tech_blocks {
+        margin-top: 30px;
+    }
+    .case_tools {
+        margin-top: 30px;
+    }
+    .case_tools button {
+        height: 32px;
+        font-size: 14px;
+        padding: 3px 15px
+    }
+    .case_tech_banner img {
+        width: 100%;
+    }
+    .case_tech_banner {
+        width: 100%;
+        height: 240px;
+        margin-top: 30px;
+    }
+    .case_item h1 {
+        font-size: 24px;
+    }
+    .case_count_item h1{
+        font-size: 18px;
+    }
+    .case_count_item p{
+        font-size: 12px;
+    }
+    .casepage_block {
+        height: 533px;
+    }
 }

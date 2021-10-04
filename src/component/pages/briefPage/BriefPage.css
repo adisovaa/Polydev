@@ -1,0 +1,150 @@
+.brief_page {
+    width: 77%;
+    float: right;
+    margin-top: 100px;
+}
+
+.brief_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brief_info h1 {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "ALS Gorizont Expanded";
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.brief_info p {
+    width: 45%;
+    font-size: 16px;
+}
+.purple {
+    color: #6002FD;
+    text-decoration: underline;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.register_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.entire h4, .entire_block h4,
+.brief_button h4 {
+    font-size: 16px;
+}
+
+.entire_block {
+    width: 45%;
+}
+
+.entire {
+    width: 100%;
+}
+
+input, select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000!important;
+}
+
+select {
+    background: url("./../../../images/down_small.svg") no-repeat;
+    background-position: calc(100% - 1px) -6px;
+    height: 32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.register_text img {
+    position: absolute;
+    margin-left: 20px;
+}
+
+.textarea{
+    margin-bottom: 50px;
+}
+
+.btn-large {
+    padding: 18px 35px 18px 60px;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.brief_button{
+    margin-top: 20%;
+    display: flex;
+}
+.brief_button p{
+   font-size: 16px;
+    line-height: 5.5;
+    margin: 0 40px;
+}
+
+.brief_button button {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    font-size: 16px;
+    background: transparent;
+    font-weight: bold;
+    margin-top: -47px;
+}
+
+@media (max-width: 800px) {
+    .brief_page {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .brief_info,
+    .brief_button {
+        display: block;
+    }
+    .brief_page p {
+        width: 100%;
+    }
+    .register_block {
+        display: block;
+        margin: 0;
+    }
+    .entire_block, .entire {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .brief_button{
+        margin-top: 40%;
+    }
+    .brief_button p {
+        margin: 35px 0;
+        line-height: 1.5;
+    }
+    .brief_info h1 {
+        font-size: 30px;
+    }
+
+    .brief_info p,
+    .brief_button h4{
+        font-size: 14px;
+    }
+}

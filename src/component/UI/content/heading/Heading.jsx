@@ -1,7 +1,13 @@
 import React from 'react'
 import './Heading.css'
+import {useHistory} from "react-router-dom";
 
 const Heading = () => {
+    const history = useHistory();
+
+    function handleClick() {
+        history.push("/brief");
+    }
     return (
         <div className="heading">
             <div className="wrapper">
@@ -13,7 +19,7 @@ const Heading = () => {
                         </h1>
                     </div>
                     <div className="heading_button">
-                        <button>Оставить заявку</button>
+                        <button onClick={handleClick}>Оставить заявку</button>
                     </div>
                 </div>
 

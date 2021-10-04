@@ -4,8 +4,9 @@ import Footer from "./component/UI/footer/Footer";
 import Contact from "./component/pages/contact/Contact"
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import MainPage from "./component/UI/content/MainPage";
-import BriefPage from "./component/pages/briefPage/BriefPage";
 import ErrorPage from "./component/pages/error/Error";
+import BriefPage from "./component/pages/briefPage/BriefPage";
+import AboutPage from "./component/pages/about/About";
 import CasePage from "./component/pages/case/Case";
 
 
@@ -15,11 +16,12 @@ function App() {
             <BrowserRouter>
                 <Header/>
                 <Switch>
-                    <Route path='/case' render={CasePage}/>
-                    <Route path='/error' render={ErrorPage}/>
-                    <Route path='/contact' render={Contact}/>
-                    <Route path='/brief' render={BriefPage}/>
-                    <Route path='/' render={MainPage}/>
+                    <Route path='/case' component={CasePage}/>
+                    <Route path='/brief' component={BriefPage}/>
+                    <Route path='/about' component={AboutPage}/>
+                    <Route path='/error' component={ErrorPage}/>
+                    <Route path='/contact' component={Contact}/>
+                    <Route path='/' component={MainPage}/>
                 </Switch>
                 <Footer/>
             </BrowserRouter>

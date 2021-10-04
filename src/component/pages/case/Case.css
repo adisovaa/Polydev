@@ -1,230 +1,24 @@
-.caseContainer {
-    margin: 0 auto;
-    padding-bottom: 180px;
-    max-width: 1740px;
-}
-.case_title {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-.case_text {
-    margin: 8% 48% 9% 23%;
-}
-.case_button button,
-.casepage_button button {
-    width: 180px;
-    height: 180px;
-    border: 1px solid #000;
-    border-radius: 100px;
-    font-size: 16px;
-    background: transparent;
-    font-weight: bold;
-    margin-top: -47px;
-}
-.case_title h1 {
-    font-size: 96px;
-    font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
-    text-transform: uppercase;
-    padding-left: 60px;
-    color: #6002FD;
-    margin: 0;
-}
-.case_agency, .case_tech {
-    width: 77%;
-    float: right;
-    margin-top: 4%;
-}
-.case_agency h1,
-.case_tech h1 {
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
-    line-height: 1.1;
-}
-.agency_items{
+.casePage_blocks {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
 }
-.agency_text {
-    width: 74%;
-}
-.case_block_text h1 {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
-}
-.agency_text p {
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 1.4;
-}
-.agency_links {
-    width: 20%;
-    margin-top: 13px;
-}
-.agency_link {
-    border-top: 1px solid gray;
-    padding: 15px 0
-}
-.agency_link p {
-    color: #6002FD;
-    font-size: 16px;
-    font-weight: 600;
-}
-.casepage_button button {
-    margin: 60px 0 110px;
-}
-.case_tech_blocks {
+
+.casePage_block {
+    width: 48%;
+    height: 500px;
     margin-top: 60px;
 }
-.case_block {
-    border-top: 1px solid gray;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
-}
-.case_block_text {
-    width: 40%;
-}
-.case_block_text p,
-.case_count_item p,
-.case_count p,
-.case_text p {
-    font-size: 16px;
-}
-.case_tech_banner {
-    width: 54%;
-    height: 350px;
-    background: #6002FD;
-}
-.case_tech_banner img {
-    margin-top: 23px;
-}
-.case_tools {
-    margin-top: 41%;
-}
-.case_tools button {
-    width: auto;
-    padding: 10px 24px;
-    background: #000;
+
+.casePage_text h2{
     color: #fff;
+    font-family: "ALS Gorizont Expanded";
     font-size: 18px;
-    font-weight: 600;
-    border: 1px solid #000;
-    border-radius: 30px;
+    font-weight: 700;
 }
-
-.btn_right {
-    margin-left: 13px;
-}
-
-.case_item {
-    float: left;
-}
-
-.case_item h1 {
+.casePage_text p {
     color: #fff;
-}
-.case_contact {
-    width: 90%;
-}
-.case_count {
-    width: 46%;
-    color: #fff;
-}
-.case_count_item {
-    width: 100%;
-}
-.case_count_item h1 {
-    color: #fff!important;
-}
-.casepage_block {
-    top: 115px;
-    margin-bottom: 200px;
-}
-
-@media (max-width: 650px) {
-    .case_text {
-        margin: 20% 0 17% 45%;
-    }
-    .case_title {
-        width: 200%;
-    }
-    .case_title h1 {
-        font-size: 36px;
-        padding-left: 18px;
-    }
-    .case_agency h1,
-    .case_tech h1 {
-        font-size: 30px;
-    }
-    .agency_text p {
-        font-size: 16px;
-    }
-    .agency_items,
-    .case_block {
-        display: block;
-        padding: 30px 0
-    }
-    .case_agency,
-    .case_tech,
-    .agency_text,
-    .case_block_text,
-    .case_count{
-        width: 100%;
-    }
-    .caseContainer {
-        margin-bottom: -60px;
-    }
-    .agency_links {
-        float: right;
-        width: 51%;
-    }
-    .agency_link p,
-    .case_count p{
-        font-size: 14px;
-    }
-    .case_button {
-        display: none;
-    }
-    .casepage_button button {
-        margin: 44px 80px 86px
-    }
-    .case_block_text h1 {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    .case_tech_blocks {
-        margin-top: 30px;
-    }
-    .case_tools {
-        margin-top: 30px;
-    }
-    .case_tools button {
-        height: 32px;
-        font-size: 14px;
-        padding: 3px 15px
-    }
-    .case_tech_banner img {
-        width: 100%;
-    }
-    .case_tech_banner {
-        width: 100%;
-        height: 240px;
-        margin-top: 30px;
-    }
-    .case_item h1 {
-        font-size: 24px;
-    }
-    .case_count_item h1{
-        font-size: 18px;
-    }
-    .case_count_item p{
-        font-size: 12px;
-    }
-    .casepage_block {
-        height: 533px;
-    }
+    font-size: 16px;
+    font-weight: 400;
 }

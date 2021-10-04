@@ -17,7 +17,7 @@ const Header = () => {
     const clickHeader = e => {
         dispatch(openHandle());
         if (e.target.textContent === 'О студии') {
-            history.push('/about-us')
+            history.push('/about')
         } else if (e.target.textContent === 'Кейсы') {
             history.push('/case')
         } else if (e.target.textContent === 'Контакты') {

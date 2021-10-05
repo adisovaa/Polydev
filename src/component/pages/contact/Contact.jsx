@@ -1,13 +1,8 @@
 import React from 'react';
 import './Contact.css'
-import {useHistory} from "react-router-dom";
+import Button from "../../common/Button";
 
 const Contact = () => {
-    const history = useHistory();
-
-    function handleClick() {
-        history.push("/brief");
-    }
     return (
         <div className="wrapper">
             <div>
@@ -15,7 +10,7 @@ const Contact = () => {
                     <h2>Контакты</h2>
                 </div>
                 <div className="heading_button contact_btn">
-                    <button onClick={handleClick}>Оставить заявку</button>
+                    <Button/>
                 </div>
                 <div className="studio_block">
                     <div className="studio_item">
@@ -44,7 +39,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
 
             <div>
                 <div className="studio_block second_block">

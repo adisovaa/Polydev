@@ -1,43 +1,48 @@
 import React from 'react'
 import './Heading.css'
-import {useHistory} from "react-router-dom";
+import Button from "../../../common/Button";
 
 const Heading = () => {
-    const history = useHistory();
-
-    function handleClick() {
-        history.push("/brief");
-    }
+    const heading = [
+        {
+            title: 'Лендинги',
+            text: 'На конструкторе Tilda/Wordpress или самописные'
+        },
+        {
+            title: 'Сайты',
+            text: 'Интернет-магазины,  корпоративные сайты, блоги'
+        },
+        {
+            title: 'Приложения',
+            text: 'От дизайна до публикации в сторе'
+        },
+    ]
     return (
         <div className="heading">
             <div className="wrapper">
                 <div className="heading_block">
                     <div className="heading_text">
-                        <h1> <span> Digital-продукты</span>
+                        <h1><span> Digital-продукты</span>
                             <p>с умом</p>
                             <p className='right'>для бизнеса</p>
                         </h1>
                     </div>
                     <div className="heading_button">
-                        <button onClick={handleClick}>Оставить заявку</button>
+                        <Button/>
                     </div>
                 </div>
 
                 <div className="blocks">
-                    <div className="block">
-                        <h4>Лендинги</h4>
-                        <p>На конструкторе Tilda/Wordpress <br/> или самописные</p>
-                    </div>
-
-                    <div className="block">
-                        <h4>Сайты</h4>
-                        <p>Интернет-магазины, <br/> корпоративные сайты, блоги</p>
-                    </div>
-
-                    <div className="block">
-                        <h4>Приложения</h4>
-                        <p>От дизайна до <br/> публикации <br/> в сторе</p>
-                    </div>
+                    {
+                        heading.map((heading, i) => {
+                            return (
+                                <div className="block" key={i}>
+                                    <h4>{heading.title}</h4>
+                                    <p>{heading.text}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>

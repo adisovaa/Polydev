@@ -40,7 +40,7 @@
     text-transform: uppercase;
     font-size: 64px;
     font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
+    font-family: 'ALS Gorizont Bold Expanded';
     line-height: 1.1;
 }
 .agency_items{
@@ -53,7 +53,7 @@
 .case_block_text h1 {
     font-size: 30px;
     font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
+    font-family: 'ALS Gorizont Bold Expanded';
 }
 .agency_text p {
     font-size: 32px;

@@ -1,29 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import Slider from 'react-slick';
 import {useHistory} from "react-router";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import './Review.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Review = () => {
     const review = useSelector(state => state.slice.items.reviews);
-    const dispatch = useDispatch();
     const history = useHistory();
     const [screen9, setScreen9] = useState(false);
     const [screen6, setScreen6] = useState(window.matchMedia('(max-width: 650px)').matches);
-    const [screen4, setScreen4] = useState(window.matchMedia('(max-width: 450px)').matches);
-    const [screen3, setScreen3] = useState(window.matchMedia('(max-width: 420px)').matches);
 
     useEffect(() => {
         const handler = e => setScreen9(e.matches);
         const screenHandler = e => setScreen6(e.matches);
-        const screen4Handler = e => setScreen4(e.matches);
-        const screen3Handler = e => setScreen3(e.matches);
         window.matchMedia("(max-width: 900px)").addListener(handler);
         window.matchMedia("(max-width: 650px)").addListener(screenHandler);
-        window.matchMedia("(max-width: 450px)").addListener(screen4Handler);
-        window.matchMedia("(max-width: 420px)").addListener(screen3Handler);
     });
 
     const showOneSlides = () => {

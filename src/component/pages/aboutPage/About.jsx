@@ -3,9 +3,9 @@ import about1 from './../../../images/about1.svg'
 import about2 from './../../../images/about2.svg'
 import about3 from './../../../images/about3.svg'
 import about4 from './../../../images/about4.svg'
+import Button from "../../common/Button";
 
 import './About.css'
-import {useHistory} from "react-router-dom";
 
 const AboutPage = () => {
     const cases = [
@@ -42,12 +42,6 @@ const AboutPage = () => {
             images: about4
         }
     ]
-
-
-    const history = useHistory();
-    function handleClick() {
-        history.push("/brief");
-    }
     return (
         <>
             <div className="wrapper">
@@ -57,7 +51,7 @@ const AboutPage = () => {
                             <p>Мы делаем современные Digital-продукты на пользу бизнесу</p>
                         </div>
                         <div className="case_button">
-                            <button onClick={handleClick}>Оставить заявку</button>
+                            <Button/>
                         </div>
                     </div>
                 </div>

@@ -57,7 +57,7 @@
     text-transform: uppercase;
     font-size: 24px;
     color: #fff;
-    font-family: "ALS Gorizont Expanded";
+    font-family: 'ALS Gorizont Bold Expanded';
 }
 
 .projectTitle {
@@ -143,7 +143,7 @@
         color: #fff;
         font-size: 17px;
         font-weight: bold;
-        font-family: "ALS Gorizont Expanded";
+        font-family: 'ALS Gorizont Bold Expanded';
     }
 
     .projectTitleCard p {

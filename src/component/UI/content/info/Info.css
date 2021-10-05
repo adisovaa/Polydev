@@ -37,7 +37,7 @@
     font-size: 64px;
     font-weight: 900;
     line-height: 1.4;
-    font-family: "ALS Gorizont Expanded";
+    font-family: 'ALS Gorizont Bold Expanded';
     text-transform: uppercase;
     margin-left: 23%;
 }
@@ -58,7 +58,7 @@
 
 .clients_count h1 {
     color: #6002FD;
-    font-family: "ALS Gorizont Expanded";
+    font-family: 'ALS Gorizont Bold Expanded';
     font-size: 100px;
     margin: 30px 0;
 }

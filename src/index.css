@@ -1,13 +1,8 @@
 @font-face {
-    font-family: "ALS Gorizont Expanded";
-    src: url("//db.onlinewebfonts.com/t/52ffeb15f7ec5bb258d99836c944a2c8.eot");
-    src: url("//db.onlinewebfonts.com/t/52ffeb15f7ec5bb258d99836c944a2c8.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/52ffeb15f7ec5bb258d99836c944a2c8.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/52ffeb15f7ec5bb258d99836c944a2c8.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/52ffeb15f7ec5bb258d99836c944a2c8.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/52ffeb15f7ec5bb258d99836c944a2c8.svg#ALS Gorizont Expanded") format("svg");
+    font-family: 'ALS Gorizont Bold Expanded';
+    src: url('./fonts/ALSGorizont-BoldExpanded.otf') format('opentype');
+    font-weight: bold;
 }
-
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

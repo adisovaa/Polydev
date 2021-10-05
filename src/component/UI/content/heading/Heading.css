@@ -1,6 +1,6 @@
 .heading_block {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .heading_text {
@@ -19,7 +19,7 @@
 .heading_text h1 {
     font-size: 64px;
     font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
+    font-family: "ALS Gorizont Bold Expanded";
     text-transform: uppercase;
     text-align: left;
     line-height: 1.2;
@@ -42,7 +42,7 @@
 
 .blocks {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .block {
@@ -54,7 +54,7 @@
 .block h4 {
     font-size: 30px;
     font-weight: bold;
-    font-family: "ALS Gorizont Expanded";
+    font-family: "ALS Gorizont Bold Expanded";
     color: #6002FD;
     margin: 22px 0
 }

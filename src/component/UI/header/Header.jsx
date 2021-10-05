@@ -5,6 +5,8 @@ import './Header.css';
 import logo from '../../../images/POLYDEV.svg';
 import logo_mobile from '../../../images/Logo_mobile.svg';
 import {openHandle} from "../../../redux/sliceReducer";
+import Button from "../../common/Button";
+
 
 const Header = () => {
     const active = useSelector(state => state.slice.active);
@@ -77,13 +79,13 @@ const Header = () => {
                         </div>
                         <div className="headerNavLink wrapper">
                             <div className="headerLink">
-                                <a href="#">Instagram</a>
-                                <a href="#">Dribble</a>
+                                <a href="https://www.instagram.com/">Instagram</a>
+                                <a href="https://dribbble.com/">Dribble</a>
                             </div>
                         </div>
                         <div className="mobile_button">
                             <div className="mobile_wrapper">
-                                <button>Заполнить бриф</button>
+                                <Button/>
                             </div>
                         </div>
                     </div>

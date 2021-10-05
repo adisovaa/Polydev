@@ -4,15 +4,9 @@ import case1 from './../../../images/case1.svg'
 import case2 from './../../../images/case2.svg'
 import case3 from './../../../images/case3.svg'
 import case4 from './../../../images/case4.svg'
-import {useHistory} from "react-router-dom";
+import Button from "../../common/Button";
 
 const CasePage = () => {
-    const history = useHistory();
-
-    function handleClick() {
-        history.push("/brief");
-    }
-
     return (
         <div className="wrapper">
             <div className='casePage_heading'>
@@ -20,7 +14,7 @@ const CasePage = () => {
                     <h2>Кейсы</h2>
                 </div>
                 <div className="heading_button contact_btn">
-                    <button onClick={handleClick}>Оставить заявку</button>
+                    <Button/>
                 </div>
             </div>
             <div className="casePage_blocks">
@@ -71,7 +65,6 @@ const CasePage = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

@@ -1,12 +1,12 @@
 import React from 'react'
 import {useForm} from "react-hook-form";
 import plus from './../../../images/plus.svg'
+import Button from "../../common/Button";
 
 import './BriefPage.css'
 
 const BriefPage = () => {
     const {register, handleSubmit} = useForm()
-
     const onSubmit = (data) => console.log(data)
 
     return (
@@ -26,17 +26,17 @@ const BriefPage = () => {
                         </div>
                         <div className="register_company entire_block">
                             <h4>Компания</h4>
-                            <input type="text" name="name" className="input" ref={register({required: true})}/>
+                            <input type="text" name="company" className="input" ref={register({required: true})}/>
                         </div>
                     </div>
                     <div className="register_block">
                         <div className="register_name entire_block">
                             <h4>Email<span>*</span></h4>
-                            <input type="email" name="name" className="input" ref={register({required: true})}/>
+                            <input type="email" name="email" className="input" ref={register({required: true})}/>
                         </div>
                         <div className="register_company entire_block">
                             <h4>Телефон</h4>
-                            <input type="number" name="name" className="input" ref={register({required: true})}/>
+                            <input type="number" name="phone" className="input" ref={register({required: true})}/>
                         </div>
                     </div>
                     <div className="register_block">
@@ -76,7 +76,7 @@ const BriefPage = () => {
                         </div>
                     </div>
                     <div className="brief_button">
-                        <button>Оставить заявку</button>
+                        <Button/>
                         <p>Нажимая “Отправить”, вы даёте <span className='purple'>согласие на обработку персональных данных</span>
                         </p>
                     </div>

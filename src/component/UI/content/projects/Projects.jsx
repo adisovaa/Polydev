@@ -3,24 +3,18 @@ import './Projects.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 
 const Project = () => {
     const project = useSelector(state => state.slice.items.project);
     const [screen9, setScreen9] = useState(false);
     const [screen6, setScreen6] = useState(window.matchMedia('(max-width: 650px)').matches);
-    const [screen4, setScreen4] = useState(window.matchMedia('(max-width: 450px)').matches);
-    const [screen3, setScreen3] = useState(window.matchMedia('(max-width: 420px)').matches);
 
     useEffect(() => {
         const handler = e => setScreen9(e.matches);
         const screenHandler = e => setScreen6(e.matches);
-        const screen4Handler = e => setScreen4(e.matches);
-        const screen3Handler = e => setScreen3(e.matches);
         window.matchMedia("(max-width: 900px)").addListener(handler);
         window.matchMedia("(max-width: 650px)").addListener(screenHandler);
-        window.matchMedia("(max-width: 450px)").addListener(screen4Handler);
-        window.matchMedia("(max-width: 420px)").addListener(screen3Handler);
     });
 
 
@@ -74,8 +68,8 @@ const Project = () => {
         speed: 500,
         slidesToShow: !screen6 ? 1 : 1,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         className: 'projectMobileSlides',
     };
 

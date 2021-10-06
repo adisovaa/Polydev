@@ -17,7 +17,7 @@ const CasePage = () => {
                     <Button/>
                 </div>
             </div>
-            <div className="casePage_blocks">
+            <div className="casePage_blocks" >
                 <div className="casePage_block" style={{backgroundColor: '#6002FD'}}>
                     <div className="caseCard">
                         <div className="caseTitleCard">

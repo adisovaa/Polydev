@@ -15,27 +15,25 @@ import tech6 from '../../../../images/tech6.svg'
 
 export const Box = () => {
     return (
-        <div className='wrapper'>
-            <div className="box">
-                <div className="grid-container">
-                    <div className="grid-block underline first">
-                        <img src={logo_1} alt=""/>
-                    </div>
-                    <div className="grid-block underline vertical_line">
-                        <img src={logo_2} alt=""/>
-                    </div>
-                    <div className="grid-block underline vertical_line">
-                        <img src={logo_3} alt=""/>
-                    </div>
-                    <div className="grid-block">
-                        <img src={logo_4} alt=""/>
-                    </div>
-                    <div className="grid-block vertical_line">
-                        <img src={logo_5} alt=""/>
-                    </div>
-                    <div className="grid-block vertical_line">
-                        <img src={logo_6} alt=""/>
-                    </div>
+        <div className='wrapper box'>
+            <div className="grid-container ">
+                <div className="grid-item one">
+                    <img src={logo_1} alt=""/>
+                </div>
+                <div className="grid-item two">
+                    <img src={logo_2} alt=""/>
+                </div>
+                <div className="grid-item three">
+                    <img src={logo_3} alt=""/>
+                </div>
+                <div className="grid-item four">
+                    <img src={logo_4} alt=""/>
+                </div>
+                <div className="grid-item five">
+                    <img src={logo_5} alt=""/>
+                </div>
+                <div className="grid-item six">
+                    <img src={logo_6} alt=""/>
                 </div>
             </div>
         </div>
@@ -45,30 +43,32 @@ export const Box = () => {
 
 export const BoxTechnologies = () => {
     return (
-        <div className="tech_box wrapper">
+        <>
             <div className="box_title wrapper">
                 <h3>Используем современные инструменты работы</h3>
             </div>
-            <div className="grid-container">
-                <div className="grid-block underline first">
-                    <img src={tech1} alt=""/>
-                </div>
-                <div className="grid-block underline vertical_line">
-                    <img src={tech2} alt=""/>
-                </div>
-                <div className="grid-block underline vertical_line">
-                    <img src={tech3} alt=""/>
-                </div>
-                <div className="grid-block">
-                    <img src={tech4} alt=""/>
-                </div>
-                <div className="grid-block vertical_line">
-                    <img src={tech5} alt=""/>
-                </div>
-                <div className="grid-block vertical_line">
-                    <img src={tech6} alt=""/>
+            <div className="tech_box wrapper">
+                <div className="grid-container">
+                    <div className="grid-item one">
+                        <img src={tech1} alt=""/>
+                    </div>
+                    <div className="grid-item two">
+                        <img src={tech2} alt=""/>
+                    </div>
+                    <div className="grid-item three">
+                        <img src={tech3} alt=""/>
+                    </div>
+                    <div className="grid-item four">
+                        <img src={tech4} alt=""/>
+                    </div>
+                    <div className="grid-item five">
+                        <img src={tech5} alt=""/>
+                    </div>
+                    <div className="grid-item six">
+                        <img src={tech6} alt=""/>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

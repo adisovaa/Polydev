@@ -1,56 +1,77 @@
 .box {
-    margin-top: 68px;
+    margin-top: 60px;
 }
-
 .grid-container {
     display: grid;
-    position: relative;
-    height: 280px;
-    align-content: center;
-    grid-template-columns: auto auto auto;
-    margin: 0 auto;
-    border: 1px solid gray;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    height: 660px;
+    border: 1px solid #000;
 }
-
-.grid-container > div {
+.grid-item {
     text-align: center;
-    padding: 50px 0;
 }
-
-.grid-block img {
-    width: 198px;
-    height: 40px;
+.grid-item img {
+    width: 250px;
+    height: 60px;
+    margin-top: 40%;
 }
-
-.underline::after {
+.grid-item.three img,
+.grid-item.four img {
+    margin-top: 20%;
+}
+.one:after, .two:after,
+.five:after, .six:after{
     content: " ";
-    width: 29%;
+    width: 23%;
     position: absolute;
     top: 50%;
     height: 1px;
-    background: gray;
-    margin-left: -22%;
+    background: #000;
+    margin-left: -21%;
 }
-
-.vertical_line::before{
-    content:'';
-    position:absolute;
+.one:before, .two:before {
+    content: " ";
+    height: 46%;
+    position: absolute;
+    top: 2%;
     width: 1px;
-    height: 100px;
-    margin-left: -9.3%;
-    margin-top: -2%;
-    background:gray;
+    background: #000;
+    margin-left: 22%;
+}
+.five:before {
+    content: " ";
+    height: 46%;
+    position: absolute;
+    top: 52%;
+    width: 1px;
+    background: #000;
+    margin-left: 22%;
+}
+.four:before{
+    content: " ";
+    height: 46%;
+    position: absolute;
+    top: 52%;
+    width: 1px;
+    background: #000;
+    margin-left: 34.5%;
+}
+.three {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.four, .tech-four{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.tech_box {
-    margin-top: 93px;
-}
+/*box-tech styles*/
 
 .box_title {
     display: flex;
-    padding: 20px 0 50px;
+    padding: 5% 0 ;
 }
-
 .box_title h3 {
     font-size: 24px;
     font-weight: 500;
@@ -75,53 +96,95 @@
         margin-top: -3%;
         margin-left: -7.8%;
     }
-    .grid-block img {
-        width: 160px;
-        height: 40px;
-    }
 }
 
 @media (max-width: 880px) {
     .grid-container {
-        width: 100%;
-        display: inline-table;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "one two"
+        "three four"
+        "five six";
     }
-    .grid-container > div {
-        padding: 14px 0;
+    .grid-item img {
+        width: 100px;
+        height: 60px;
+        margin-top: 40%;
     }
-    .underline::after,
-    .vertical_line::before{
+    .one {
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+    }
+    .four {
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six {
+        grid-area: six;
+    }
+    .one:after, .two:after{
+        content: " ";
+        width: 43%;
+        position: absolute;
+        top: 35%;
+        height: 1px;
+        background: #000 ;
+        margin-left: -36%;
+    }
+    .three:after, .four:after{
+        content: " ";
+        width: 43%;
+        position: absolute;
+        top: 65%;
+        height: 1px;
+        background: #000 ;
+        margin-left: -36%;
+    }
+    .one:before {
+        content: " ";
+        height: 31%;
+        position: absolute;
+        top: 2%;
+        width: 1px;
+        background: #000;
+        margin-left: 40%;
+    }
+    .two:before, .five:after, .six:after {
         display: none;
     }
-
-    .grid-block::after {
-        content: '';
-        display: block;
-        margin: 0 auto;
-        border-bottom: 1px solid gray!important;
-        width: 90%;
-        top: auto;
-        position: initial;
+    .four:before {
+        content: " ";
+        height: 27%;
+        position: absolute;
+        top: 37%;
+        width: 1px;
+        background: #000;
+        margin-left: -10%;
     }
-    .grid-block:last-of-type:after {
-        border-bottom: none!important;
-    }
-
-    .tech_box {
-        margin-top: 62px;
+    .five:before {
+        content: " ";
+        height: 31%;
+        position: absolute;
+        top: 67%;
+        width: 1px;
+        background: #000;
+        margin-left: 40%;
     }
     .box_title h3 {
         font-size: 18px;
-        font-weight: 600;
         width: 70%;
+        font-weight: 700;
     }
     .box_title {
-        padding-bottom: 25px;
-    }
-    .grid-block img {
-        margin-bottom: 15px;
-    }
-    .grid-block.underline.first {
-        padding-top: 25px;
+        padding: 10% 0 ;
     }
 }

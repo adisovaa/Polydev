@@ -1,9 +1,14 @@
 import React, {useEffect, useState} from 'react'
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import {useSelector} from "react-redux"
+import project1 from './../../../../images/project1.svg'
+import project2 from './../../../../images/project2.svg'
+import project3 from './../../../../images/project3.svg'
+import project4 from './../../../../images/project4.svg'
+
 import './Projects.css'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import {useSelector} from "react-redux";
 
 const Project = () => {
     const project = useSelector(state => state.slice.items.project);
@@ -27,28 +32,32 @@ const Project = () => {
                     </div>
                     <div className="projects_blocks">
                         <div className="item_big a">
-                            <div className="item_text">
-                                <h2>Хранение драг.металлов</h2>
+                            <img src={project1} alt=""  style={{marginLeft:'17%'}}/>
+                            <div className="item_text" style={{margin:'-18% 5%'}}>
+                                <h2>Хранение </h2>
                                 <p>Логотип, брендинг, лендинг, <br/> многостраничный сайт</p>
                             </div>
                         </div>
 
                         <div className="item b">
-                            <div className="item_text">
+                            <img src={project4} alt="" style={{marginLeft:'7%'}}/>
+                            <div className="item_text" style={{margin:'8%'}}>
                                 <h2>Leastly</h2>
                                 <p>Приложение под iOS с подпиской Typography</p>
                             </div>
                         </div>
 
                         <div className="item c">
-                            <div className="item_text">
+                            <img src={project3} alt="" style={{margin:'11%'}}/>
+                            <div className="item_text" style={{margin:'-16% 9%'}}>
                                 <h2>Tempria</h2>
                                 <p>Приложение-органайзер</p>
                             </div>
                         </div>
 
                         <div className="item d">
-                            <div className="item_text">
+                            <img src={project2} alt="" style={{margin:'10%'}}/>
+                            <div className="item_text" style={{margin:'-1% 8%'}}>
                                 <h2>Guard Line</h2>
                                 <p>Хранилище паролей для iOS</p>
                             </div>

@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 880px) {
-    .clients_block {
+    .block_text {
         display: none;
     }
     .studio_heading {

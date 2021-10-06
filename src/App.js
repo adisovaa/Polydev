@@ -8,6 +8,7 @@ import ErrorPage from "./component/pages/error/Error";
 import CasePage from "./component/pages/case/Case";
 import BriefPage from "./component/pages/briefPage/BriefPage";
 import AboutPage from "./component/pages/aboutPage/About";
+import FirstCase from "./component/pages/case/casePages/firstCasePage/FirstCase";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <BrowserRouter>
                 <Header/>
                 <Switch>
+                    <Route path='/first-case' component={FirstCase}/>
                     <Route path='/about' component={AboutPage}/>
                     <Route path='/case' component={CasePage}/>
                     <Route path='/brief' component={BriefPage}/>

@@ -12,34 +12,18 @@
     width: 23%;
 }
 
-.studio_title h3,
-.block_title h3 {
-    font-size: 24px;
-    color: gray;
-    line-height: 3;
-}
-
 .block_text {
-    width: 65%;
+    width: 52%;
 }
 
 .block_text p {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.4;
 }
 
 .studio_heading {
     margin-top: 187px;
-}
-
-.studio_heading h2 {
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 1.4;
-    font-family: 'ALS Gorizont Bold Expanded';
-    text-transform: uppercase;
-    margin-left: 23%;
 }
 
 .count {
@@ -53,24 +37,24 @@
 .clients_count {
     display: flex;
     width: 47%;
-    border-top: 1px solid gray;
+    border-top: 1px solid #000;
 }
 
 .clients_count h1 {
     color: #6002FD;
-    font-family: 'ALS Gorizont Bold Expanded';
     font-size: 100px;
     margin: 30px 0;
 }
-.clients_count p {
-    margin: 20% 8%;
-}
 
+.clients_count p {
+    margin: 15% 8%;
+}
 
 @media (max-width: 1294px) {
     .block_title {
         width: 22%;
     }
+
     .studio_heading h2 {
         font-size: 50px;
         margin-left: 22%;
@@ -78,54 +62,63 @@
 }
 
 @media (max-width: 880px) {
-    .block_text {
+    .clients_block {
+        margin-top: 50px;
+    }
+
+    .block_text{
+        margin-top: 30px;
+    }
+    .clients_text {
         display: none;
     }
+
     .studio_heading {
-        margin-top: 140px;
+        margin-top: 90px;
     }
+
     .studio_heading h2 {
         font-size: 30px;
         margin: 0;
         width: 70%;
     }
+
     .studio_item {
         display: block;
     }
+
     .block_text {
         width: 100%;
     }
-    .block_text p{
+
+    .block_text p {
         font-size: 16px;
     }
+
     .studio_title {
         width: auto;
+        margin-top: 20px;
     }
-    .studio_title h3{
-        font-size: 18px;
-        font-weight: 600;
-    }
+
     .count {
         display: block;
         width: 100%;
+        margin-top: 30px;
     }
+
     .clients_count {
         width: 100%;
     }
-    .clients_count h1{
+
+    .clients_count h1 {
         font-size: 48px;
         font-weight: bold;
         margin: 12px 0;
     }
-    .clients_count p{
-        font-size: 14px;
-        font-weight: 600;
-        margin: 6% 6%;
-    }
-}
 
-@media (max-width: 450px) {
-    .clients_count p{
-        margin: 12% 6%;
+    .clients_count p {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10% 6%;
     }
 }

@@ -1,16 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux';
-import './Header.css';
 import logo from '../../../images/POLYDEV.svg';
+import logoWhite from './../../../images/logo-white.svg'
 import logo_mobile from '../../../images/Logo_mobile.svg';
 import {openHandle} from "../../../redux/sliceReducer";
 import Button from "../../common/Button";
 
+import './Header.css';
 
 const Header = () => {
+    const [moviesUrlBackgroundColor, setMoviesUrlBackgroundColor] = useState('#fff');
+    const [moviesUrlColor, setMoviesUrlColor] = useState('#000');
     const active = useSelector(state => state.slice.active);
     let history = useHistory();
+
     const navText = ['О студии', 'Кейсы', 'Контакты']
     const navTextMobile = ['Главная', 'О студии', 'Портфолио', 'Контакты']
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 880px)').matches);
@@ -33,7 +37,7 @@ const Header = () => {
 
     let showText = navText.map((text, i) => {
         return (
-            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text}</a></p>
+            <p key={i}><a href={`#${i}`} onClick={clickHeader} style={{color: moviesUrlColor}}>{text}</a></p>
         )
     });
 
@@ -48,9 +52,32 @@ const Header = () => {
         window.matchMedia('(max-width: 880px)').addListener(handler)
     });
 
+    const locationURL = () => {
+        const loc = history.location;
+        return loc.pathname;
+    }
+
     const mainPage = () => {
         history.push('/')
     };
+
+    const getMoviesUrl = window.location.pathname;
+
+    useEffect(() => {
+        if (getMoviesUrl === '/first-case') {
+            setMoviesUrlBackgroundColor('#01579B');
+        } else {
+            setMoviesUrlBackgroundColor('#fff');
+        }
+    }, [getMoviesUrl]);
+
+    useEffect(() => {
+        if (getMoviesUrl === '/first-case') {
+            setMoviesUrlColor('#fff');
+        } else {
+            setMoviesUrlColor('#000');
+        }
+    }, [getMoviesUrl]);
 
     const adaptiveHeader = () => {
         if (active) {
@@ -99,18 +126,19 @@ const Header = () => {
             {
                 screen ? adaptiveHeader()
                     :
-                    <div className="header wrapper">
-                        <div className="logo" onClick={mainPage}>
-                            <img src={logo} alt="logo"/>
-                        </div>
-                        <div className={active ? "burger" : "burger".concat(' active')} onClick={() => openHandle()}>
-                            <span></span>
-                        </div>
-                        <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
-                            <div className="navBar">
-                                {
-                                    showText
-                                }
+                    <div className="header" style={{backgroundColor: moviesUrlBackgroundColor}}>
+                        <div className="wrapper flexHeader">
+                            <div className="logo" onClick={mainPage}>
+                                <img src={locationURL() === "/first-case" ? logoWhite : logo} alt="logo"/>
+                            </div>
+                            <div className={active ? "burger" : "burger".concat(' active')}
+                                 onClick={() => openHandle()}>
+                                <span></span>
+                            </div>
+                            <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                                <div className="navBar">
+                                    {showText}
+                                </div>
                             </div>
                         </div>
                     </div>

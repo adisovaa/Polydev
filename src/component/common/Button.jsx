@@ -9,9 +9,7 @@ const Button = () => {
     }
 
     return (
-        <div>
-            <button onClick={handleClick}>Оставить заявку</button>
-        </div>
+        <button onClick={handleClick}>Оставить заявку</button>
     )
 }
 

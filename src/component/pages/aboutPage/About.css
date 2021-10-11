@@ -12,21 +12,12 @@
 }
 .case_button button,
 .casepage_button button {
-    width: 180px;
-    height: 180px;
-    border: 1px solid #000;
-    border-radius: 100px;
-    font-size: 16px;
-    background: transparent;
-    font-weight: bold;
     margin-top: -47px;
 }
 .case_title h1 {
     font-size: 96px;
-    font-weight: bold;
-    font-family: 'ALS Gorizont Bold Expanded';
-    text-transform: uppercase;
     padding-left: 60px;
+    padding-top: 17px;
     color: #6002FD;
     margin: 0;
 }
@@ -37,10 +28,6 @@
 }
 .case_agency h1,
 .case_tech h1 {
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: bold;
-    font-family: 'ALS Gorizont Bold Expanded';
     line-height: 1.1;
 }
 .agency_items{
@@ -48,15 +35,13 @@
     justify-content: space-between;
 }
 .agency_text {
-    width: 74%;
+    width: 64%;
 }
 .case_block_text h1 {
     font-size: 30px;
-    font-weight: bold;
-    font-family: 'ALS Gorizont Bold Expanded';
 }
 .agency_text p {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.4;
 }
@@ -107,7 +92,8 @@
 }
 .case_tools button {
     width: auto;
-    padding: 10px 24px;
+    height: 39px;
+    padding: 0 24px;
     background: #000;
     color: #fff;
     font-size: 18px;
@@ -136,6 +122,7 @@
 }
 .case_count_item {
     width: 100%;
+    border-color: #fff;
 }
 .case_count_item h1 {
     color: #fff!important;

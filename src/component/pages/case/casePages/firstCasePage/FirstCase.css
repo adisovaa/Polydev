@@ -1,0 +1,127 @@
+.case_banner {
+    margin-top: 92px;
+}
+.grid-container-case {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 503px 512px;
+    grid-template-rows: 377px 377px;
+    float: right;
+}
+.grid-item-a {
+    background: #F5F5F5;
+}
+.grid-item-b {
+    background: #01579B;
+}
+.grid-item-c {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background: #000
+}
+.grid-item-a img, .grid-item-b img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+}
+.grid-item-c img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 325px;
+}
+.circle_one {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #01579B;
+}
+.circle_one p{
+    padding: 43% 32%;
+    color: #fff;
+}
+.circle_two p{
+    padding: 43% 27%;
+    color: #fff;
+}
+.circle_three p{
+    padding: 43% 32%;
+}
+.circle_two {
+    width: 163px;
+    height: 163px;
+    border-radius: 50%;
+    background: #102027;
+    margin-left: 35px;
+}
+.circle_three {
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    margin: -31px 185px;
+}
+.circle-block {
+    display: flex;
+}
+.desktop_block {
+    border-top: 1px solid #000;
+}
+.desktop {
+    height: 619px;
+    border: 4px solid #000;
+    border-radius: 8px;
+    display: flex;
+}
+.size {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0 10px;
+}
+.size h4{
+    text-transform: uppercase;
+}
+.desktopLine {
+    border-right: 1px solid #000;
+    text-align: center;
+    padding-top: 20px;
+}
+.first_line {
+    width: 72px;
+}
+.second_line {
+    width: 375px;
+}
+.third_line {
+    width: 60px;
+}
+.fourth_line {
+    width: 430px;
+}
+.fifth_line {
+    width: 72px;
+    text-align: center;
+    padding-top: 20px;
+}
+.laptop {
+    height: 473px;
+    width: 630px;
+    border: 4px solid #000;
+    border-radius: 8px;
+    display: flex;
+}
+.mobile {
+    height: 586px;
+    width: 330px;
+    border: 4px solid #000;
+    border-radius: 8px;
+    display: flex;
+}
+.tableMobile {
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+    float: right;
+}

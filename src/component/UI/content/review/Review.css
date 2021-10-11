@@ -9,17 +9,13 @@
 }
 
 .reviewTitle h1 {
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: bold;
     margin: 9% 26% 2%;
-    font-family: 'ALS Gorizont Bold Expanded';
 }
 
 .reviewCard {
     margin: 0 -40px;
     width: 94%;
-    border-right: 1px solid gray;
+    border: 1px solid gray;
 }
 
 .reviewBlock {
@@ -30,12 +26,6 @@
 
 .reviewTitleCard {
     padding: 15px 20px;
-}
-
-.reviewTitleCard p {
-    margin: 0;
-    font-weight: normal;
-    font-size: 19px;
 }
 
 .reviewText {
@@ -58,10 +48,6 @@
     font-weight: 600;
 }
 
-.reviewParameters p {
-    font-size: 15px;
-    color: #6002FD;
-}
 
 @media screen and (max-width: 650px) {
     .reviewTitleCard h1 {
@@ -75,14 +61,14 @@
         position: absolute;
         margin: -20% -5%;
     }
+    .review_title {
+        font-size: 16px;
+    }
     .reviewTitle h1 {
         font-size: 30px;
     }
     .reviewParameters {
         font-size: 13px;
-    }
-    .reviewTime:last-child {
-        margin-left: 15px;
     }
     .reviewCard {
         margin: 0 1px;
@@ -92,10 +78,9 @@
     .review {
         margin-top: 180px;
     }
-    .review_items_title h1 {
-        font-size: 18px;
+    .review_items_title h3 {
         font-weight: 600;
-        color: gray;
+
         width: 39%;
         margin-bottom: 17%;
     }

@@ -41,20 +41,13 @@
     background: #000;
 }
 
-.heading h3 {
-    font-size: 24px;
-    color: gray;
+.item_text h5 {
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.item_text h2 {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: #fff;
-    font-family: 'ALS Gorizont Bold Expanded';
-}
 .item_text p {
     color: #fff;
-    font-size: 16px;
 }
 
 .projectTitle {
@@ -66,14 +59,6 @@
 }
 
 .show_more .btn {
-    width: 180px;
-    height: 180px;
-    border: 1px solid #000;
-    border-radius: 100px;
-    font-size: 16px;
-    font-weight: bold;
-    background: transparent;
-    display: block;
     margin-left: 23%;
 }
 
@@ -100,27 +85,16 @@
         padding-top: 220px;
     }
 
-    .show_more .btn {
-        width: 160px;
-        height: 160px;
-        margin-left: 21%;
-    }
 }
 
 @media (max-width: 800px) {
     .projectCard {
-        width: 97%!important;
+        width: 97% !important;
         height: 320px;
     }
 
     .projectTitle {
         display: block;
-    }
-
-    .show_more button {
-        width: 60px;
-        height: 60px;
-        font-size: 5px;
     }
 
     .projectTitleCard {
@@ -150,7 +124,7 @@
     }
 
     .projectTitle {
-        margin: 35px 0;
+        margin: 45px 0;
     }
 
     button.slick-arrow.slick-prev {
@@ -178,40 +152,41 @@
     .slick-next:before {
         content: '' !important;
     }
+    .slick-dots {
+        bottom: -14%;
+    }
 
     .slick-dots li {
-        margin: -8px 5px!important;
+        margin: -8px 5px !important;
     }
 
     .slick-dots li button {
-        width: 10px!important;
-        height: 10px!important;
-        border: 1px solid black!important;
+        width: 10px !important;
+        height: 10px !important;
+        border: 1px solid black !important;
         border-radius: 20px;
     }
+
     .slick-dots li button:before {
-        content: ''!important;
+        content: '' !important;
     }
+
     .slick-dots li.slick-active {
         background: #6002FD;
-        width: 11px!important;
-        height: 11px!important;
+        width: 11px !important;
+        height: 11px !important;
         border-radius: 20px;
     }
+
     .show_more_mobile {
         display: block;
-        margin-top: 80px;
+        margin-top: 100px;
     }
-    .show_more_mobile .btn {
+
+    .show_more_mobile button {
         margin-left: 23%;
-        width: 180px;
-        height: 180px;
-        border: 1px solid #000;
-        border-radius: 100px;
-        font-size: 16px;
-        font-weight: bold;
-        background: transparent
     }
+
     .show_more .btn {
         margin-left: 25%
     }

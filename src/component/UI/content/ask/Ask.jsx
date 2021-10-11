@@ -11,10 +11,10 @@ function AskAnswer(props) {
 
     return (
         <div className="askAnswerItem" onClick={props.onQuest}>
-            <button className="askButtonAnswer">
+            <div className="askButtonAnswer">
                 {props.answer.question}
                 <img src={down} className="askAnswerIcon" alt=""/>
-            </button>
+            </div>
             <div className={classes.join(' ')}>
                 <p>{props.answer.answer}</p>
             </div>
@@ -82,9 +82,9 @@ class Ask extends Component {
 
     render() {
         return (
-            <div className="wrapper">
-                <div className="askAnswer ask_heading">
-                    <h2>Частые вопросы</h2>
+            <div className="wrapper ask">
+                <h2>Частые вопросы</h2>
+                <div className="askAnswer">
                     {
                         this.renderAnswer()
                     }

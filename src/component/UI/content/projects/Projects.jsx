@@ -34,7 +34,7 @@ const Project = () => {
                         <div className="item_big a">
                             <img src={project1} alt=""  style={{marginLeft:'17%'}}/>
                             <div className="item_text" style={{margin:'-18% 5%'}}>
-                                <h2>Хранение </h2>
+                                <h5>Хранение </h5>
                                 <p>Логотип, брендинг, лендинг, <br/> многостраничный сайт</p>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const Project = () => {
                         <div className="item b">
                             <img src={project4} alt="" style={{marginLeft:'7%'}}/>
                             <div className="item_text" style={{margin:'8%'}}>
-                                <h2>Leastly</h2>
+                                <h5>Leastly</h5>
                                 <p>Приложение под iOS с подпиской Typography</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const Project = () => {
                         <div className="item c">
                             <img src={project3} alt="" style={{margin:'11%'}}/>
                             <div className="item_text" style={{margin:'-16% 9%'}}>
-                                <h2>Tempria</h2>
+                                <h5>Tempria</h5>
                                 <p>Приложение-органайзер</p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ const Project = () => {
                         <div className="item d">
                             <img src={project2} alt="" style={{margin:'10%'}}/>
                             <div className="item_text" style={{margin:'-1% 8%'}}>
-                                <h2>Guard Line</h2>
+                                <h5>Guard Line</h5>
                                 <p>Хранилище паролей для iOS</p>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ const Project = () => {
         <div className="project">
             <div className="wrapper">
                 <div className="projectTitle">
-                    <h1>Проекты</h1>
+                    <h3>Проекты</h3>
                 </div>
                 {screen6 ?
                     <Slider {...settings}>

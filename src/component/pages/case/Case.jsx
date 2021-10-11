@@ -4,7 +4,7 @@ import case1 from './../../../images/case1.svg'
 import case2 from './../../../images/case2.svg'
 import case3 from './../../../images/case3.svg'
 import case4 from './../../../images/case4.svg'
-import Button from "../../common/Button";
+import Button from "../../common/Button"
 
 const CasePage = () => {
     return (

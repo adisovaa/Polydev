@@ -7,7 +7,7 @@ const Text = () => {
             <div className="wrapper">
                 <div className="text_block">
                     <h1>Высокий <br/>
-                        <p>уровень</p>
+                        <h1 className='left'>уровень</h1>
                         <span> экспертизы </span>
                     </h1>
                 </div>

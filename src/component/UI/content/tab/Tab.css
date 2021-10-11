@@ -8,6 +8,7 @@
 
 .ant-tabs-tab-btn {
     font-size: 24px;
+    color: gray;
 }
 
 .ant-tabs-tab {
@@ -33,35 +34,44 @@ div#rc-tabs-0-panel-1 {
 .table_row {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid gray;
+    border-top: 1px solid #000;
 }
 
-.table_row_text {
-    width: 56%;
-    font-size: 40px;
+.table_row:last-of-type {
+    border-bottom: 1px solid #000!important;
+}
+
+.table_row_text h6{
+    width: 500px;
+    font-size: 32px;
     margin-top: 15px;
 }
 
 .table_row_time p {
     font-size: 18px;
-    margin-top: 33px;
+    margin-top: 22px;
 }
 
 .table_row_icon img {
     margin-top: 5px;
+    width: 58px;
 }
 
 .tab_table_text p {
-    font-size: 32px;
-    width: 80%;
+    font-size: 24px;
+    width: 60%;
     margin-bottom: 68px;
 }
 
 .table_row_red {
     color: #EB5757;
     font-size: 18px;
-    margin-top: 33px;
+    margin-top: 6%;
     margin-left: 69%;
+}
+
+.tab_btn {
+    margin: -1% 23% 2%;
 }
 
 @media (max-width: 1294px) {
@@ -112,8 +122,9 @@ div#rc-tabs-0-panel-1 {
         margin-left: 63%;
     }
     .table_row_time p {
-        font-size: 13px;
+        font-size: 14px;
         margin-top: 20px;
+        font-weight: 600;
     }
     .tab_table_text p {
         margin-bottom: 40px;
@@ -121,6 +132,9 @@ div#rc-tabs-0-panel-1 {
 }
 
 @media (max-width: 481px) {
+    .tab_btn {
+        margin: 10% 23% 2%;
+    }
     .ant-tabs {
         display: block;
     }
@@ -157,17 +171,18 @@ div#rc-tabs-0-panel-1 {
     .ant-tabs-tab-btn {
         font-size: 12px!important;
         font-weight: bold;
+        color: #000;
     }
     .ant-tabs-tab.ant-tabs-tab-active{
         background: #6002FD;
         border: 1px solid #6002FD;
     }
-    .table_row_text h4 {
+    .table_row_text h6 {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 400!important;
     }
     .table_row_text {
-        margin: 21px 0 30px;
+        margin: 0 0 30px;
         width: 90%;
     }
     .table_row_time {
@@ -179,6 +194,10 @@ div#rc-tabs-0-panel-1 {
     }
     .table_row_icon img {
         margin-top: 24px
+    }
+    .table_row_red {
+        font-size: 16px;
+        margin-left: 45%;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .ant-tabs-tab {

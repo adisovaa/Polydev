@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.caseProject_block, .caseTitle_block {
+    margin-top: 194px;
+}
+.caseProject_item {
+    width: 77%;
+    display: flex;
+}
+.caseProject_title {
+    width: 30%;
+}
+.caseProject_text {
+    width: 60%;
+}
+.caseProject_text p {
+    font-size: 24px;
+}
+.caseTasks_item {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.caseTasks_texts {
+    width: 77%;
+    float: right;
+}
+.caseTasks_texts:last-of-type {
+    border-bottom: 1px solid #000;
+}
+.caseTasks_text {
+    display: flex;
+    border-top: 1px solid #000;
+    padding: 24px 0;
+}
+.caseTasks_text p{
+    font-size: 16px;
+    width: 48%;
+}
+.caseTasks_text h6{
+    font-size: 32px;
+    width: 30%;
+}
+.caseProject_heading h2 {
+    margin-left: 0;
+    width: 41%;
+}
+.caseProject_heading {
+    width: 77%;
+    float: right;
+}
+.caseProject_heading p {
+    width: 65%;
+    font-size: 24px;
+}
+.caseDescription_item {
+    margin-top: 131px
+}
+.calcBanner {
+    display: flex;
+    justify-content: space-between;
+}
+.styleSolution_item {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.styleSolution_text {
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+}
+.styleSolution_text p {
+    width: 40%;
+}
+.case-underline-block {
+    border-top: 1px solid black;
+    width: 45%;
+    padding: 25px 0;
+}
+.case-underline-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+.case-underline-block h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 37px;
+}
+.case-underline-block h3 {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000!important;
+}
+.case-underline-block h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+.case-underline-block h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+.case-underline-block h6 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.case-underline-block p {
+    width: 100%;
+    opacity: 0.5;
+}
+.case-underline-blocks {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.customerInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    padding-top: 20px;
+}
+.position h6 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.position p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6002FD;
+}

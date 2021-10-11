@@ -1,46 +1,35 @@
+.ask {
+    margin-top: 15%;
+}
 .askAnswer {
     width: 77%;
     float: right;
-    margin-top: 190px;
 }
-
 .askAnswerBlock {
     display: none;
 }
-
 .askAnswerBlock.show {
     display: block;
     width: 76%;
     margin: 15px auto;
     font-size: 17px;
 }
-
-.ask_heading h2{
-    font-size: 64px;
-    line-height: 1.4;
-    font-weight: bold;
-    font-family: 'ALS Gorizont Bold Expanded';
-    text-transform: uppercase;
-    width: 35%;
-}
-
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #6002FD;
 }
-
 .askButtonAnswer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: left;
     background: none;
-    border-top: 1px solid #7C7C7C;
+    border-top: 1px solid #000;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    font-size: 40px;
+    font-size: 32px;
     color: #334059;
-    line-height: 2.5;
+    line-height: 3;
 }
 .askButtonAnswer img {
     width: 65px;
@@ -48,7 +37,7 @@
 }
 
 .askAnswer:last-of-type {
-    border-bottom: 1px solid #7C7C7C!important;
+    border-bottom: 1px solid #000C!important;
 }
 
 @media (max-width: 1294px) {
@@ -76,9 +65,12 @@
 
 
 @media (max-width: 600px) {
+    .ask {
+        margin-top: 30%;
+    }
     .askAnswer {
         width: 100%;
-        margin-top: 97px;
+        margin-top: 20px;
     }
     .askButtonAnswer {
         font-size: 18px;
@@ -90,8 +82,8 @@
         margin: 10px 0;
         width: 30px;
     }
-    .ask_heading h2{
-        font-size: 30px;
+    .ask h2{
+        margin: 0!important;
     }
 
 }

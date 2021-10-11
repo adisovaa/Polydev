@@ -11,10 +11,7 @@
 .brief_text h1 a{
     font-size: 96px;
     text-transform: uppercase;
-    font-family: 'ALS Gorizont Bold Expanded';
     color: #fff;
-    font-weight: bold;
-    line-height: 1.2;
     text-decoration: none;
 }
 
@@ -94,7 +91,6 @@
         margin-top: 0;
     }
     .brief_text{
-        margin-top: 33px;
         width: 100%;
     }
     .brief_text h1 a{

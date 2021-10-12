@@ -1,22 +1,33 @@
 .ask {
-    margin-top: 15%;
+    margin-top: 194px;
 }
+
 .askAnswer {
-    width: 77%;
+    width: 75%;
     float: right;
+    margin-top: 30px;
 }
+
 .askAnswerBlock {
     display: none;
 }
+
 .askAnswerBlock.show {
     display: block;
-    width: 76%;
+    width: 75%;
     margin: 15px auto;
     font-size: 17px;
 }
+
+.askAnswerBlock.show p {
+    width: 440px;
+    margin-left: 205px;
+}
+
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #6002FD;
 }
+
 .askButtonAnswer {
     display: flex;
     justify-content: space-between;
@@ -31,23 +42,37 @@
     color: #334059;
     line-height: 3;
 }
-.askButtonAnswer img {
-    width: 65px;
-    margin: 17px 0;
+
+.askButtonAnswer:hover{
+    color: #fff;
+    background-color: #6002FD;
+}
+
+.askAnswerIcon {
+    background-image:url('../../../../images/Down.svg');
+    width: 78px;
+    margin: 10px 0px;
+}
+.askAnswerIcon:hover {
+    background-image:url('../../../../images/down-white.svg');
+    width: 78px;
+    margin: 10px 0px;
 }
 
 .askAnswer:last-of-type {
-    border-bottom: 1px solid #000C!important;
+    border-bottom: 1px solid #000C !important;
 }
 
 @media (max-width: 1294px) {
     .askAnswer {
         width: 78%
     }
+
     .askButtonAnswer {
         font-size: 27px;
         line-height: 3;
     }
+
     .askButtonAnswer img {
         margin: 13px 0;
     }
@@ -57,6 +82,7 @@
     .askButtonAnswer {
         font-size: 20px;
     }
+
     .askButtonAnswer img {
         margin: 13px 0;
         width: 40px;
@@ -68,22 +94,26 @@
     .ask {
         margin-top: 30%;
     }
+
     .askAnswer {
         width: 100%;
         margin-top: 20px;
     }
+
     .askButtonAnswer {
         font-size: 18px;
         line-height: 1.3;
         padding: 10px 0;
         font-weight: 400;
     }
+
     .askButtonAnswer img {
         margin: 10px 0;
         width: 30px;
     }
-    .ask h2{
-        margin: 0!important;
+
+    .ask h2 {
+        margin: 0 !important;
     }
 
 }

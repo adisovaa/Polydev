@@ -1,21 +1,20 @@
 .review {
-    margin-top: 80px;
+    padding-top: 71px;
 }
 
 .reviewContainer {
     margin: 0 auto;
-    padding-bottom: 180px;
+    padding-bottom: 195px;
     max-width: 1640px;
 }
 
 .reviewTitle h1 {
-    margin: 9% 26% 2%;
+    margin: 9% 28% 2%;
 }
 
 .reviewCard {
-    margin: 0 -40px;
-    width: 94%;
-    border: 1px solid gray;
+    width: 770px;
+    border-right: 1px solid gray;
 }
 
 .reviewBlock {
@@ -25,17 +24,24 @@
 }
 
 .reviewTitleCard {
-    padding: 15px 20px;
+    padding: 15px 60px 0 60px
+}
+.reviewTitleCard p {
+    font-size: 24px;
 }
 
 .reviewText {
     margin: 33px 8px;
 }
-
+.reviewText p {
+    font-size: 18px;
+    color: #6002FD;
+    width: 200px;
+    line-height: 1.4;
+}
 .reviewBlock .companyImg {
     width: 120px;
 }
-
 .reviewParameters {
     font-weight: 600;
     font-size: 16px;
@@ -46,6 +52,14 @@
 .reviewParameters h3 {
     font-size: 21px;
     font-weight: 600;
+}
+
+.slick-list {
+    width: 75.7%;
+    float: right;
+}
+.slick-slide.slick-active.slick-current {
+    width: 771px!important;
 }
 
 

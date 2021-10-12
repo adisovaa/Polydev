@@ -32,39 +32,39 @@ const Project = () => {
                     </div>
                     <div className="projects_blocks">
                         <div className="item_big a">
-                            <img src={project1} alt=""  style={{marginLeft:'17%'}}/>
-                            <div className="item_text" style={{margin:'-18% 5%'}}>
-                                <h5>Хранение </h5>
-                                <p>Логотип, брендинг, лендинг, <br/> многостраничный сайт</p>
+                            <img src={project1} alt=""  style={{marginLeft:'162px'}}/>
+                            <div className="item_text" style={{margin:'-16% 5%'}}>
+                                <h5>Vitakit</h5>
+                                <p>Хранение рецептов, поиск <br/>и покупка лекарств </p>
                             </div>
                         </div>
 
                         <div className="item b">
                             <img src={project4} alt="" style={{marginLeft:'7%'}}/>
-                            <div className="item_text" style={{margin:'8%'}}>
-                                <h5>Leastly</h5>
-                                <p>Приложение под iOS с подпиской Typography</p>
+                            <div className="item_text" style={{margin:'25px 44px'}}>
+                                <h5>Делай вещи</h5>
+                                <p>Приложение для производства <br/>вещей на заказ </p>
                             </div>
                         </div>
 
                         <div className="item c">
-                            <img src={project3} alt="" style={{margin:'11%'}}/>
-                            <div className="item_text" style={{margin:'-16% 9%'}}>
-                                <h5>Tempria</h5>
-                                <p>Приложение-органайзер</p>
+                            <img src={project3} alt="" style={{margin:'40px 40px'}}/>
+                            <div className="item_text" style={{margin:'1% 10%'}}>
+                                <h5>Canadian international</h5>
+                                <p>Помощь по иммиграции в Канаду <br/>по учебной и спортивной визам</p>
                             </div>
                         </div>
 
                         <div className="item d">
-                            <img src={project2} alt="" style={{margin:'10%'}}/>
-                            <div className="item_text" style={{margin:'-1% 8%'}}>
-                                <h5>Guard Line</h5>
-                                <p>Хранилище паролей для iOS</p>
+                            <img src={project2} alt="" style={{margin:'40px 40px'}}/>
+                            <div className="item_text" style={{margin:'5% 8%'}}>
+                                <h5>Swift global</h5>
+                                <p>Хранение драг. металлов</p>
                             </div>
                         </div>
                     </div>
                     <div className="show_more">
-                        <button className='btn'>Смотреть все</button>
+                        <button className='project_btn'>Смотреть все</button>
                     </div>
                 </div>
             </div>

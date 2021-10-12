@@ -1,5 +1,8 @@
 .text_block {
-    margin: 137px 304px;
+    margin: 122px 327px;
+}
+.text_block h1 {
+    margin: 0;
 }
 
 @media screen and (max-width: 1025px) {

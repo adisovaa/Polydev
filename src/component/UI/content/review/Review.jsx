@@ -26,8 +26,8 @@ const Review = () => {
             speed: 500,
             slidesToShow: screen6 ? 1 : 2,
             slidesToScroll: 1,
-            // autoplay: true,
-            // autoplaySpeed: 2000,
+            autoplay: true,
+            autoplaySpeed: 2000,
             className: 'eventSlides'
         };
 
@@ -69,7 +69,7 @@ const Review = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: !screen9 ? 3 : 2,
+        slidesToShow: !screen9 ? 1 : 2,
         slidesToScroll: 1,
         className: 'eventSlides',
         autoplay: true,
@@ -94,7 +94,6 @@ const Review = () => {
                                                 <p>{review.title}</p>
                                                 <div className="reviewBlock">
                                                     <div className="reviewParameters">
-                                                        <img className="reviewImg" src={review.img} alt=""/>
                                                         <div className="reviewText">
                                                             <h6>{review.name}</h6>
                                                             <p>{review.position}</p>

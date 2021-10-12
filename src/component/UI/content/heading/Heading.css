@@ -5,15 +5,14 @@
 
 .heading_text {
     width: 60%;
-    margin: 50px
+    margin: 60px 23px
+}
+.heading_text h1, .heading_text h1.right {
+    margin: 0;
 }
 
 .left {
-    margin: 0 -110px;
-}
-
-.heading_text h1.right {
-    margin: 0;
+    margin: 0 -110px!important;
 }
 
 span {
@@ -22,6 +21,8 @@ span {
 
 .heading_button button {
     margin-top: -47px;
+    width: 180px;
+    height: 180px;
 }
 
 .blocks {
@@ -32,7 +33,7 @@ span {
 .block {
     width: 22.7%;
     border-top: 1px solid gray;
-    margin-left: 60px;
+    margin-left: 44px;
 }
 
 .block h4 {
@@ -41,7 +42,7 @@ span {
 }
 
 .block p {
-    width: 200px;
+    width: 160px;
     line-height: 1.4;
 }
 

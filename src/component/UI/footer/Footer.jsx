@@ -1,15 +1,20 @@
 import React from "react";
 import './Footer.css'
 import message from '../../../images/message.png'
-import Button from "../../common/Button";
+import {useHistory} from "react-router-dom";
 
 const Footer = () => {
+    const history = useHistory();
+
+    function handleClick() {
+        history.push("/brief");
+    }
     return (
         <footer>
             <div className="wrapper">
                 <div className="footer_items">
                     <div className="circle">
-                        <Button/>
+                        <button onClick={handleClick}>Заполнить бриф</button>
                     </div>
                     <div className="footer_content">
                         <div className="footer_item">

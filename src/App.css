@@ -21,13 +21,14 @@ h2 {
     line-height: 1  ;
     font-family: 'ALS Gorizont Bold Expanded';
     text-transform: uppercase;
-    margin-left: 23%;
+    margin-left: 25%;
     width: 32%;
 }
 h3 {
     font-size: 24px;
-    color: gray!important;
-    font-weight: 600;
+    color: #000;
+    opacity: 0.3;
+    font-weight: 500;
     font-family: 'Manrope', sans-serif;
 }
 h4 {
@@ -53,14 +54,20 @@ p {
     font-family: 'Manrope', sans-serif;
 }
 button {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #000;
     border-radius: 100px;
     font-size: 16px!important;
     background: transparent;
-    font-weight: 700;
+    font-weight: 700!important;
     font-family: 'Manrope', sans-serif;
+}
+button:hover{
+    color: #fff;
+    background-color: #6002FD;
+    border-color: #6002FD;
+    cursor: pointer;
 }
 
 

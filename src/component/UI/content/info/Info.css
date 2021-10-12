@@ -1,5 +1,5 @@
 .clients_block {
-    margin-top: 110px;
+    margin-top: 132px;
 }
 
 .clients_block,
@@ -7,13 +7,17 @@
     display: flex;
 }
 
+.studio_item {
+    margin-top: 52px;
+}
+
 .studio_title,
 .block_title {
-    width: 23%;
+    width: 25%;
 }
 
 .block_text {
-    width: 52%;
+    width: 660px;
 }
 
 .block_text p {
@@ -23,31 +27,31 @@
 }
 
 .studio_heading {
-    margin-top: 187px;
+    margin-top: 190px;
 }
 
 .count {
     display: flex;
-    justify-content: space-between;
     float: right;
-    width: 77%;
+    width: 75%;
     margin-top: 68px;
 }
 
 .clients_count {
     display: flex;
-    width: 47%;
+    width: 315px;
     border-top: 1px solid #000;
+    margin-right: 60px;
 }
 
 .clients_count h1 {
     color: #6002FD;
-    font-size: 100px;
     margin: 30px 0;
 }
 
 .clients_count p {
-    margin: 15% 8%;
+    margin: 60px 0 0 20px;
+    font-weight: 500;
 }
 
 @media (max-width: 1294px) {

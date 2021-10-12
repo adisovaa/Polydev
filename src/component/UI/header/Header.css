@@ -8,11 +8,11 @@
 .navBar {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 129px;
+    margin-left: 176px;
 }
 
 .navBar p {
-    margin: 6px 40px;
+    margin: 6px 20px;
 }
 
 .navBar a {

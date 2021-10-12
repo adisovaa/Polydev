@@ -6,10 +6,9 @@ const Text = () => {
         <div className="text">
             <div className="wrapper">
                 <div className="text_block">
-                    <h1>Высокий <br/>
-                        <h1 className='left'>уровень</h1>
-                        <span> экспертизы </span>
-                    </h1>
+                    <h1>Высокий</h1>
+                    <h1 className='left'>уровень</h1>
+                    <h1><span> экспертизы </span></h1>
                 </div>
             </div>
         </div>

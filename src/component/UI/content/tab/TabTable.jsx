@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './Tab.css'
 import down from '../../../../images/Down.svg'
+
 
 export const Landing = () => {
     const lending = [
@@ -61,13 +62,12 @@ export const Landing = () => {
                         return (
                             <div className="table_row" key={i}>
                                 <div className="table_row_text">
-                                    <h6>{lending.title}</h6>
+                                    <p>{lending.title}</p>
                                 </div>
                                 <div className="table_row_time">
                                     <p>{lending.duration}</p>
                                 </div>
                                 <div className="table_row_icon">
-                                    <img src={lending.images} alt=""/>
                                 </div>
                             </div>
                         )
@@ -141,13 +141,13 @@ export const Website = () => {
                         return (
                             <div className="table_row" key={i}>
                                 <div className="table_row_text">
-                                    <h6>{website.title}</h6>
+                                    <p>{website.title}</p>
                                 </div>
                                 <div className="table_row_time">
                                     <p>{website.duration}</p>
                                 </div>
                                 <div className="table_row_icon">
-                                    <img src={website.images} alt=""/>
+
                                 </div>
                             </div>
                         )
@@ -221,13 +221,13 @@ export const App = () => {
                         return (
                             <div className="table_row" key={i}>
                                 <div className="table_row_text">
-                                    <h6>{app.title}</h6>
+                                    <p>{app.title}</p>
                                 </div>
                                 <div className="table_row_time">
                                     <p>{app.duration}</p>
                                 </div>
                                 <div className="table_row_icon">
-                                    <img src={app.images} alt=""/>
+
                                 </div>
                             </div>
                         )

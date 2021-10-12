@@ -22,10 +22,9 @@ const Heading = () => {
             <div className="wrapper">
                 <div className="heading_block">
                     <div className="heading_text">
-                        <h1><span> Digital-продукты</span>
+                        <h1><span> Digital-продукты</span></h1>
                             <h1 className='left'>с умом</h1>
                             <h1 className='right'>для бизнеса</h1>
-                        </h1>
                     </div>
                     <div className="heading_button">
                         <Button/>

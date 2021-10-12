@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import down from '../../../../images/Down.svg'
 import './Ask.css'
 
 function AskAnswer(props) {
@@ -13,7 +12,7 @@ function AskAnswer(props) {
         <div className="askAnswerItem" onClick={props.onQuest}>
             <div className="askButtonAnswer">
                 {props.answer.question}
-                <img src={down} className="askAnswerIcon" alt=""/>
+                <p className="askAnswerIcon" />
             </div>
             <div className={classes.join(' ')}>
                 <p>{props.answer.answer}</p>
@@ -28,27 +27,27 @@ class Ask extends Component {
             {
                 showAnswer: false,
                 question: 'Что если я нахожусь в другом городе?',
-                answer: 'Lorem ipsum dolor sit amet'
+                answer: 'In vel id viverra ipsum, tellus. Tellus suspendisse nunc nibh id augue. Luctus pharetra non lacus, non.'
             },
             {
                 showAnswer: false,
                 question: 'Кого выбрать: веб-студию или фрилансера?',
-                answer: 'Lorem ipsum dolor sit amet'
+                answer: 'In vel id viverra ipsum, tellus. Tellus suspendisse nunc nibh id augue. Luctus pharetra non lacus, non.'
             },
             {
                 showAnswer: false,
                 question: 'Помогаете ли вы с SEO продвижением?',
-                answer: 'Lorem ipsum dolor sit amet'
+                answer: 'In vel id viverra ipsum, tellus. Tellus suspendisse nunc nibh id augue. Luctus pharetra non lacus, non.'
             },
             {
                 showAnswer: false,
                 question: 'Что если я не могу ответить на вопрос брифа?',
-                answer: 'Lorem ipsum dolor sit amet'
+                answer: 'In vel id viverra ipsum, tellus. Tellus suspendisse nunc nibh id augue. Luctus pharetra non lacus, non.'
             },
             {
                 showAnswer: false,
                 question: 'Смогу ли я сам управлять своим сайтом?',
-                answer: 'Lorem ipsum dolor sit amet'
+                answer: 'In vel id viverra ipsum, tellus. Tellus suspendisse nunc nibh id augue. Luctus pharetra non lacus, non.'
             },
         ],
         numberUser: '',

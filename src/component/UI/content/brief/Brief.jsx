@@ -15,7 +15,7 @@ export const Brief = () => {
                         <h1>
                             <a href="/brief">Заполнить бриф</a>
                         </h1>
-                        <img src={vector} alt   =""/>
+                        <img src={vector} alt="" />
                     </div>
                 </div>
             </div>

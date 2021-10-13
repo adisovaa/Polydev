@@ -119,7 +119,7 @@ span {
 
 @media (max-width: 800px) {
     .heading {
-        margin: 15% 0;
+        margin: 76px 0;
     }
     .heading_block {
         display: inline-block;
@@ -130,20 +130,23 @@ span {
         padding: 0;
     }
 
-    .left {
-        margin: 0
+    .heading_text .left , .text_block .left{
+        margin: 0!important;
     }
 
     .heading_button button {
         position: absolute;
         font-family: 'Manrope', sans-serif;
-        margin: 355px 89px;
+        margin: 340px 89px;
     }
 
     .blocks {
-        margin: 20px 0;
+        margin: 31px 0;
         display: inline-block;
         width: 100%;
+    }
+    .block h4{
+        margin: 0
     }
 
     .block h4, .block p {

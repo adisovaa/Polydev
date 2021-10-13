@@ -40,22 +40,15 @@ const Review = () => {
                     {
                         review.map((review, i) => {
                             return (
-                                <div key={i}>
-                                    <div className="reviewCard">
-                                        <div className="reviewTitleCard">
-                                            <div className="reviewParameters">
-                                                <div className="reviewTime">
-                                                    <img className="reviewImg" src={review.img} alt=""/>
-                                                    <div className="reviewText">
-                                                        <h6>{review.name}</h6>
-                                                        <p><span>{review.position}</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p className='review_title'>{review.title}</p>
+                                <div className="reviewCard" key={i}>
+                                    <div className="reviewTitleCard">
+                                        <div className="reviewText">
+                                            <h6>{review.name}</h6>
+                                            <p><span>{review.position}</span></p>
                                         </div>
-                                        <img className='companyImg' src={review.company} alt=""/>
+                                        <p className='review_title'>{review.title}</p>
                                     </div>
+                                    <img className='companyImg' src={review.company} alt=""/>
                                 </div>
                             )
                         })

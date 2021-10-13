@@ -19,6 +19,10 @@
     font-size: 17px;
 }
 
+.askButtonAnswer p {
+    font-size: 32px;
+}
+
 .askAnswerBlock.show p {
     width: 440px;
     margin-left: 205px;
@@ -35,11 +39,6 @@
     text-align: left;
     background: none;
     border-top: 1px solid #000;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    font-size: 32px;
-    color: #334059;
     line-height: 3;
 }
 
@@ -51,12 +50,12 @@
 .askAnswerIcon {
     background-image:url('../../../../images/Down.svg');
     width: 78px;
-    margin: 10px 0px;
+    margin: 21px 0;
 }
 .askAnswerIcon:hover {
     background-image:url('../../../../images/down-white.svg');
     width: 78px;
-    margin: 10px 0px;
+    margin: 10px 0
 }
 
 .askAnswer:last-of-type {
@@ -100,11 +99,14 @@
         margin-top: 20px;
     }
 
-    .askButtonAnswer {
+    .askButtonAnswer p{
         font-size: 18px;
         line-height: 1.3;
         padding: 10px 0;
         font-weight: 400;
+    }
+    .question {
+        width: 500px;
     }
 
     .askButtonAnswer img {
@@ -116,4 +118,12 @@
         margin: 0 !important;
     }
 
+    .askAnswerIcon {
+        background-image:url('../../../../images/down-small.svg');
+        background-repeat: no-repeat;
+    }
+    .askAnswerBlock.show p {
+        width: 240px;
+        margin-left: 50px;
+    }
 }

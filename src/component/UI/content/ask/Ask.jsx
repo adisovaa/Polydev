@@ -11,7 +11,7 @@ function AskAnswer(props) {
     return (
         <div className="askAnswerItem" onClick={props.onQuest}>
             <div className="askButtonAnswer">
-                {props.answer.question}
+                <p className='question'>{props.answer.question}</p>
                 <p className="askAnswerIcon" />
             </div>
             <div className={classes.join(' ')}>

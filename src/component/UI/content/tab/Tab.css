@@ -5,8 +5,7 @@
     width: 23%;
 }
 .ant-tabs-content {
-    width: 97%;
-    float: right;
+    margin-left: 30px;
 }
 .ant-tabs-tab-btn {
     font-size: 24px;
@@ -44,7 +43,7 @@ div#rc-tabs-0-panel-1 {
     background: #6002FD;
     color: #fff!important;
 }
-.table_row:last-of-type {
+.askAnswerItem:last-of-type {
     border-bottom: 1px solid #000!important;
 }
 .table_row_text p{
@@ -60,7 +59,7 @@ div#rc-tabs-0-panel-1 {
 .table_row_icon {
     background-image: url("./../../../../images/Down.svg");
     width: 75px;
-    margin: 15px 0
+    margin: 15px 30px
 }
 .table_row_icon:hover {
     background-image: url("./../../../../images/down-white.svg");
@@ -74,7 +73,7 @@ div#rc-tabs-0-panel-1 {
     color: #EB5757;
     font-size: 18px;
     margin-top: 51px;
-    margin-left: 69%;
+    margin-left: 50%;
 }
 .tab_btn {
     margin: -13px 330px;
@@ -142,7 +141,7 @@ div#rc-tabs-0-panel-1 {
 
 @media (max-width: 481px) {
     .tab_btn {
-        margin: 10% 23% 2%;
+        margin: 35px 0 0 92px
     }
     .ant-tabs {
         display: block;
@@ -186,13 +185,13 @@ div#rc-tabs-0-panel-1 {
         background: #6002FD;
         border: 1px solid #6002FD;
     }
-    .table_row_text h6 {
+    .table_row_text p {
         font-size: 18px;
         font-weight: 400!important;
+        margin-top: 16px;
     }
     .table_row_text {
-        margin: 0 0 30px;
-        width: 90%;
+        margin: 0 0 21px;
     }
     .table_row_time {
         position: absolute;
@@ -201,12 +200,21 @@ div#rc-tabs-0-panel-1 {
         font-size: 14px;
         font-weight: bold;
     }
-    .table_row_icon img {
-        margin-top: 24px
+    .table_row_icon {
+        background-image: url("./../../../../images/down-small.svg");
+        background-repeat: no-repeat;
+        margin: 23px -34px
+    }
+    .table_row_icon:hover {
+        background-image: url("./../../../../images/down-small.svg");
+    }
+    .ant-tabs-content {
+        margin-left: 0
     }
     .table_row_red {
         font-size: 16px;
         margin-left: 45%;
+        margin-top: 35px;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .ant-tabs-tab {

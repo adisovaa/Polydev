@@ -1,7 +1,7 @@
 import React from 'react'
 import 'antd/dist/antd.css';
 import {Tabs} from 'antd'
-import {App, Landing, Website} from "./TabTable";
+import {App, Landing, Websites} from "./TabTable";
 import Button from "../../../common/Button";
 
 const {TabPane} = Tabs;
@@ -18,7 +18,7 @@ const TabInfo = () => {
                         <Landing/>
                     </TabPane>
                     <TabPane tab="Многостраничный сайт" key="2">
-                        <Website/>
+                        <Websites/>
                     </TabPane>
                     <TabPane tab="Приложение" key="3">
                         <App/>

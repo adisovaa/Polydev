@@ -64,58 +64,58 @@
 
 
 @media screen and (max-width: 650px) {
-    .reviewTitleCard h1 {
-        font-size: 14px;
-    }
-    .reviewParameters {
-        display: flex;
-        font-size: 13px;
-    }
     .reviewTitle {
         position: absolute;
         margin: -20% -5%;
     }
+    .reviewText {
+        margin: 0
+    }
+    .reviewTitleCard {
+        padding: 0 10px 0 0
+    }
     .review_title {
-        font-size: 16px;
+        font-size: 16px!important;
     }
     .reviewTitle h1 {
         font-size: 30px;
     }
-    .reviewParameters {
-        font-size: 13px;
-    }
     .reviewCard {
         margin: 0 1px;
         width: 94%;
-        border: 1px solid gray;
+        border-right: 1px solid gray;
     }
     .review {
-        margin-top: 180px;
+        margin-top: 97px;
     }
     .review_items_title h3 {
         font-weight: 600;
-
         width: 39%;
         margin-bottom: 17%;
     }
     .reviewImg {
         width: 50px;
     }
-    .reviewTime {
-        display: flex;
-    }
     .reviewText h3,
     .reviewText p {
         font-size: 14px;
     }
-    .companyImg{
-        margin: 0 10px 10px
+
+    .slick-list {
+        margin-top: 20px;
     }
     .slick-dots li {
         width: auto;
     }
     .slick-slide.slick-active.slick-current {
-        width: 333px!important;
+        width: 290px!important;
+        margin: 0 30px;
+    }
+    .slick-slide.slick-cloned{
+        width: 309px!important;
+    }
+    .review .slick-dots {
+        bottom: -425px;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .reviewTitle {

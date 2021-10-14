@@ -1,7 +1,6 @@
 .brief_page {
-    width: 77%;
-    float: right;
-    margin-top: 100px;
+    width: 820px;
+    margin: 90px 330px;
 }
 
 .brief_info {
@@ -10,23 +9,20 @@
 }
 
 .brief_info h1 {
-    font-size: 64px;
-    font-weight: bold;
-    font-family: 'ALS Gorizont Bold Expanded';
-    text-transform: uppercase;
     line-height: 1;
 }
 
 .brief_info p {
-    width: 45%;
+    width: 381px;
     font-size: 16px;
 }
+
 .purple {
     color: #6002FD;
     text-decoration: underline;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus {
     outline: none;
 }
 
@@ -36,13 +32,14 @@ textarea:focus, input:focus{
     margin-top: 50px;
 }
 
-.entire h4, .entire_block h4,
-.brief_button h4 {
+.entire h5, .entire_block h5,
+.brief_button h5 {
     font-size: 16px;
+    font-family: 'Manrope', sans-serif!important;
 }
 
 .entire_block {
-    width: 45%;
+    width: 380px;
 }
 
 .entire {
@@ -52,7 +49,7 @@ textarea:focus, input:focus{
 input, select {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #000!important;
+    border-bottom: 1px solid #000 !important;
 }
 
 select {
@@ -79,7 +76,7 @@ select {
     margin-left: 20px;
 }
 
-.textarea{
+.textarea {
     margin-bottom: 50px;
 }
 
@@ -91,14 +88,21 @@ select {
     -moz-border-radius: 30px;
     border-radius: 30px;
 }
-.brief_button{
+
+.btn-large:hover {
+    color: #fff;
+    background-color: #6002FD;
+}
+
+.brief_button {
     margin-top: 20%;
     display: flex;
 }
-.brief_button p{
-   font-size: 16px;
+
+.brief_button p {
+    font-size: 16px;
     line-height: 5.5;
-    margin: 0 40px;
+    margin: 0 25px;
 }
 
 .brief_button button {
@@ -115,36 +119,43 @@ select {
 @media (max-width: 800px) {
     .brief_page {
         width: 100%;
-        margin-top: 50px;
+        margin: 50px 0;
     }
+
     .brief_info,
     .brief_button {
         display: block;
     }
+
     .brief_page p {
         width: 100%;
     }
+
     .register_block {
         display: block;
         margin: 0;
     }
+
     .entire_block, .entire {
         width: 100%;
         margin-top: 30px;
     }
-    .brief_button{
+
+    .brief_button {
         margin-top: 40%;
     }
+
     .brief_button p {
         margin: 35px 0;
         line-height: 1.5;
     }
+
     .brief_info h1 {
         font-size: 30px;
     }
 
     .brief_info p,
-    .brief_button h4{
+    .brief_button h4 {
         font-size: 14px;
     }
 }

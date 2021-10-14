@@ -124,7 +124,7 @@ const AboutPage = () => {
                                         портфолио</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Email нашего HR</p>
-                                        <h1>HR@polydev.io</h1>
+                                        <h5>HR@polydev.io</h5>
                                     </div>
                                 </div>
                                 <div className="case_count">
@@ -132,7 +132,7 @@ const AboutPage = () => {
                                         портфолио</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Телеграм нашего CEO</p>
-                                        <h1>@polydev.io</h1>
+                                        <h5>@polydev.io</h5>
                                     </div>
                                 </div>
                             </div>

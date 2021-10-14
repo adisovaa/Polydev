@@ -65,8 +65,8 @@ button {
 }
 button:hover{
     color: #fff;
-    background-color: #6002FD;
-    border-color: #6002FD;
+    background-color: #6002FD!important;
+    border-color: #6002FD!important;
     cursor: pointer;
 }
 

@@ -21,27 +21,27 @@ const BriefPage = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="register_block">
                         <div className="register_name entire_block">
-                            <h4>Имя<span>*</span></h4>
+                            <h5>Имя<span>*</span></h5>
                             <input type="text" name="name" className="input" ref={register({required: true})}/>
                         </div>
                         <div className="register_company entire_block">
-                            <h4>Компания</h4>
+                            <h5>Компания</h5>
                             <input type="text" name="company" className="input" ref={register({required: true})}/>
                         </div>
                     </div>
                     <div className="register_block">
                         <div className="register_name entire_block">
-                            <h4>Email<span>*</span></h4>
+                            <h5>Email<span>*</span></h5>
                             <input type="email" name="email" className="input" ref={register({required: true})}/>
                         </div>
                         <div className="register_company entire_block">
-                            <h4>Телефон</h4>
+                            <h5>Телефон</h5>
                             <input type="number" name="phone" className="input" ref={register({required: true})}/>
                         </div>
                     </div>
                     <div className="register_block">
                         <div className="register_name entire_block">
-                            <h4>Вид проекта</h4>
+                            <h5>Вид проекта</h5>
                             <select id="projects" name="projects">
                                 <option value="site"></option>
                                 <option value="site">website</option>
@@ -52,7 +52,7 @@ const BriefPage = () => {
                         </div>
 
                         <div className="register_company entire_block">
-                            <h4>Бюджет</h4>
+                            <h5>Бюджет</h5>
                             <select id="projects" name="projects">
                                 <option value="site"></option>
                                 <option value="site">1000$</option>
@@ -64,7 +64,7 @@ const BriefPage = () => {
                     </div>
                     <div className="register_block">
                         <div className="register_name entire">
-                            <h4>О задаче и сроках</h4>
+                            <h5>О задаче и сроках</h5>
                             <input type="textarea" name="textValue" className="textarea" ref={register({required: true})}/>
                         </div>
                     </div>

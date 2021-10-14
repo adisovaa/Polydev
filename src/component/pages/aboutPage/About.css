@@ -8,7 +8,7 @@
     border-bottom: 1px solid gray;
 }
 .case_text {
-    margin: 8% 48% 9% 23%;
+    margin: 150px 44% 115px 25%;
 }
 .case_button button,
 .casepage_button button {
@@ -22,9 +22,9 @@
     margin: 0;
 }
 .case_agency, .case_tech {
-    width: 77%;
+    width: 75%;
     float: right;
-    margin-top: 4%;
+    margin-top: 85px;
 }
 .case_agency h1,
 .case_tech h1 {
@@ -59,7 +59,7 @@
     font-weight: 600;
 }
 .casepage_button button {
-    margin: 60px 0 110px;
+    margin: 72px 0 110px;
 }
 .case_tech_blocks {
     margin-top: 60px;
@@ -130,6 +130,9 @@
 .casepage_block {
     top: 115px;
     margin-bottom: 200px;
+}
+.case_count_item h5 {
+    color: #fff!important;
 }
 
 @media (max-width: 650px) {

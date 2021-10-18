@@ -58,10 +58,6 @@
     margin: 10px 0
 }
 
-.askAnswer:last-of-type {
-    border-bottom: 1px solid #000C !important;
-}
-
 @media (max-width: 1294px) {
     .askAnswer {
         width: 78%

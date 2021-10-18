@@ -23,7 +23,7 @@
 }
 
 .navBar a:hover {
-    color: #6002FD!important;
+    border-bottom: 1px solid #6002FD;
 }
 
 @media screen and (max-width: 880px) {

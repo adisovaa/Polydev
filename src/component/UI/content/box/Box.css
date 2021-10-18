@@ -11,51 +11,69 @@
 .grid-item {
     text-align: center;
 }
+.grid-item:hover{
+    background: #6002FD;
+}
 .grid-item img {
     width: 250px;
     height: 60px;
     margin-top: 40%;
 }
+.one, .two, .three, .four, .five, .six {
+    position: relative;
+    display: inline-block;
+}
+.grid-item .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 99;
+}
+.grid-item.three:hover .img-top,
+.grid-item.four:hover .img-top {
+    left: 206px;
+}
+.grid-item:hover .img-top {
+    display: inline;
+}
 .grid-item.three img,
 .grid-item.four img {
     margin-top: 20%;
 }
-.one:after, .two:after,
-.five:after, .six:after{
+.one:after, .two:after, .five:after, .six:after {
     content: " ";
-    width: 23%;
+    width: 92%;
     position: absolute;
-    top: 50%;
+    top: 100%;
     height: 1px;
     background: #000;
-    margin-left: -21%;
+    margin-left: -84%;
 }
-.one:before, .two:before {
+.five:after, .six:after {
+    top: 0;
+}
+.one:before, .two:before, .five:before{
     content: " ";
-    height: 46%;
+    height: 94%;
     position: absolute;
     top: 2%;
     width: 1px;
     background: #000;
-    margin-left: 22%;
+    margin-left: 88%;
 }
 .five:before {
-    content: " ";
-    height: 46%;
-    position: absolute;
-    top: 52%;
-    width: 1px;
-    background: #000;
-    margin-left: 22%;
+    height: 92%;
+    top: 6%
 }
 .four:before{
     content: " ";
-    height: 46%;
+    height: 92%;
     position: absolute;
-    top: 52%;
+    top: 6%;
     width: 1px;
     background: #000;
-    margin-left: 34.5%;
+    margin-left: 69%;
 }
 .three {
     grid-column-start: 3;
@@ -65,7 +83,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
 }
-
 .box_title {
     display: flex;
     padding: 85px 0 63px;
@@ -134,51 +151,44 @@
     }
     .one:after, .two:after{
         content: " ";
-        width: 43%;
+        width: 90%;
         position: absolute;
-        top: 35%;
         height: 1px;
-        background: #000 ;
-        margin-left: -36%;
+        background: #000;
+        left: 150px
     }
     .three:after, .four:after{
         content: " ";
-        width: 43%;
+        width: 88%;
         position: absolute;
-        top: 65%;
+        top: 100%;
         height: 1px;
         background: #000 ;
-        margin-left: -36%;
+        margin-left: -73%;
     }
-    .one:before {
+    .one:before,  .five:before {
         content: " ";
-        height: 31%;
+        height: 92%;
         position: absolute;
         top: 2%;
         width: 1px;
         background: #000;
-        margin-left: 40%;
+        margin-left: 80%;
     }
     .two:before, .five:after, .six:after {
         display: none;
     }
     .four:before {
         content: " ";
-        height: 27%;
+        height: 87%;
         position: absolute;
-        top: 37%;
+        top: 7%;
         width: 1px;
         background: #000;
-        margin-left: -10%;
+        margin-left: -20%;
     }
     .five:before {
-        content: " ";
-        height: 31%;
-        position: absolute;
-        top: 67%;
-        width: 1px;
-        background: #000;
-        margin-left: 40%;
+        top: 7%;
     }
     .box_title h3 {
         font-size: 18px;

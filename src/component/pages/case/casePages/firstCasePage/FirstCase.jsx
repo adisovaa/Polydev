@@ -1,6 +1,6 @@
 import React from 'react'
 import swiftLogo from './../../../../../images/swift-logo.svg'
-import CaseHeader from "../../caseComponents/caseHeader/caseHeader";
+import CaseHeading from "../../caseComponents/caseHeader/caseHeading";
 import {
     CaseDescription,
     CaseProject,
@@ -8,6 +8,7 @@ import {
     CaseTitle,
     CustomerReview
 } from "../../caseComponents/caseProjects/CaseProject";
+import CaseReview from "../../caseComponents/caseReview/caseReview";
 import caseFirst_1 from './../../../../../images/caseFirst-1.jpg'
 import caseFirst_2 from './../../../../../images/caseFirst-2.png'
 import caseFirst_3 from './../../../../../images/caseFirst-3.png'
@@ -20,19 +21,19 @@ import case_logo_1 from './../../../../../images/case-logo-1.svg'
 import case_logo_2 from './../../../../../images/case-logo-2.svg'
 import case_logo_3 from './../../../../../images/case-logo-3.svg'
 
-
 import './FirstCase.css'
+
 
 const FirstCase = () => {
     return (
         <>
-            <CaseHeader title={'Swift Global'}
-                        text={"Хранение и продажа драгоценных металлов"}
-                        caseLogo={swiftLogo}
-                        btnInfo1={'Лендинг'}
-                        btnInfo2={'Сайт'}
-                        btnInfo3={'Брендинг'}
-                        link={'Перейти на сайт'}/>
+            <CaseHeading title={'Swift Global'}
+                         text={"Хранение и продажа драгоценных металлов"}
+                         caseLogo={swiftLogo}
+                         btnInfo1={'Лендинг'}
+                         btnInfo2={'Сайт'}
+                         btnInfo3={'Брендинг'}
+                         link={'Перейти на сайт'}/>
 
             <CaseProject
                 text={'Swift Global LTD – международная компания, предоставляющая услуги по купле, продаже и хранению драгоценных металлов'}/>
@@ -141,7 +142,6 @@ const FirstCase = () => {
                             <div className="circle_three">
                                 <p>#F5F5F5</p>
                             </div>
-
                         </div>
 
                         <p>Синий цвет в сочетании с тёмно-синим передают спокойствие и при этом настраивают на деловой
@@ -212,7 +212,7 @@ const FirstCase = () => {
                 </div>
                 <div className="tableMobile">
                     <div className="table_block">
-                        <div className="desktop_block">
+                        <div className="desktop_blocks">
                             <div className="size">
                                 <h4>TABLET</h4>
                                 <p>1024</p>
@@ -227,7 +227,7 @@ const FirstCase = () => {
                         </div>
                     </div>
                     <div className="table_block">
-                        <div className="desktop_block">
+                        <div className="desktop_blocks">
                             <div className="size">
                                 <h4>MOBILE</h4>
                                 <p>360</p>
@@ -249,6 +249,9 @@ const FirstCase = () => {
                             name='Иван'
                             position='Руководитель проекта SwiftGlobal'
             />
+
+            <CaseReview/>
+
         </>
     )
 }

@@ -4,7 +4,7 @@
 .grid-container-case {
     margin-top: 80px;
     display: grid;
-    grid-template-columns: 503px 512px;
+    grid-template-columns: 502px 491px;
     grid-template-rows: 377px 377px;
     float: right;
 }
@@ -67,6 +67,11 @@
 }
 .desktop_block {
     border-top: 1px solid #000;
+    width: 75%;
+}
+
+.desktop_blocks {
+    border-top: 1px solid #000;
 }
 .desktop {
     height: 619px;
@@ -119,7 +124,7 @@
     display: flex;
 }
 .tableMobile {
-    width: 77%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     margin-top: 105px;

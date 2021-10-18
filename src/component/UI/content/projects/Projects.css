@@ -13,6 +13,54 @@
     height: 500px
 }
 
+.item_big:hover, .item:hover {
+    opacity: 0.5;
+}
+
+.item_big:hover .overlay_up,
+.item:hover .overlay_up,
+.item:hover .overlay_bottom {
+    opacity: 1;
+}
+
+.overlay_up {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+}
+ .overlay_bottom {
+    position: absolute;
+    top: 640px;
+    opacity: 0;
+}
+.item_big .overlay_up h4,
+.item.d .overlay_up h4,
+.item.c .overlay_bottom h4,
+.item.b .overlay_bottom h4 {
+    font-size: 54px !important;
+    color: #fff;
+    margin: 37px 40px;
+    width: 100px;
+}
+.item_big .overlay_up img {
+    position: absolute;
+    top: 320px;
+    left: 560px;
+}
+.item.d .overlay_up img,
+.item.c .overlay img {
+    position: absolute;
+    top: 320px;
+    left: 310px;
+}
+.overlay_bottom img {
+    position: absolute;
+    top: 345px;
+    left: 250px;
+}
+.item.b .overlay_bottom img {
+    left: 315px;
+}
 .a {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -89,7 +137,7 @@
 
 @media (max-width: 800px) {
     .projectCard {
-        width: 97%!important;
+        width: 97% !important;
         height: 320px;
     }
 
@@ -154,12 +202,13 @@
     .slick-next:before {
         content: '' !important;
     }
+
     .slick-dots {
         bottom: -370px;
     }
 
     .slick-list {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .slick-dots li {

@@ -1,9 +1,9 @@
 import React from 'react'
 import Button from "../../../../common/Button";
 
-import './caseHeader.css'
+import './caseHeading.css'
 
-const CaseHeader = (props) => {
+const CaseHeading = (props) => {
     return (
         <div className='cases_heading'>
             <div className="wrapper">
@@ -34,4 +34,4 @@ const CaseHeader = (props) => {
     )
 }
 
-export default CaseHeader
+export default CaseHeading

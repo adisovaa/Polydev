@@ -12,6 +12,16 @@ import tech3 from '../../../../images/tech3.svg'
 import tech4 from '../../../../images/tech4.svg'
 import tech5 from '../../../../images/tech5.svg'
 import tech6 from '../../../../images/tech6.svg'
+import logo_1_white from './../../../../images/1-white.svg'
+import logo_2_white from './../../../../images/2-white.svg'
+import logo_3_white from './../../../../images/3-white.svg'
+import logo_4_white from './../../../../images/4-white.svg'
+import tech1_white from './../../../../images/tech1-white.svg'
+import tech2_white from './../../../../images/tech2-white.svg'
+import tech3_white from './../../../../images/tech3-white.svg'
+import tech4_white from './../../../../images/tech4-white.svg'
+import tech5_white from './../../../../images/tech5-white.svg'
+import tech6_white from './../../../../images/tech6-white.svg'
 
 export const Box = () => {
     return (
@@ -19,21 +29,27 @@ export const Box = () => {
             <div className="grid-container ">
                 <div className="grid-item one">
                     <img src={logo_1} alt=""/>
+                    <img src={logo_1_white} className='img-top' alt=""/>
                 </div>
                 <div className="grid-item two">
                     <img src={logo_2} alt=""/>
+                    <img src={logo_2_white} className='img-top' alt=""/>
                 </div>
                 <div className="grid-item three">
                     <img src={logo_3} alt=""/>
+                    <img src={logo_3_white} className='img-top' alt=""/>
                 </div>
                 <div className="grid-item four">
                     <img src={logo_4} alt=""/>
+                    <img src={logo_4_white} className='img-top' alt=""/>
                 </div>
                 <div className="grid-item five">
                     <img src={logo_5} alt=""/>
+                    <img src={logo_4_white} className='img-top' alt=""/>
                 </div>
                 <div className="grid-item six">
                     <img src={logo_6} alt=""/>
+                    <img src={logo_4_white} className='img-top' alt=""/>
                 </div>
             </div>
         </div>
@@ -51,21 +67,27 @@ export const BoxTechnologies = () => {
                 <div className="grid-container">
                     <div className="grid-item one">
                         <img src={tech1} alt=""/>
+                        <img src={tech1_white} className='img-top' alt=""/>
                     </div>
                     <div className="grid-item two">
                         <img src={tech2} alt=""/>
+                        <img src={tech2_white} className='img-top' alt=""/>
                     </div>
                     <div className="grid-item three">
                         <img src={tech3} alt=""/>
+                        <img src={tech3_white} className='img-top' alt=""/>
                     </div>
                     <div className="grid-item four">
                         <img src={tech4} alt=""/>
+                        <img src={tech4_white} className='img-top' alt=""/>
                     </div>
                     <div className="grid-item five">
                         <img src={tech5} alt=""/>
+                        <img src={tech5_white} className='img-top' alt=""/>
                     </div>
                     <div className="grid-item six">
                         <img src={tech6} alt=""/>
+                        <img src={tech6_white} className='img-top' alt=""/>
                     </div>
                 </div>
             </div>

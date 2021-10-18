@@ -70,10 +70,27 @@ div#rc-tabs-0-panel-1 {
     margin-bottom: 72px;
 }
 .table_row_red {
+    display: flex;
+    float: right;
+    margin-top: 35px;
+}
+.table_row_red p {
+    width: 180px;
     color: #EB5757;
+    margin: 0 30px 0 70px;
     font-size: 18px;
-    margin-top: 51px;
-    margin-left: 50%;
+}
+.without_dev, .with_dev {
+    display: flex;
+}
+.without_dev p, .with_dev p {
+    font-size: 18px;
+    color: #000;
+    opacity: 0.5;
+    width: 200px;
+}
+.without_dev h6, .with_dev h6 {
+    font-size: 18px;
 }
 .tab_btn {
     margin: -13px 330px;

@@ -1,0 +1,94 @@
+.caseReview {
+    padding-top: 40px;
+}
+
+.reviewContainer {
+    margin: 0 auto;
+    padding-bottom: 195px;
+    max-width: 1640px;
+}
+
+.reviewTitle h1 {
+    margin: 9% 28% 2%;
+    width: 380px;
+}
+
+.caseReviewCard{
+    width: 630px;
+    height: 500px;
+    background: #6002FD;
+    margin-left: 60px;
+}
+.caseReviewContainer {
+    margin: 0 auto;
+    max-width: 1640px;
+    display: flow-root;
+}
+
+
+@media screen and (max-width: 650px) {
+    .reviewTitle {
+        position: absolute;
+        margin: -20% -5%;
+    }
+    .reviewText {
+        margin: 0
+    }
+    .reviewTitleCard {
+        padding: 0 10px 0 0
+    }
+    .review_title {
+        font-size: 16px!important;
+    }
+    .reviewTitle h1 {
+        font-size: 30px;
+    }
+    .reviewCard {
+        margin: 0 1px;
+        width: 94%;
+        border-right: 1px solid gray;
+    }
+    .review {
+        margin-top: 97px;
+    }
+    .review_items_title h3 {
+        font-weight: 600;
+        width: 39%;
+        margin-bottom: 17%;
+    }
+    .reviewImg {
+        width: 50px;
+    }
+    .reviewText h3,
+    .reviewText p {
+        font-size: 14px;
+    }
+
+    .slick-list {
+        margin-top: 20px;
+    }
+    .slick-dots li {
+        width: auto;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 290px!important;
+        margin: 0 30px;
+    }
+    .slick-slide.slick-cloned{
+        width: 309px!important;
+    }
+    .review .slick-dots {
+        bottom: -425px;
+    }
+    @media not all and (min-resolution:.001dpcm) { @media {
+        .reviewTitle {
+            margin: -16% 2%;
+        }
+        .review_items_title h1 {
+            width: 40%;
+        }
+        .review{
+            margin-top: 170px;
+        }
+    }}
+}

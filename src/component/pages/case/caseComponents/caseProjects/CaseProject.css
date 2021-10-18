@@ -6,11 +6,11 @@
     margin-top: 194px;
 }
 .caseProject_item {
-    width: 77%;
+    width: 75%;
     display: flex;
 }
 .caseProject_title {
-    width: 30%;
+    width: 33.4%;
 }
 .caseProject_text {
     width: 60%;
@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 .caseTasks_texts {
-    width: 77%;
+    width: 75%;
     float: right;
 }
 .caseTasks_texts:last-of-type {
@@ -45,10 +45,10 @@
 }
 .caseProject_heading h2 {
     margin-left: 0;
-    width: 41%;
+    width: 45%;
 }
 .caseProject_heading {
-    width: 77%;
+    width: 75%;
     float: right;
 }
 .caseProject_heading p {
@@ -68,7 +68,7 @@
     justify-content: space-between;
 }
 .styleSolution_text {
-    width: 77%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
 }
@@ -94,7 +94,7 @@
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    color: #000!important;
+    opacity: initial;
 }
 .case-underline-block h4 {
     font-family: 'Montserrat', sans-serif;
@@ -110,6 +110,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 24px;
 }
 .case-underline-block p {
     width: 100%;

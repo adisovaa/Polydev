@@ -17,7 +17,7 @@ function App() {
             <BrowserRouter>
                 <Header/>
                 <Switch>
-                    <Route path='/first-case' component={FirstCase}/>
+                    <Route path='/swift-global' component={FirstCase}/>
                     <Route path='/about' component={AboutPage}/>
                     <Route path='/case' component={CasePage}/>
                     <Route path='/brief' component={BriefPage}/>

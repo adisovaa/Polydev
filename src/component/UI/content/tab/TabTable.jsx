@@ -32,7 +32,7 @@ export class Landing extends Component {
             {
                 showAnswer: false,
                 title: 'Брифинг и ТЗ',
-                duration: '1 день',
+                duration: 'От 1 дня',
                 answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
             }, {
                 showAnswer: false,
@@ -109,7 +109,7 @@ export class Landing extends Component {
         return (
             <>
                 <div className="tab_table_text">
-                    <p>Лендинг – это одна страница, которая продаёт один или несколько товаров или услуг</p>
+                    <p>Лендинг – это одна страница, которая продаёт     один или несколько товаров или услуг</p>
                 </div>
                 <div className="table">
                     {
@@ -117,6 +117,16 @@ export class Landing extends Component {
                     }
                 </div>
                 <div className="table_row_red">
+                    <div className="total_time">
+                        <div className="without_dev">
+                            <p>Итого без разработки:</p>
+                            <h6>от 17 дней</h6>
+                        </div>
+                        <div className="with_dev">
+                            <p>Итого с разработкой:</p>
+                            <h6>от 24 дней</h6>
+                        </div>
+                    </div>
                     <p>*Без учёта времени на согласование</p>
                 </div>
             </>
@@ -149,7 +159,7 @@ function WebsiteTab(props) {
         </div>
     )
 }
-export class Websites extends Component {
+export class Websites extends Component     {
     state = {
         website: [
             {
@@ -241,6 +251,16 @@ export class Websites extends Component {
                     }
                 </div>
                 <div className="table_row_red">
+                    <div className="total_time">
+                        <div className="without_dev">
+                            <p>Итого без разработки:</p>
+                            <h6>от 17 дней</h6>
+                        </div>
+                        <div className="with_dev">
+                            <p>Итого с разработкой:</p>
+                            <h6>от 24 дней</h6>
+                        </div>
+                    </div>
                     <p>*Без учёта времени на согласование</p>
                 </div>
             </>
@@ -279,50 +299,44 @@ export class App extends Component {
             {
                 showAnswer: false,
                 title: 'Брифинг и ТЗ',
-                duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
-            }, {
-                showAnswer: false,
-                title: 'Анализ рынка',
-                duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                duration: 'От 1 дня',
+                answer: 'Знакомимся с бизнесом, заполняем бриф, уточняем детали. Составляем ТЗ, если его нет и утверждаем. В конце этого этапа заключается договор и вносится предоплата'
             }, {
                 showAnswer: false,
                 title: 'Прототип',
-                duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                duration: 'От 3 дней',
+                answer: 'Используя согласованное ТЗ, создаём прототип сайта. Сначала проводим конкурентный и визуальный анализ, выдвигаем гипотезы, проектируем структуру и на основе этого делаем схематичную версию страницы с основным функционалом'
             }, {
                 showAnswer: false,
-                title: 'Дизайн-концепция главной',
-                duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                title: 'Дизайн-концепция',
+                duration: 'От 3 дней',
+                answer: 'На основе принятых решений из предыдущего этапа создаём дизайн экранов из основного пользовательского сценария. Презентуем их заказчику. По итогам вносим правки и утверждаем визуал'
             }, {
                 showAnswer: false,
-                title: 'Дизайн внутренних страниц',
+                title: 'Дизайн всех экранов',
                 duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                answer: 'Используя утверждённые стилистические решения, дизайним остальные экраны. Презентуем, вносим правки и утверждаем'
             }, {
                 showAnswer: false,
-                title: 'Адаптивы',
-                duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                title: 'Дизайн под разные платформы',
+                duration: 'От 4 дней',
+                answer: 'Адаптируем дизайн под платформы iOS и Android, а также популярные разрешения экрана'
             }, {
                 showAnswer: false,
-                title: 'Вёрстка',
-                duration: '1 день',
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                title: 'Разработка',
+                duration: 'От 7 дней',
+                answer: 'Разрабатываем приложения на нативных языках (Swift, Kotlin), присылаем приглашение на бета-тест. После проведения тестов вносим правки и корректировки, если они появляются'
             }, {
                 showAnswer: false,
-                title: 'SEO оптимизация',
-                duration: '1 день',
-                images: down,
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                title: 'Завершение',
+                duration: 'От 1 дня',
+                answer: 'После получения оплаты переносим приложение на ваш аккаунт. Подписываем закрывающие документы'
             }, {
                 showAnswer: false,
                 title: 'Поддержка (по желанию)',
-                duration: '1 день',
+                duration: 'Сколько потребуется',
                 images: down,
-                answer: 'In commodo, eu hendrerit id laoreet fermentum ligula sit quam. Aenean convallis faucibus elementum purus in. Amet, nibh aliquam donec est volutpat habitant risus vel.'
+                answer: 'Проследим чтобы все корректно работало, адаптируем приложения под обновления и оперативно решим все технические вопросы'
             }
         ],
         numberUser: '',
@@ -356,7 +370,7 @@ export class App extends Component {
         return (
             <>
                 <div className="tab_table_text">
-                    <p>программа для компьютера, работающая под управлением конкретной операционной (см.) и обеспечивающая работу с дисками и файлами</p>
+                    <p>Мобильные приложения под платформы iOS и Android на нативных языках</p>
                 </div>
                 <div className="table">
                     {
@@ -364,6 +378,16 @@ export class App extends Component {
                     }
                 </div>
                 <div className="table_row_red">
+                    <div className="total_time">
+                        <div className="without_dev">
+                            <p>Итого без разработки:</p>
+                            <h6>от 17 дней</h6>
+                        </div>
+                        <div className="with_dev">
+                            <p>Итого с разработкой:</p>
+                            <h6>от 24 дней</h6>
+                        </div>
+                    </div>
                     <p>*Без учёта времени на согласование</p>
                 </div>
             </>

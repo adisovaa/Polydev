@@ -68,7 +68,7 @@ const Header = () => {
             setMoviesUrlBackgroundColor('#01579B');
         } else if (getMoviesUrl === '/') {
             setMoviesUrlBackgroundColor('#fff');
-        } else if (getMoviesUrl === '/make-closes'){
+        } else if (getMoviesUrl === '/make-clothes'){
             setMoviesUrlBackgroundColor('#FF5C45');
         } else {
             setMoviesUrlBackgroundColor('#fff');
@@ -77,6 +77,8 @@ const Header = () => {
 
     useEffect(() => {
         if (getMoviesUrl === '/swift-global') {
+            setMoviesUrlColor('#fff');
+        } else if (getMoviesUrl === '/make-clothes') {
             setMoviesUrlColor('#fff');
         } else {
             setMoviesUrlColor('#000');
@@ -133,7 +135,7 @@ const Header = () => {
                     <div className="header" style={{backgroundColor: moviesUrlBackgroundColor}}>
                         <div className="wrapper flexHeader">
                             <div className="logo" onClick={mainPage}>
-                                <img src={locationURL() === "/swift-global" ? logoWhite : logo} alt="logo"/>
+                                <img src={locationURL() === "/swift-global" && "/make-clothes" ? logoWhite : logo} alt="logo"/>
                             </div>
                             <div className={active ? "burger" : "burger".concat(' active')}
                                  onClick={() => openHandle()}>

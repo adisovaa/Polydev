@@ -9,6 +9,7 @@ import CasePage from "./component/pages/case/Case";
 import BriefPage from "./component/pages/briefPage/BriefPage";
 import AboutPage from "./component/pages/aboutPage/About";
 import FirstCase from "./component/pages/case/casePages/firstCasePage/FirstCase";
+import SecondCase from "./component/pages/case/casePages/secondCasePage/SecondCase";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Header/>
                 <Switch>
                     <Route path='/swift-global' component={FirstCase}/>
+                    <Route path='/make-clothes' component={SecondCase}/>
                     <Route path='/about' component={AboutPage}/>
                     <Route path='/case' component={CasePage}/>
                     <Route path='/brief' component={BriefPage}/>

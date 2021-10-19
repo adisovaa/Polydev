@@ -20,20 +20,20 @@ import caseFirst_8 from './../../../../../images/caseFirst-8.svg'
 import case_logo_1 from './../../../../../images/case-logo-1.svg'
 import case_logo_2 from './../../../../../images/case-logo-2.svg'
 import case_logo_3 from './../../../../../images/case-logo-3.svg'
+import appStore from './../../../../../images/appStore.png'
 
 import './FirstCase.css'
 
-
 const FirstCase = () => {
+    const btnInfo = ['Лендинг', 'Сайт', 'Брендинг']
     return (
         <>
             <CaseHeading title={'Swift Global'}
                          text={"Хранение и продажа драгоценных металлов"}
                          caseLogo={swiftLogo}
-                         btnInfo1={'Лендинг'}
-                         btnInfo2={'Сайт'}
-                         btnInfo3={'Брендинг'}
-                         link={'Перейти на сайт'}/>
+                         btnInfo={btnInfo}
+                         backgroundColor={'#01579B'}
+                         appStore={appStore}/>
 
             <CaseProject
                 text={'Swift Global LTD – международная компания, предоставляющая услуги по купле, продаже и хранению драгоценных металлов'}/>
@@ -251,7 +251,6 @@ const FirstCase = () => {
             />
 
             <CaseReview/>
-
         </>
     )
 }

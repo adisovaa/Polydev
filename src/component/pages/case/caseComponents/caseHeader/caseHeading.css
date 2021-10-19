@@ -8,7 +8,6 @@
 }
 .cases_heading {
     height: 700px;
-    background: #01579B;
 }
 .cases_text {
     margin-top: 120px;
@@ -47,13 +46,17 @@
     margin-right: 10px;
     padding: 0 20px
 }
-.cases_block a {
+.case_logo a {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     text-decoration: underline;
-    line-height: 9;
 }
 .case_logo {
     margin-top: 17%;
+    display: flex;
+    justify-content: space-between;
+}
+.appStore {
+    margin-top: 18px;
 }

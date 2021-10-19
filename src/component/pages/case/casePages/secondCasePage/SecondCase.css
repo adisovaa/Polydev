@@ -1,0 +1,100 @@
+.circleMakeOrange {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #FF5C45;
+}
+.circleMakeOrange p{
+    margin: 99px 70px;
+    color: #fff;
+}
+.circleMakeBlack {
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    background: #171717;
+    margin: 20px;
+}
+.circleMakeBlack p{
+    margin: 78px 47px;
+    color: #fff;
+    width: 50%;
+}
+.circleMakeGray {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: #838383;
+    margin-top: 40px;
+}
+.circleMakeGray p{
+    margin: 47px;
+    color: #fff;
+}
+.orangeCircle{
+    width: 75%;
+    display: flex;
+}
+.transparentImg {
+    margin-right: 219px;
+}
+.styleSolution_item_orange {
+    display: flex;
+    margin-top: 141px;
+}
+.styleSolution_orange {
+    border-top: 1px solid #000;
+    width: 769px;
+}
+.styleSolution_orange h1 {
+    font-family: 'SF Pro Display';
+    text-transform: initial;
+}
+.styleSolution_orange p {
+    width: 350px;
+}
+.styleSolution_orange_title {
+    width: 330px;
+}
+.iphone12_block {
+    width: 330px;
+    border-top: 1px solid #000;
+}
+.iPhone12 {
+    width: 330px;
+    height: 586px;
+    border: 4px solid #1B1B1B;
+    border-radius: 8px;
+    display: flex;
+}
+.iPhone12Line {
+    border-left: 1px solid #000;
+    text-align: center;
+    padding-top: 20px;
+}
+.line_one {
+    width: 24px;
+}
+.line_two {
+    width: 27px;
+    margin-left: 275px;
+}
+.mobile_orange {
+    display: flex;
+}
+.iphoneSE_block {
+    width: 330px;
+    border-top: 1px solid #000;
+    margin-left: 111px;
+}
+.iPhoneSE {
+    width: 220px;
+    height: 391px;
+    border: 4px solid #1B1B1B;
+    border-radius: 8px;
+    display: flex;
+}
+.line_two_SE {
+    width: 27px;
+    margin-left: 162px;
+}

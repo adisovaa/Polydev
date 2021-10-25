@@ -10,6 +10,7 @@ import BriefPage from "./component/pages/briefPage/BriefPage";
 import AboutPage from "./component/pages/aboutPage/About";
 import FirstCase from "./component/pages/case/casePages/firstCasePage/FirstCase";
 import SecondCase from "./component/pages/case/casePages/secondCasePage/SecondCase";
+import ThirdCase from "./component/pages/case/casePages/thirdCasePage/ThirdCase";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <BrowserRouter>
                 <Header/>
                 <Switch>
+                    <Route path='/canadian' component={ThirdCase}/>
                     <Route path='/swift-global' component={FirstCase}/>
                     <Route path='/make-clothes' component={SecondCase}/>
                     <Route path='/about' component={AboutPage}/>

@@ -31,7 +31,7 @@
 }
 
 .reviewText {
-    margin: 33px 8px;
+    margin: 33px 0 0;
 }
 .reviewText p {
     font-size: 18px;
@@ -39,9 +39,7 @@
     width: 200px;
     line-height: 1.4;
 }
-.reviewBlock .companyImg {
-    width: 120px;
-}
+
 .reviewParameters {
     font-weight: 600;
     font-size: 16px;

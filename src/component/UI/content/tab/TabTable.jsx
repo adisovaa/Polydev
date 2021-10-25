@@ -109,7 +109,7 @@ export class Landing extends Component {
         return (
             <>
                 <div className="tab_table_text">
-                    <p>Лендинг – это одна страница, которая продаёт     один или несколько товаров или услуг</p>
+                    <p>Лендинг – это одна страница, которая продаёт один или несколько товаров или услуг</p>
                 </div>
                 <div className="table">
                     {

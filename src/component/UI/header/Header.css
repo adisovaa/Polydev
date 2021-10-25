@@ -1,5 +1,5 @@
 .header {
-    padding-top: 40px;
+    padding-top: 44px;
 }
 .flexHeader {
     display: flex;
@@ -24,6 +24,15 @@
 
 .navBar a:hover {
     border-bottom: 1px solid #6002FD;
+}
+
+@media screen and (max-width: 1024px) {
+    .navBar {
+        margin-left: 82px;
+    }
+    .navBar a {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 880px) {

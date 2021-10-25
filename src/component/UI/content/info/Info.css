@@ -31,10 +31,13 @@
 }
 
 .count {
-    display: flex;
     float: right;
-    width: 75%;
-    margin-top: 68px;
+    width: 50%;
+}
+
+.clients_count_text {
+    width: 330px;
+    margin: 47px 0;
 }
 
 .clients_count {
@@ -54,7 +57,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 1294px) {
+@media (max-width: 1024px) {
     .block_title {
         width: 22%;
     }
@@ -62,6 +65,9 @@
     .studio_heading h2 {
         font-size: 50px;
         margin-left: 22%;
+    }
+    .clients_block {
+        margin-top: 74px;
     }
 }
 

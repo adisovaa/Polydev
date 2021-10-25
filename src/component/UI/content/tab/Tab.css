@@ -61,7 +61,12 @@ div#rc-tabs-0-panel-1 {
     width: 75px;
     margin: 15px 30px
 }
-.table_row_icon:hover {
+.table_row_icon:before {
+    background-image: url("./../../../../images/Down.svg");
+    width: 75px;
+    margin: 15px 30px
+}
+.table_row_icon.special:hover {
     background-image: url("./../../../../images/down-white.svg");
 }
 .tab_table_text p {

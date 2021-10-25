@@ -70,6 +70,8 @@ const Header = () => {
             setMoviesUrlBackgroundColor('#fff');
         } else if (getMoviesUrl === '/make-clothes'){
             setMoviesUrlBackgroundColor('#FF5C45');
+        } else if (getMoviesUrl === '/canadian'){
+            setMoviesUrlBackgroundColor('#262626');
         } else {
             setMoviesUrlBackgroundColor('#fff');
         }
@@ -79,6 +81,8 @@ const Header = () => {
         if (getMoviesUrl === '/swift-global') {
             setMoviesUrlColor('#fff');
         } else if (getMoviesUrl === '/make-clothes') {
+            setMoviesUrlColor('#fff');
+        } else if (getMoviesUrl === '/canadian') {
             setMoviesUrlColor('#fff');
         } else {
             setMoviesUrlColor('#000');
@@ -135,7 +139,7 @@ const Header = () => {
                     <div className="header" style={{backgroundColor: moviesUrlBackgroundColor}}>
                         <div className="wrapper flexHeader">
                             <div className="logo" onClick={mainPage}>
-                                <img src={locationURL() === "/swift-global" && "/make-clothes" ? logoWhite : logo} alt="logo"/>
+                                <img src={locationURL() === "/swift-global" ? logoWhite : logo} alt="logo"/>
                             </div>
                             <div className={active ? "burger" : "burger".concat(' active')}
                                  onClick={() => openHandle()}>

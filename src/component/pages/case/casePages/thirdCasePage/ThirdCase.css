@@ -1,0 +1,118 @@
+.cases_heading_block {
+    width: 75%;
+    float: right;
+}
+.casesBlock {
+    display: flex;
+    justify-content: space-between;
+}
+.cases_heading {
+    height: 700px;
+}
+.cases_text {
+    margin-top: 120px;
+}
+.word{
+    color: #FF3D00!important;
+    line-height: 0;
+}
+.cases_text h1{
+    color: #fff;
+}
+.cases_text p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.cases_btn button {
+    color: #fff;
+    border-color: #fff;
+}
+.cases_block {
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.cases_buttons {
+    margin-top: 5%;
+}
+.cases_buttons button {
+    width: auto;
+    height: 39px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+    padding: 0 20px
+}
+.canadian_case_logo a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+}
+.canadian_case_logo {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.appStore {
+    margin-top: 18px;
+}
+.transparentImgCanadian {
+    margin-right: 219px;
+    margin-bottom: 73px;
+}
+.blocks .orange_circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    background: #FF3D00;
+}
+.blocks .orange_circle p {
+    margin: 98px 67px;
+    color: #fff;
+}
+.blocks .black_circle {
+    width: 163px;
+    height: 163px;
+    border-radius: 100%;
+    background: #262626;
+    margin-left: 39px;
+}
+.blocks .black_circle p {
+    margin: 69px 45px;
+    color: #fff;
+}
+.blocks .gray_circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    background: #F6F6F6;
+    margin: 32px 256px 0 0;
+}
+.blocks .gray_circle p {
+    margin: 48px 28px;
+}
+.blocks .peach_circle {
+    width: 168px;
+    height: 168px;
+    border-radius: 100%;
+    background: #FFA06D;
+    position: absolute;
+    margin: -48px 67px;
+}
+.blocks .peach_circle p {
+    margin: 72px 49px;
+}
+.circle_text {
+    margin-right: 44px;
+}
+.orangeCircleBlock {
+    margin-top: 64px;
+}

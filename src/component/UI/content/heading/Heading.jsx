@@ -6,15 +6,15 @@ const Heading = () => {
     const heading = [
         {
             title: 'Лендинги',
-            text: 'На конструкторе Tilda/Wordpress или самописные'
+            text: 'Дизайним и разрабатываем высоко конверсионные лендинги на конструкторах'
         },
         {
             title: 'Сайты',
-            text: 'Интернет-магазины,  корпоративные сайты, блоги'
+            text: 'Продумываем логику, создаём визуал и разрабатываем сайты, которыми пользуются'
         },
         {
             title: 'Приложения',
-            text: 'От дизайна до публикации в сторе'
+            text: 'Проектируем и разрабатываем приложения   iOS/Android , которые решают бизнес-задачи'
         },
     ]
     return (
@@ -22,8 +22,8 @@ const Heading = () => {
             <div className="wrapper">
                 <div className="heading_block">
                     <div className="heading_text">
-                        <h1><span> Digital-продукты</span></h1>
-                            <h1 className='left'>с умом</h1>
+                        <h1>современные</h1>
+                          <h1> <span className='left'> Digital-продукты</span></h1>
                             <h1 className='right'>для бизнеса</h1>
                     </div>
                     <div className="heading_button">

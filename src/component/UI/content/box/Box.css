@@ -10,9 +10,18 @@
 }
 .grid-item {
     text-align: center;
+    position: relative;
 }
 .grid-item:hover{
     background: #6002FD;
+}
+.grid-item:hover.grid-item:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 20px solid white;
+    border-right: 20px solid #6002FD;
 }
 .grid-item img {
     width: 250px;
@@ -23,7 +32,7 @@
     position: relative;
     display: inline-block;
 }
-.grid-item .img-top {
+.grid-item .img-top, .img-text {
     display: none;
     position: absolute;
     top: 0;
@@ -34,8 +43,35 @@
 .grid-item.four:hover .img-top {
     left: 206px;
 }
+.bold {
+    font-weight: bold;
+}
 .grid-item:hover .img-top {
     display: inline;
+    margin: 93px 0;
+}
+.grid-item:hover .img-text {
+    display: block;
+    color: #fff;
+}
+.grid-item.one:hover .img-text {
+    margin: 190px 45px;
+}
+.grid-item.two:hover .img-text {
+    margin: 190px 25px;
+}
+.grid-item.three:hover .img-text,
+.grid-item.four:hover .img-text {
+    margin: 190px 185px;
+}
+.grid-item.five:hover .img-text {
+    margin: 190px 78px;
+}
+.grid-item.six:hover .img-text {
+    margin: 190px 25px;
+}
+.grid-item:hover .img-initial {
+    opacity: 0.009;
 }
 .grid-item.three img,
 .grid-item.four img {
@@ -60,7 +96,7 @@
     top: 2%;
     width: 1px;
     background: #000;
-    margin-left: 88%;
+    left: 100%;
 }
 .five:before {
     height: 92%;
@@ -73,7 +109,7 @@
     top: 6%;
     width: 1px;
     background: #000;
-    margin-left: 69%;
+    left: 100%;
 }
 .three {
     grid-column-start: 3;
@@ -101,7 +137,7 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .underline::after {
         width: 27%;
         margin-left: -24%;
@@ -110,6 +146,10 @@
         height: 90px;
         margin-top: -3%;
         margin-left: -7.8%;
+    }
+    .grid-container {
+        height: 472px;
+        width: 944px;
     }
 }
 

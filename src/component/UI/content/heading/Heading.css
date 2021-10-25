@@ -10,7 +10,6 @@
 .heading_text h1, .heading_text h1.right {
     margin: 0;
 }
-
 .left {
     margin: 0 -110px!important;
 }
@@ -26,24 +25,24 @@ span {
 }
 
 .blocks {
-    display: flex;
-    justify-content: flex-end;
+    width: 75%;
+    float: right;
 }
 
 .block {
-    width: 22.7%;
     border-top: 1px solid gray;
-    margin-left: 44px;
+    display: flex;
 }
 
 .block h4 {
     color: #6002FD;
-    margin: 22px 0
+    margin: 22px 0;
+    width: 330px;
 }
 
 .block p {
-    width: 160px;
-    line-height: 1.4;
+    width: 360px;
+    margin: 25px 0;
 }
 
 
@@ -65,54 +64,22 @@ span {
     }
 }
 
-@media (max-width: 1294px) {
-    .logo img {
-        width: 150px;
-    }
 
-    .heading_button button {
-        width: 160px;
-        height: 160px;
-    }
-
+@media (max-width: 1024px) {
     .heading_text {
-        margin: 35px
+        padding-left: 6.4%;
     }
-
-    .heading_text h1 {
-        font-size: 50px;
+    .block h4 {
+        width: 236px;
     }
-
-    .blocks {
-        margin-left: 175px;
-    }
-
-    .block {
-        width: 35%;
-        margin-left: 50px;
-    }
-
-    .block p {
-        width: 150px;
-    }
-}
-
-@media (max-width: 1025px) {
-    .heading_text {
-        padding-left: 8%;
-    }
-
-    .heading_text h1 {
-        font-size: 30px;
-        line-height: 1.2;
-    }
-
     .heading_text p {
         margin: 0 -70px;
     }
-
     .blocks {
         margin-left: 24%;
+    }
+    button {
+        font-size: 14px!important;
     }
 }
 

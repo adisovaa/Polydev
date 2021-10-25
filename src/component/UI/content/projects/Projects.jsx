@@ -33,8 +33,8 @@ const Project = () => {
                     </div>
                     <div className="projects_blocks">
                         <div className="item_big a">
-                            <img src={project1} alt="" style={{marginLeft: '162px'}}/>
-                            <div className="item_text" style={{margin: '-16% 5%'}}>
+                            <img src={project1} alt="" />
+                            <div className="item_text">
                                 <h5>Vitakit</h5>
                                 <p>Хранение рецептов, поиск <br/>и покупка лекарств </p>
                             </div>
@@ -45,19 +45,19 @@ const Project = () => {
                         </div>
 
                         <div className="item b">
-                            <img src={project4} alt="" style={{marginLeft: '7%'}}/>
-                            <div className="item_text" style={{margin: '25px 44px'}}>
-                                <h5>Делай вещи</h5>
-                                <p>Приложение для производства <br/>вещей на заказ </p>
+                            <img src={project2} alt="" />
+                            <div className="item_text" >
+                                <h5>Swift global</h5>
+                                <p>Хранение драг. металлов</p>
                             </div>
-                            <div className="overlay_bottom">
+                            <div className="overlay_up">
                                 <h4>СМОТРЕТЬ КЕЙС</h4>
                                 <img src={hover_line} alt=""/>
                             </div>
                         </div>
 
                         <div className="item c">
-                            <img src={project3} alt="" style={{margin: '40px 40px'}}/>
+                            <img src={project3} alt="" />
                             <div className="item_text" style={{margin: '1% 10%'}}>
                                 <h5>Canadian international</h5>
                                 <p>Помощь по иммиграции в Канаду <br/>по учебной и спортивной визам</p>
@@ -69,16 +69,17 @@ const Project = () => {
                         </div>
 
                         <div className="item d">
-                            <img src={project2} alt="" style={{margin: '40px 40px'}}/>
-                            <div className="item_text" style={{margin: '5% 8%'}}>
-                                <h5>Swift global</h5>
-                                <p>Хранение драг. металлов</p>
+                            <img src={project4} alt="" />
+                            <div className="item_text">
+                                <h5>Делай вещи</h5>
+                                <p>Приложение для производства <br/>вещей на заказ </p>
                             </div>
-                            <div className="overlay_up">
+                            <div className="overlay_bottom">
                                 <h4>СМОТРЕТЬ КЕЙС</h4>
                                 <img src={hover_line} alt=""/>
                             </div>
                         </div>
+
                     </div>
                     <div className="show_more">
                         <button className='project_btn'>Смотреть все</button>

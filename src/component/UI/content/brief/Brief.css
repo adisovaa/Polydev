@@ -32,38 +32,25 @@
     margin: 0 0 38px 60px;
 }
 
-@media (max-width: 1294px) {
-    .brief_text h1 a{
-        font-size: 80px;
-    }
-    .block_title h3 {
-        width: 80%;
-        font-size: 20px;
-    }
-    .brief_bottom {
-        margin-top: 20%;
-    }
-    .brief_text img {
-        width: 150px;
-    }
-}
-
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .brief_block {
-        height: 650px;
+        height: 450px;
     }
     .brief_text h1 a{
-        font-size: 60px;
+        font-size: 72px;
     }
     .block_title h3 {
-        font-size: 20px;
+        font-size: 18px;
+        width: 100%;
     }
-
     .brief_bottom {
         margin-top: 20%;
     }
     .brief_text img {
-        width: 125px;
+        width: 165px;
+    }
+    .brief_block_item {
+        padding: 15px 20px
     }
 }
 

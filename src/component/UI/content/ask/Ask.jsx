@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Down from './../../../../images/Down.svg'
+import DownWhite from './../../../../images/down-white.svg'
 import './Ask.css'
 
 function AskAnswer(props) {
@@ -12,7 +14,8 @@ function AskAnswer(props) {
         <div className="askAnswerItem" onClick={props.onQuest}>
             <div className="askButtonAnswer">
                 <p className='question'>{props.answer.question}</p>
-                <p className="askAnswerIcon" />
+                <img src={Down} alt=""/>
+                <img src={DownWhite} className='askArrowWhite' alt=""/>
             </div>
             <div className={classes.join(' ')}>
                 <p>{props.answer.answer}</p>

@@ -201,14 +201,112 @@
         top: 205px;
         left: 270px;
     }
+    .show_more .project_btn {
+        margin-left: 0
+    }
     .show_more {
         margin-top: 40px;
+        text-align: center;
     }
     .block_text p {
         font-size: 18px!important;
         width: 472px;
     }
+    .item_big .overlay_up img {
+        top: 130px;
+        left: 235px;
+        width: 170px;
+    }
+    .item.b .overlay_up img {
+        top: 166px;
+        left: 273px;
+        width: 170px;
+    }
+    .item.c .overlay_bottom img {
+        width: 170px;
+        top: 135px;
+        left: 270px;
+    }
+    .item.d .overlay_bottom img {
+        width: 170px;
+        top: 205px;
+        left: 270px;
+    }
 }
+
+@media (max-width: 768px) {
+    .projects_block .heading {
+        margin: -20px 0 36px 0;
+    }
+    .item_big, .item {
+        width: 350px;
+        height: 300px;
+    }
+    .item_big.a img {
+        margin-left: 59px;
+        width: 322px;
+        height: 300px;
+    }
+    .item.d img {
+        margin-left: 76px;
+        width: 254px;
+        height: 206px;
+    }
+    .item.c img {
+        margin: 20px;
+        width: 310px;
+        height: 248px;
+    }
+    .item.b img {
+        margin: 20px;
+        width: 310px;
+        height: 202px;
+    }
+    .item_big .overlay_up h4,
+    .item.b .overlay_up h4,
+    .item.c .overlay_bottom h4,
+    .item.d .overlay_bottom h4 {
+        font-size: 24px!important;
+        margin: -40px 15px;
+    }
+    .item_big.a .item_text {
+        margin: -24% 3%
+    }
+    .item.b .item_text {
+        margin: -6px 17px
+    }
+    .item.c .item_text {
+        margin: -20% 3%!important;
+    }
+    .item.d .item_text {
+        margin: 33px 0 0 17px
+    }
+    .item_big .overlay_up img {
+        top: 55px;
+        left: 204px;
+        width: 100px;
+    }
+    .item.b .overlay_up img {
+        top: 76px;
+        left: 236px;
+        width: 100px;
+    }
+    .item.c .overlay_bottom img {
+        width: 100px;
+        top: 64px;
+        left: 240px;
+    }
+    .item.d .overlay_bottom img {
+        width: 100px;
+        top: 105px;
+        left: 185px;
+    }
+    .overlay_bottom {
+        top: 414px;
+    }
+}
+
+
 
 @media (max-width: 600px) {
     .projects_blocks {

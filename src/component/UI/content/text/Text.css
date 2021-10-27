@@ -14,9 +14,15 @@
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 768px) {
     .text_block {
         margin-left: 180px;
+    }
+    .text_block h1 {
+        font-size: 36px;
+    }
+    .text_block {
+        margin-top: 22px
     }
 }
 

@@ -60,6 +60,29 @@
     width: 771px!important;
 }
 
+@media screen and (max-width: 1024px) {
+    .reviewCard {
+        width: 472px;
+    }
+    .reviewTitleCard p {
+        font-size: 18px!important;
+    }
+    .reviewText h6, .reviewText p {
+        font-size: 14px!important;
+    }
+    .reviewTitleCard {
+        padding: 0 13px 0 22px;
+    }
+    .reviewTitle h1 {
+        margin: 9% 26% 3% !important;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 472px !important;
+    }
+    .reviewText p {
+        width: 300px;
+    }
+}
 
 @media screen and (max-width: 650px) {
     .reviewTitle {

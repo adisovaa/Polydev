@@ -64,18 +64,66 @@
 
     .studio_heading h2 {
         font-size: 50px;
-        margin-left: 22%;
+        margin-left: 25%;
     }
     .clients_block {
         margin-top: 74px;
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
     .clients_block {
         margin-top: 50px;
     }
+    .block_text{
+        margin-top: 30px;
+    }
+    .studio_heading {
+        margin-top: 90px;
+    }
+    .studio_heading h2 {
+        font-size: 36px;
+        width: 70%;
+    }
+    .block_text, .clients_count {
+        width: 100%;
+    }
+    .block_text p {
+        font-size: 16px!important;
+    }
+    .studio_title {
+        width: 33%;
+        margin-top: 20px;
+    }
+    .count {
+        width: 37%;
+        margin: 20px 11% 0;
+    }
+    .clients_count h1 {
+        font-size: 36px;
+        margin: 17px 0;
+    }
+    .clients_count p {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10% 6%;
+    }
+    .clients_count_text {
+        width: 266px;
+        margin: 0 0 25px 0;
+    }
+    .studio_item {
+        margin-top: -10px
+    }
+    .clients_count_text p {
+        font-size: 14px;
+    }
+}
 
+@media (max-width: 500px) {
+    .clients_block {
+        margin-top: 50px;
+    }
     .block_text{
         margin-top: 30px;
     }
@@ -92,21 +140,16 @@
         margin: 0;
         width: 70%;
     }
-
-    .studio_item {
-        display: block;
-    }
-
     .block_text {
         width: 100%;
     }
 
     .block_text p {
-        font-size: 16px;
+        font-size: 16px!important;
     }
 
     .studio_title {
-        width: auto;
+        width: 33%;
         margin-top: 20px;
     }
 

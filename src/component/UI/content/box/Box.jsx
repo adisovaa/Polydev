@@ -94,7 +94,7 @@ export const BoxTechnologies = () => {
                     <div className="grid-item one">
                         <img src={tech1} alt=""/>
                         <img src={tech1_white} className='img-top' alt=""/>
-                        <div className="img-text">
+                        <div className="img-text boxTech">
                             <p className='bold'>HTML / CSS</p>
                             <p>Вёрстка и разработка</p>
                         </div>
@@ -102,7 +102,7 @@ export const BoxTechnologies = () => {
                     <div className="grid-item two">
                         <img src={tech2} alt=""/>
                         <img src={tech2_white} className='img-top' alt=""/>
-                        <div className="img-text" style={{margin: '190px 80px'}}>
+                        <div className="img-text boxTech">
                             <p className='bold'>React</p>
                             <p>Разработка</p>
                         </div>
@@ -110,7 +110,7 @@ export const BoxTechnologies = () => {
                     <div className="grid-item three">
                         <img src={tech3} alt=""/>
                         <img src={tech3_white} className='img-top' alt=""/>
-                        <div className="img-text" style={{margin: '190px 250px'}}>
+                        <div className="img-text boxTech">
                             <p className='bold'>Wordpress</p>
                             <p>CMS</p>
                         </div>
@@ -118,7 +118,7 @@ export const BoxTechnologies = () => {
                     <div className="grid-item four">
                         <img src={tech4} alt=""/>
                         <img src={tech4_white} className='img-top' alt=""/>
-                        <div className="img-text" style={{margin: '190px 240px'}}>
+                        <div className="img-text boxTech">
                             <p className='bold'>Figma</p>
                             <p>UX/UI дизайн</p>
                         </div>
@@ -126,7 +126,7 @@ export const BoxTechnologies = () => {
                     <div className="grid-item five">
                         <img src={tech5} alt=""/>
                         <img src={tech5_white} className='img-top' alt=""/>
-                        <div className="img-text" style={{margin: '190px -3px'}}>
+                        <div className="img-text boxTech">
                             <p className='bold'>Tilda</p>
                             <p>Создание сайтов на конструкторе</p>
                         </div>
@@ -134,7 +134,7 @@ export const BoxTechnologies = () => {
                     <div className="grid-item six">
                         <img src={tech6} alt=""/>
                         <img src={tech6_white} className='img-top' alt=""/>
-                        <div className="img-text" style={{margin: '190px 35px'}}>
+                        <div className="img-text boxTech">
                             <p className='bold'>Jira</p>
                             <p>Управление проектами</p>
                         </div>

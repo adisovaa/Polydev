@@ -84,6 +84,9 @@ button:hover{
     h1 {
         font-size: 48px;
     }
+    h2 {
+        font-size: 48px;
+    }
     h3 {
         font-size: 18px
     }
@@ -104,7 +107,7 @@ button:hover{
 
 @media (max-width: 800px) {
     .wrapper {
-        width: 680px;
+        width: 770px!important;
     }
     button {
         width: 160px;
@@ -118,9 +121,21 @@ button:hover{
     }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 768px) {
     .wrapper {
-        width: 585px;
+        width: 720px!important;
+    }
+    p {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 36px
+    }
+    h3 {
+        font-size: 16px
+    }
+    h4 {
+        font-size: 18px
     }
 }
 

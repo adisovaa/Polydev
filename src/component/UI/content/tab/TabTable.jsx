@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import './Tab.css'
 import down from '../../../../images/Down.svg'
+import arrow from './../../../../images/Down.svg'
+import arrowWhite from './../../../../images/down-white.svg'
 
 function LandingTab(props) {
     const classes = ['askAnswerBlock'];
@@ -18,6 +20,8 @@ function LandingTab(props) {
                     <p>{props.answer.duration}</p>
                 </div>
                 <div className="table_row_icon">
+                    <img src={arrow} alt=""/>
+                    <img src={arrowWhite} className='arrowWhite' alt=""/>
                 </div>
             </div>
             <div className={classes.join(' ')}>

@@ -84,47 +84,34 @@ span {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .heading {
         margin: 76px 0;
-    }
-    .heading_block {
-        display: inline-block;
     }
     .heading_text {
         width: 75%;
         margin: 0;
         padding: 0;
     }
-
-    .heading_text .left , .text_block .left{
+    .heading_text h1 {
+        font-size: 36px;
+    }
+    .heading_button button {
+        width: 165px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 14px;
+        position: absolute;
+        top: -44px;
+        left: 300px;
+    }
+    .heading {
+        margin: 57px 0;
+    }
+    .left {
         margin: 0!important;
     }
-
-    .heading_button button {
-        position: absolute;
-        font-family: 'Manrope', sans-serif;
-        margin: 340px 89px;
-    }
-
     .blocks {
-        margin: 31px 0;
-        display: inline-block;
-        width: 100%;
-    }
-    .block h4{
-        margin: 0
-    }
-
-    .block h4, .block p {
-        width: 50%;
-    }
-
-    .block {
-        width: 100%;
-        margin: 0;
-        padding: 17px 0;
-        border-top: 1px solid gray;
-        display: flex;
+        margin-top: 29px;
     }
 }

@@ -4,24 +4,20 @@
 .flexHeader {
     display: flex;
 }
-
 .navBar {
     display: flex;
     flex-wrap: wrap;
     margin-left: 176px;
 }
-
 .navBar p {
     margin: 6px 20px;
 }
-
 .navBar a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
     font-size: 16px;
 }
-
 .navBar a:hover {
     border-bottom: 1px solid #6002FD;
 }
@@ -35,7 +31,7 @@
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 768px) {
     .container {
         position: relative;
         margin-top: 40px;
@@ -214,4 +210,9 @@
             margin-top: 188px;
         }
     }}
+}
+@media screen and (max-width: 400px) {
+    .navBar.wrapper {
+        margin: 39px 27px
+    }
 }

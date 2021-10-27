@@ -72,7 +72,7 @@
         font-size: 20px;
     }
     .askButtonAnswer p {
-        font-size: 24px;
+        font-size: 18px;
     }
     .askButtonAnswer img {
         margin: 13px 0;
@@ -84,6 +84,9 @@
     .askAnswerBlock.show p {
         width: 255px;
         margin-left: 150px;
+    }
+    .ask {
+        margin-top: 116px;
     }
 }
 

@@ -155,6 +155,8 @@ function WebsiteTab(props) {
                     <p>{props.website.duration}</p>
                 </div>
                 <div className="table_row_icon">
+                    <img src={arrow} alt=""/>
+                    <img src={arrowWhite} className='arrowWhite' alt=""/>
                 </div>
             </div>
             <div className={classes.join(' ')}>
@@ -289,6 +291,8 @@ function AppTab(props) {
                     <p>{props.app.duration}</p>
                 </div>
                 <div className="table_row_icon">
+                    <img src={arrow} alt=""/>
+                    <img src={arrowWhite} className='arrowWhite' alt=""/>
                 </div>
             </div>
             <div className={classes.join(' ')}>

@@ -38,7 +38,6 @@ footer {
 .footer_item h3 {
     font-size: 30px;
     color: #fff!important;
-    font-family: 'ALS Gorizont Bold Expanded';
     margin-top: 28px;
     opacity: initial;
 }
@@ -113,7 +112,32 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+    .footer_item {
+        width: 260px;
+        height: 179px;
+    }
+    .circle button {
+        width: 160px;
+        height: 160px;
+    }
+    .footer_item ul li {
+        font-size: 14px;
+        line-height: 2;
+    }
+    .footer_item h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .security_text p {
+        font-size: 14px;
+    }
+    .line{
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 500px) {
     footer {
         height: auto;
         margin-top: 100px;

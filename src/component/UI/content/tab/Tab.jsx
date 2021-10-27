@@ -2,11 +2,16 @@ import React from 'react'
 import 'antd/dist/antd.css';
 import {Tabs} from 'antd'
 import {App, Landing, Websites} from "./TabTable";
-import Button from "../../../common/Button";
+import {useHistory} from "react-router-dom";
 
 const {TabPane} = Tabs;
 
 const TabInfo = () => {
+    const history = useHistory();
+
+    function handleClick() {
+        history.push("/brief");
+    }
     return (
         <div className="wrapper">
             <div className="studio_heading">
@@ -26,7 +31,7 @@ const TabInfo = () => {
                 </Tabs>
             </div>
             <div className="tab_btn">
-                <Button/>
+                <button onClick={handleClick}>Оставить заявку</button>
             </div>
         </div>
     )

@@ -95,9 +95,9 @@ const Project = () => {
         speed: 500,
         slidesToShow: !screen6 ? 1 : 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        className: 'projectMobileSlides',
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // className: 'projectMobileSlides',
     };
 
     return (

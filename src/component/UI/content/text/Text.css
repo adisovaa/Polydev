@@ -27,12 +27,15 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .text {
         margin-top: 240px
     }
     .text_block {
-        margin: 0;
+        margin: 30px 0;
         line-height: 1.2;
+    }
+    .text_block h1 {
+        font-size: 30px;
     }
 }

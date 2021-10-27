@@ -83,6 +83,26 @@
         width: 300px;
     }
 }
+@media screen and (max-width: 768px) {
+    .reviewCard {
+        width: 430px;
+    }
+    .reviewTitleCard p {
+        font-size: 16px!important;
+    }
+    .reviewText h6, .reviewText p {
+        font-size: 14px!important;
+    }
+    .reviewTitleCard {
+        padding: 0 13px 0 15px;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 430px!important;
+    }
+    .reviewText p {
+        width: 300px;
+    }
+}
 
 @media screen and (max-width: 650px) {
     .reviewTitle {

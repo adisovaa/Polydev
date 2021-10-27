@@ -54,19 +54,16 @@
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
     .brief_block {
-        height: 560px;
-        margin-top: 170px
+        height: 350px;
+        margin-top: 166px
     }
     .brief_text h1 a{
-        font-size: 50px;
+        font-size: 48px;
     }
     .block_title h3 {
-        font-size: 17px;
-    }
-    .brief_bottom {
-        margin-top: 25%;
+        font-size: 16px;
     }
     .brief_text img {
         width: 95px;

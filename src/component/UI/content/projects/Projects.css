@@ -336,7 +336,6 @@
         color: #fff;
         font-size: 17px;
         font-weight: bold;
-        font-family: 'ALS Gorizont Bold Expanded';
     }
 
     .projectTitleCard p {
@@ -349,29 +348,29 @@
         margin: 55px 0;
     }
 
-    button.slick-arrow.slick-prev {
-        background-image: url("../../../../images/left.svg") !important;
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: -22%;
-        left: 55%;
-        margin-top: -66px;
-    }
+    /*button.slick-arrow.slick-prev {*/
+    /*    background-image: url("../../../../images/left.svg") !important;*/
+    /*    width: 70px;*/
+    /*    height: 70px;*/
+    /*    position: absolute;*/
+    /*    top: -22%;*/
+    /*    left: 55%;*/
+    /*    margin-top: -66px;*/
+    /*}*/
 
     .slick-prev:before {
         content: '' !important;
     }
 
-    button.slick-arrow.slick-next {
-        background-image: url("../../../../images/right.svg") !important;
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: -22%;
-        left: 79%;
-        margin-top: -66px;
-    }
+    /*button.slick-arrow.slick-next {*/
+    /*    background-image: url("../../../../images/right.svg") !important;*/
+    /*    width: 70px;*/
+    /*    height: 70px;*/
+    /*    position: absolute;*/
+    /*    top: -22%;*/
+    /*    left: 79%;*/
+    /*    margin-top: -66px;*/
+    /*}*/
 
     .slick-next:before {
         content: '' !important;

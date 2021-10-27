@@ -141,16 +141,17 @@ button:hover{
 
 @media (max-width: 630px) {
     .wrapper {
-        width: 500px;
+        width: 500px!important;
     }
     h1 {
         font-size: 28px
     }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 400px) {
     .wrapper {
-        width: 340px;
+        width: 320px!important;
+        margin: 0 auto;
     }
     h1 {
         font-size: 30px

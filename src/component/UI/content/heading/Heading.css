@@ -115,3 +115,43 @@ span {
         margin-top: 29px;
     }
 }
+
+@media (max-width: 400px) {
+    .heading {
+        margin: 76px 0;
+    }
+    .heading_text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .heading_text h1 {
+        font-size: 30px;
+    }
+    .heading_button button {
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        font-size: 14px;
+        position: absolute;
+        top: 644px;
+        left: 85px;
+    }
+    .heading {
+        margin: 57px 0;
+    }
+    .left {
+        margin: 0!important;
+    }
+    .blocks {
+        margin-top: 29px;
+        width: 100%;
+    }
+    .block {
+        display: block;
+    }
+    .block p {
+        width: 239px;
+        margin: -18px 0 13px 84px;
+    }
+}

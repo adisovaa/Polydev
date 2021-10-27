@@ -151,6 +151,11 @@ div#rc-tabs-0-panel-1 {
     .table_row_icon {
         margin: 5px 30px;
     }
+    .table_row_icon img {
+        width: 40px;
+        height: 40px;
+        margin: 15px 0;
+    }
     .without_dev p, .with_dev p {
         font-size: 14px;
         width: 140px;
@@ -165,6 +170,10 @@ div#rc-tabs-0-panel-1 {
     }
     .tab_btn {
         margin: -13px 182px;
+    }
+    .tab_btn button {
+        width: 140px;
+        height: 140px;
     }
 }
 

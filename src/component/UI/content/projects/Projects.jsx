@@ -23,7 +23,6 @@ const Project = () => {
         window.matchMedia("(max-width: 650px)").addListener(screenHandler);
     });
 
-
     const desktopProject = () => {
         return (
             <div className="projects_block">
@@ -95,9 +94,9 @@ const Project = () => {
         speed: 500,
         slidesToShow: !screen6 ? 1 : 1,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // className: 'projectMobileSlides',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        className: 'projectMobileSlides',
     };
 
     return (

@@ -120,58 +120,52 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .clients_block {
         margin-top: 50px;
+        display: block;
+    }
+    .studio_item {
+        margin-top: -34px;
+        display: block;
     }
     .block_text{
-        margin-top: 30px;
+        margin-top: 20px;
     }
-    .clients_text {
-        display: none;
-    }
-
     .studio_heading {
         margin-top: 90px;
     }
-
     .studio_heading h2 {
         font-size: 30px;
         margin: 0;
         width: 70%;
     }
-    .block_text {
-        width: 100%;
-    }
-
     .block_text p {
-        font-size: 16px!important;
+        width: 320px;
     }
-
     .studio_title {
-        width: 33%;
-        margin-top: 20px;
-    }
-
-    .count {
-        display: block;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 50px;
     }
-
+    .count {
+        width: 100%;
+        margin: 20px 0;
+    }
     .clients_count {
         width: 100%;
     }
-
     .clients_count h1 {
         font-size: 48px;
         font-weight: bold;
         margin: 12px 0;
     }
-
     .clients_count p {
         font-size: 14px;
         font-weight: 700;
         margin: 10% 6%;
+    }
+    .clients_count_text {
+        width: 240px;
+        float: right;
     }
 }

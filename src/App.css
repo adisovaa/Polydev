@@ -1,6 +1,6 @@
 .App {
     font-family: 'Manrope', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 .wrapper {
     width: 1320px;
@@ -139,16 +139,13 @@ button:hover{
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 600px) {
     .wrapper {
-        width: 500px!important;
-    }
-    h1 {
-        font-size: 28px
+        width: 320px!important;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .wrapper {
         width: 320px!important;
         margin: 0 auto;

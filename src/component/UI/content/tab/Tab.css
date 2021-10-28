@@ -177,7 +177,7 @@ div#rc-tabs-0-panel-1 {
     }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 600px) {
     .tab_btn {
         margin: 35px 0 0 92px
     }
@@ -227,24 +227,11 @@ div#rc-tabs-0-panel-1 {
         font-size: 18px;
         font-weight: 400!important;
         margin-top: 16px;
-    }
-    .table_row_text {
-        margin: 0 0 21px;
+        width: 250px
     }
     .table_row_time {
         position: absolute;
-        width: 40%;
-        margin-top: 30px;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    .table_row_icon {
-        background-image: url("./../../../../images/down-small.svg");
-        background-repeat: no-repeat;
-        margin: 23px -34px
-    }
-    .table_row_icon:hover {
-        background-image: url("./../../../../images/down-small.svg");
+        margin-top: 10px;
     }
     .ant-tabs-content {
         margin-left: 0
@@ -253,6 +240,23 @@ div#rc-tabs-0-panel-1 {
         font-size: 16px;
         margin-left: 45%;
         margin-top: 35px;
+        display: block;
+    }
+    .without_dev h6, .with_dev h6 {
+        width: 120px;
+    }
+    .without_dev p,
+    .with_dev p {
+        width: 200px;
+        font-size: 16px;
+    }
+    .table_row_red p {
+        font-size: 14px;
+        float: right;
+    }
+    .tab_btn button {
+        width: 160px;
+        height: 160px;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .ant-tabs-tab {

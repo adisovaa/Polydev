@@ -137,7 +137,7 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     footer {
         height: auto;
         margin-top: 100px;
@@ -159,30 +159,25 @@ footer {
         height: 160px;
         font-size: 14px
     }
-
     .footer_item ul li {
         font-size: 14px;
         line-height: 3;
     }
-
     .footer_item h3 {
         font-size: 18px;
     }
     .footer_item ul {
         margin-bottom: 10px;
     }
-
     .security_text p {
         font-size: 14px;
     }
-
     .message_button {
         width: 80px;
         height: 80px;
         bottom: 30px;
         right: 7%;
     }
-
     .message_button img {
         width: 32px;
         height: 30px;

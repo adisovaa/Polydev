@@ -26,35 +26,31 @@
 }
 
 
-@media screen and (max-width: 650px) {
-    .reviewTitle {
-        position: absolute;
-        margin: -20% -5%;
-    }
+@media screen and (max-width: 600px) {
     .reviewText {
         margin: 0
     }
     .reviewTitleCard {
-        padding: 0 10px 0 0
+        padding: 0 13px
     }
     .review_title {
         font-size: 16px!important;
     }
     .reviewTitle h1 {
         font-size: 30px;
-    }
-    .reviewCard {
-        margin: 0 1px;
-        width: 94%;
-        border-right: 1px solid gray;
+        width: initial;
     }
     .review {
-        margin-top: 97px;
+        margin-top: -10px;
     }
     .review_items_title h3 {
         font-weight: 600;
-        width: 39%;
-        margin-bottom: 17%;
+        width: 40%;
+        margin-bottom: 7%;
+    }
+    img.companyImg {
+        width: 40px;
+        margin-left: 13px;
     }
     .reviewImg {
         width: 50px;
@@ -70,15 +66,11 @@
     .slick-dots li {
         width: auto;
     }
-    .slick-slide.slick-active.slick-current {
-        width: 290px!important;
-        margin: 0 30px;
-    }
     .slick-slide.slick-cloned{
         width: 309px!important;
     }
     .review .slick-dots {
-        bottom: -425px;
+        bottom: -350px;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .reviewTitle {

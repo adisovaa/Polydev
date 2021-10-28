@@ -103,12 +103,7 @@
         width: 300px;
     }
 }
-
-@media screen and (max-width: 650px) {
-    .reviewTitle {
-        position: absolute;
-        margin: -20% -5%;
-    }
+@media screen and (max-width: 600px) {
     .reviewText {
         margin: 0
     }
@@ -148,15 +143,19 @@
     .slick-dots li {
         width: auto;
     }
-    .slick-slide.slick-active.slick-current {
-        width: 290px!important;
-        margin: 0 30px;
-    }
     .slick-slide.slick-cloned{
         width: 309px!important;
     }
     .review .slick-dots {
         bottom: -425px;
+    }
+    .slick-slide.slick-active.slick-current {
+        width: 300px!important;
+        margin: 0;
+    }
+    .reviewTitleCard p {
+        font-size: 14px!important;
+        width: 280px;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .reviewTitle {

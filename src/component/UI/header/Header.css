@@ -211,8 +211,10 @@
         }
     }}
 }
-@media screen and (max-width: 400px) {
-    .navBar.wrapper {
-        margin: 39px 27px
+
+@media screen and (max-width: 600px) {
+    .navBar a:hover {
+        border-bottom: none;
+        color: #6002FD;
     }
 }

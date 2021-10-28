@@ -22,7 +22,7 @@ const TabInfo = () => {
                     <TabPane tab="Лендинг" key="1">
                         <Landing/>
                     </TabPane>
-                    <TabPane tab="Многостраничный сайт" key="2">
+                    <TabPane tab="Веб-сайт" key="2">
                         <Websites/>
                     </TabPane>
                     <TabPane tab="Приложение" key="3">
@@ -31,7 +31,7 @@ const TabInfo = () => {
                 </Tabs>
             </div>
             <div className="tab_btn">
-                <button onClick={handleClick}>Оставить заявку</button>
+                <button onClick={handleClick}>Заказать лендинг</button>
             </div>
         </div>
     )

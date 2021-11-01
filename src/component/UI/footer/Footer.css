@@ -91,9 +91,19 @@ footer {
     margin: 30px 24px;
 }
 
+@media (max-width: 1300px) {
+    .footer_item {
+        width: 47%
+    }
+    .circle button {
+        width: 220px;
+        height: 220px;
+    }
+}
+
 @media (max-width: 1024px) {
     .footer_item {
-        width: 334px
+        width: 48%
     }
     .circle button {
         width: 196px;
@@ -102,19 +112,17 @@ footer {
     .footer_item ul li {
         font-size: 14px;
     }
-
     .footer_item h3 {
         font-size: 24px;
     }
-
     .security_text p {
         font-size: 17px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .footer_item {
-        width: 260px;
+        width: 48%;
         height: 179px;
     }
     .circle button {
@@ -137,7 +145,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     footer {
         height: auto;
         margin-top: 100px;

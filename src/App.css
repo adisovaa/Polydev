@@ -6,7 +6,7 @@
     width: 1320px;
     margin: 0 auto;
     position: relative;
-    display: flow-root;
+    display: flow-root  ;
     min-height: auto;
 }
 h1 {
@@ -70,16 +70,21 @@ button:hover{
     cursor: pointer;
 }
 
-
 @media (max-width: 1440px) {
     .wrapper {
-        width: 1320px;
+        width: 1280px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        width: 1000px!important;
     }
 }
 
 @media (max-width: 1024px) {
     .wrapper {
-        width: 944px!important;
+        width: 880px!important;
     }
     h1 {
         font-size: 48px;
@@ -105,9 +110,9 @@ button:hover{
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .wrapper {
-        width: 770px!important;
+        width: 780px!important;
     }
     button {
         width: 160px;
@@ -121,9 +126,27 @@ button:hover{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .wrapper {
-        width: 720px!important;
+        width: 680px!important;
+    }
+    p {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 36px
+    }
+    h3 {
+        font-size: 16px
+    }
+    h4 {
+        font-size: 18px
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        width: 580px!important;
     }
     p {
         font-size: 12px;
@@ -141,7 +164,7 @@ button:hover{
 
 @media (max-width: 600px) {
     .wrapper {
-        width: 320px!important;
+        width: 420px!important;
     }
 }
 

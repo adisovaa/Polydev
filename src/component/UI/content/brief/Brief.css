@@ -32,7 +32,20 @@
     margin: 0 0 38px 60px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
+    .brief_text img {
+        width: 200px;
+        margin: 0 0 38px 120px;
+    }
+    .brief_text h1 a {
+        font-size: 84px
+    }
+    .block_title h3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1160px) {
     .brief_block {
         height: 450px;
     }
@@ -54,7 +67,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .brief_block {
         height: 350px;
         margin-top: 166px

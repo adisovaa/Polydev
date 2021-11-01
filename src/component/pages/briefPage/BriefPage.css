@@ -1,6 +1,7 @@
 .brief_page {
-    width: 820px;
-    margin: 90px 330px;
+    width: 62%;
+    margin: 7% 13%;
+    float: right;
 }
 
 .brief_info {
@@ -39,7 +40,7 @@ textarea:focus, input:focus {
 }
 
 .entire_block {
-    width: 380px;
+    width: 46.5%;
 }
 
 .entire {
@@ -101,8 +102,7 @@ select {
 
 .brief_button p {
     font-size: 16px;
-    line-height: 5.5;
-    margin: 0 25px;
+    margin: 28px 25px;
 }
 
 .brief_button button {
@@ -114,6 +114,26 @@ select {
     background: transparent;
     font-weight: bold;
     margin-top: -47px;
+}
+@media (max-width: 1300px) {
+    .brief_page {
+        width: 66%;
+        margin: 7% 0;
+    }
+}
+
+@media (max-width: 1160px) {
+    .brief_page {
+        width: 76%;
+        margin: 7% 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .brief_page {
+        width: 100%;
+        margin: 7% 0;
+    }
 }
 
 @media (max-width: 800px) {

@@ -48,6 +48,12 @@
     display: initial;
 }
 
+@media (max-width: 1300px) {
+    .askButtonAnswer p {
+        font-size: 28px;
+    }
+}
+
 @media (max-width: 1024px) {
     .askButtonAnswer {
         font-size: 20px;
@@ -67,6 +73,7 @@
         margin-left: 200px;
     }
 }
+
 @media (max-width: 768px) {
     .askButtonAnswer {
         font-size: 20px;

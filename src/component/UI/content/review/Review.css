@@ -1,28 +1,23 @@
 .review {
     padding-top: 71px;
 }
-
 .reviewContainer {
     margin: 0 auto;
     padding-bottom: 195px;
     max-width: 1640px;
 }
-
 .reviewTitle h1 {
     margin: 9% 28% 2%;
 }
-
 .reviewCard {
     width: 770px;
     border-right: 1px solid gray;
 }
-
 .reviewBlock {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
 }
-
 .reviewTitleCard {
     padding: 15px 60px 0 60px
 }
@@ -60,7 +55,16 @@
     width: 771px!important;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
+    .slick-list {
+        width: 74%;
+    }
+    .reviewTitle h1 {
+        margin: 9% 31% 2%!important;
+    }
+}
+
+@media screen and (max-width: 1160px) {
     .reviewCard {
         width: 472px;
     }
@@ -83,7 +87,7 @@
         width: 300px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .reviewCard {
         width: 430px;
     }

@@ -142,7 +142,53 @@
     width: 34%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
+    .one:after, .two:after, .five:after, .six:after {
+        width: 84%;
+        margin-left: -93%;
+    }
+    .grid-item.three:hover .img-top,
+    .grid-item.four:hover .img-top {
+        margin: 60px -70px!important;
+    }
+    .grid-item:hover .img-top {
+        display: inline;
+        margin: 60px -35px;
+    }
+    .grid-item.one:hover .img-text {
+        margin: 160px 12px;
+    }
+    .grid-item.two:hover .img-text {
+        margin: 160px 0;
+    }
+    .grid-item.three:hover .img-text,
+    .grid-item.four:hover .img-text {
+        margin: 160px 125px;
+    }
+    .grid-item.five:hover .img-text {
+        margin: 160px 40px;
+    }
+    .grid-item.six:hover .img-text {
+        margin: 160px 0;
+    }
+    .grid-item.two:hover .boxTech {
+        margin: 160px 40px;
+    }
+    .grid-item.three:hover .boxTech {
+        margin: 160px 170px;
+    }
+    .grid-item.four:hover .boxTech {
+        margin: 160px 160px;
+    }
+    .grid-item.five:hover .boxTech {
+        margin: 160px 0 0 -30px;
+    }
+    .grid-item.six:hover .boxTech {
+        margin: 160px 0 0 5px;
+    }
+}
+
+@media (max-width: 1160px) {
     .underline::after {
         width: 27%;
         margin-left: -24%;
@@ -204,7 +250,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .grid-container {
         height: 360px;
     }
@@ -266,7 +312,7 @@
 @media (max-width: 600px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 160px 160px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 160px 160px 160px;
         height: 480px;
         grid-template-areas:
@@ -278,7 +324,7 @@
         display: none;
     }
     .one:after, .two:after, .five:after, .six:after{
-        margin-left: -70%;
+        margin-left: -62%;
     }
     .three {
         grid-area: three;
@@ -287,7 +333,7 @@
         grid-area: four;
     }
     .four:before {
-        left: 0%;
+        left: 0;
     }
     .five {
         grid-area: five;
@@ -303,7 +349,7 @@
     }
     .grid-item.three:hover .img-top,
     .grid-item.four:hover .img-top {
-        margin: 30px -163px!important;
+        margin: 30px -140px!important;
     }
     .box_title {
         padding: 15px 0 30px;
@@ -312,35 +358,35 @@
         width: 100%;
     }
     .grid-item .img-top {
-        margin: 30px 3px!important;
+        margin: 30px 31px!important;
     }
     .grid-item.one:hover .img-text {
-        margin: 80px -18px;
+        margin: 80px 10px;
     }
     .grid-item.two:hover .img-text {
-        margin: 80px -30px;
+        margin: 80px -3px;
     }
     .grid-item.three:hover .img-text,
     .grid-item.four:hover .img-text {
-        margin: 80px -30px;
+        margin: 80px -2px;
     }
     .grid-item.five:hover .img-text {
-        margin: 80px 7px;
+        margin: 80px 30px;
     }
     .grid-item.six:hover .img-text {
-        margin: 80px -36px;
+        margin: 80px -5px;
     }
     .grid-item.two:hover .boxTech,
     .grid-item.three:hover .boxTech {
-        margin: 80px 10px;
+        margin: 80px 35px;
     }
     .grid-item.four:hover .boxTech {
-        margin: 80px 4px;
+        margin: 80px 24px;
     }
     .grid-item.five:hover .boxTech {
-        margin: 80px 0 0 -40px;
+        margin: 80px 0 0 -26px;
     }
     .grid-item.six:hover .boxTech {
-        margin: 80px 0 0 -25px;
+        margin: 80px 0 0 1px;
     }
 }

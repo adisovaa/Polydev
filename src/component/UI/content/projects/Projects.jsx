@@ -14,13 +14,13 @@ import './Projects.css'
 const Project = () => {
     const project = useSelector(state => state.slice.items.project);
     const [screen9, setScreen9] = useState(false);
-    const [screen6, setScreen6] = useState(window.matchMedia('(max-width: 650px)').matches);
+    const [screen6, setScreen6] = useState(window.matchMedia('(max-width: 800px)').matches);
 
     useEffect(() => {
         const handler = e => setScreen9(e.matches);
         const screenHandler = e => setScreen6(e.matches);
         window.matchMedia("(max-width: 900px)").addListener(handler);
-        window.matchMedia("(max-width: 650px)").addListener(screenHandler);
+        window.matchMedia("(max-width: 800px)").addListener(screenHandler);
     });
 
     const desktopProject = () => {

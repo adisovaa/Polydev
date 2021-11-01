@@ -57,7 +57,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1160px) {
     .block_title {
         width: 22%;
     }
@@ -71,7 +71,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .clients_block {
         margin-top: 50px;
     }

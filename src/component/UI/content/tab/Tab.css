@@ -95,7 +95,12 @@ div#rc-tabs-0-panel-1 {
     padding-left: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
+    .tab_btn {
+        margin: 16px 252px;
+    }
+}
+@media (max-width: 1160px) {
     .ant-tabs-nav {
         width: 22%;
     }
@@ -113,9 +118,6 @@ div#rc-tabs-0-panel-1 {
     .table_row_time p {
         font-size: 14px;
     }
-    .table_row_icon {
-        margin: 5px 30px;
-    }
     .without_dev p, .with_dev p {
         font-size: 14px;
         width: 170px;
@@ -132,10 +134,10 @@ div#rc-tabs-0-panel-1 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .table_row_text p {
         font-size: 18px;
-        width: 350px;
+        width: 200px;
     }
     .tab_table_text p {
         font-size: 16px;

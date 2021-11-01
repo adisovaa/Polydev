@@ -17,7 +17,7 @@ const Header = () => {
 
     const navText = ['О студии', 'Кейсы', 'Контакты']
     const navTextMobile = ['Главная', 'О студии', 'Портфолио', 'Контакты']
-    const [screen, setScreen] = useState(window.matchMedia('(max-width: 768px)').matches);
+    const [screen, setScreen] = useState(window.matchMedia('(max-width: 900px)').matches);
     const dispatch = useDispatch();
 
     const clickHeader = e => {
@@ -33,7 +33,7 @@ const Header = () => {
         } else if (e.target.textContent === 'Главная') {
             history.push('/')
         }
-    };
+    }
 
     let showText = navText.map((text, i) => {
         return (
@@ -49,7 +49,7 @@ const Header = () => {
 
     useEffect(() => {
         const handler = e => setScreen(e.matches);
-        window.matchMedia('(max-width: 768px)').addListener(handler)
+        window.matchMedia('(max-width: 900px)').addListener(handler)
     });
 
     const locationURL = () => {

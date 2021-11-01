@@ -6,7 +6,7 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import MainPage from "./component/UI/content/MainPage";
 import ErrorPage from "./component/pages/error/Error";
 import CasePage from "./component/pages/case/Case";
-import BriefPage from "./component/pages/briefPage/BriefPage";
+import BriefPage, {ConfirmBrief} from "./component/pages/briefPage/BriefPage";
 import AboutPage from "./component/pages/aboutPage/About";
 import FirstCase from "./component/pages/case/casePages/firstCasePage/FirstCase";
 import SecondCase from "./component/pages/case/casePages/secondCasePage/SecondCase";
@@ -24,6 +24,7 @@ function App() {
                     <Route path='/make-clothes' component={SecondCase}/>
                     <Route path='/about' component={AboutPage}/>
                     <Route path='/case' component={CasePage}/>
+                    <Route path='/confirm-brief' component={ConfirmBrief}/>
                     <Route path='/brief' component={BriefPage}/>
                     <Route path='/error' component={ErrorPage}/>
                     <Route path='/contact' component={Contact}/>

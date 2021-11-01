@@ -208,6 +208,7 @@
         left: 211px;
     }
 }
+
 @media (max-width: 1160px) {
     .projects_blocks {
         grid-gap: 0;

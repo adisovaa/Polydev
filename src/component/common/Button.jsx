@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom";
 const Button = () => {
     const history = useHistory();
 
-    function handleClick() {
+    const handleClick = () => {
         history.push("/brief");
     }
 

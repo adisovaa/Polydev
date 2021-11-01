@@ -1,13 +1,21 @@
 import React from 'react'
 import {useForm} from "react-hook-form";
 import plus from './../../../images/plus.svg'
-import Button from "../../common/Button";
+import briefImages from "../../../images/brief_img.svg";
 
 import './BriefPage.css'
+import {useHistory} from "react-router-dom";
 
 const BriefPage = () => {
     const {register, handleSubmit} = useForm()
+    let history = useHistory()
+
     const onSubmit = (data) => console.log(data)
+
+    const confirmBrief = () => {
+        history.push('./confirm-brief')
+    }
+
 
     return (
         <div className="wrapper">
@@ -65,18 +73,20 @@ const BriefPage = () => {
                     <div className="register_block">
                         <div className="register_name entire">
                             <h5>О задаче и сроках</h5>
-                            <input type="textarea" name="textValue" className="textarea" ref={register({required: true})}/>
+                            <input type="textarea" name="textValue" className="textarea"
+                                   ref={register({required: true})}/>
                         </div>
                     </div>
                     <div className="register_block textarea">
                         <div className="register_text">
-                            <input type="file" name="imageUpload" id="imageUpload" className="hide" ref={register({required: true})}/>
+                            <input type="file" name="imageUpload" id="imageUpload" className="hide"
+                                   ref={register({required: true})}/>
                             <img src={plus} alt=""/>
                             <label htmlFor="imageUpload" className="btn btn-large">Добавить файл</label>
                         </div>
                     </div>
                     <div className="brief_button">
-                        <Button/>
+                        <button onClick={confirmBrief}>Отправить</button>
                         <p>Нажимая “Отправить”, вы даёте <span className='purple'>согласие на обработку персональных данных</span>
                         </p>
                     </div>
@@ -87,3 +97,25 @@ const BriefPage = () => {
 }
 
 export default BriefPage
+
+
+export const ConfirmBrief = () => {
+    let history = useHistory()
+
+    const mainPageLink = () => {
+        history.push("/");
+    }
+
+    return (
+        <div className="wrapper">
+            <div className="brief_send">
+                <div className="brief-send-text">
+                    <h1>Бриф отправлен</h1>
+                    <p>Мы его прочитаем и свяжемся с вами по Email или по телефону</p>
+                    <button onClick={mainPageLink}>Вернуться на главную</button>
+                </div>
+                <img src={briefImages} alt=""/>
+            </div>
+        </div>
+    )
+}

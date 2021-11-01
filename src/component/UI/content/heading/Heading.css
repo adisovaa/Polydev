@@ -45,25 +45,6 @@ span {
     margin: 25px 0;
 }
 
-
-@media not all and (min-resolution: .001dpcm) {
-    @media {
-        .heading_block {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .blocks {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .heading_text h1 {
-            font-weight: 900;
-        }
-    }
-}
-
 @media (max-width: 1300px) {
     .heading_text {
         margin: 60px -35px;

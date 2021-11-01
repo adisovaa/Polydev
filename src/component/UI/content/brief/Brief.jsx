@@ -3,7 +3,6 @@ import './Brief.css'
 import vector from '../../../../images/vector_big.svg'
 
 export const Brief = () => {
-
     return (
         <div className="wrapper">
             <div className="brief_block">

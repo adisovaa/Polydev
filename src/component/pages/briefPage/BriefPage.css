@@ -94,17 +94,14 @@ select {
     color: #fff;
     background-color: #6002FD;
 }
-
 .brief_button {
     margin-top: 20%;
     display: flex;
 }
-
 .brief_button p {
     font-size: 16px;
     margin: 28px 25px;
 }
-
 .brief_button button {
     width: 180px;
     height: 180px;
@@ -115,10 +112,60 @@ select {
     font-weight: bold;
     margin-top: -47px;
 }
+.brief_send {
+    height: 600px;
+    background-color: #6002FD;
+    margin: 52px 0;
+    display: flex;
+}
+.brief_send:before{
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 0;
+    border-top: 20px solid white;
+    border-right: 20px solid #6002FD;
+}
+.brief-send-text {
+    margin: 0 60px;
+}
+.brief-send-text h1 {
+    color: #fff;
+    padding: 52px 0 0 ;
+}
+.brief-send-text p {
+    color: #fff;
+    width: 40%;
+}
+.brief_send img {
+    position: absolute;
+    width: 514px;
+    height: 353px;
+    margin: 15% 0 0 55%;
+}
+.brief_send button {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 55px 0;
+}
+.brief_send button:hover{
+    color: #6002FD;
+    background-color: #fff!important;
+    border-color: #fff!important;
+    cursor: pointer;
+}
+
 @media (max-width: 1300px) {
     .brief_page {
         width: 66%;
         margin: 7% 0;
+    }
+    .brief_send img {
+        width: 480px;
+        height: 353px;
+        margin: 22% 0 0 46%;
     }
 }
 
@@ -130,52 +177,111 @@ select {
 }
 
 @media (max-width: 1024px) {
+    .brief_send {
+        height: 500px;
+    }
     .brief_page {
         width: 100%;
         margin: 7% 0;
     }
+    .brief_send img {
+        width: 437px;
+        height: 300px;
+        margin: 20% 0 0 46%;
+    }
+    .brief-send-text p {
+        width: 50%;
+    }
+    .brief_send button {
+        margin: 35px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .brief_send img {
+        width: 390px;
+        margin: 24% 0 0 46%;
+    }
 }
 
 @media (max-width: 800px) {
+    .brief_send img {
+        width: 265px;
+        height: 182px;
+        margin: 20% 0 0 56%;
+    }
+    .brief_send {
+        height: 350px;
+    }
     .brief_page {
         width: 100%;
         margin: 50px 0;
     }
-
+    .brief_send button {
+        width: 206px;
+        height: 40px;
+        margin: 35px 0;
+    }
+    .brief-send-text p {
+        width: 40%;
+    }
     .brief_info,
     .brief_button {
         display: block;
     }
-
     .brief_page p {
         width: 100%;
     }
-
     .register_block {
         display: block;
         margin: 0;
     }
-
     .entire_block, .entire {
         width: 100%;
         margin-top: 30px;
     }
-
     .brief_button {
         margin-top: 40%;
     }
-
     .brief_button p {
         margin: 35px 0;
         line-height: 1.5;
     }
-
     .brief_info h1 {
         font-size: 30px;
     }
-
     .brief_info p,
     .brief_button h4 {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .brief_send img {
+        width: 226px;
+        margin: 29% 0 0 56%;
+    }
+}
+
+@media (max-width: 600px) {
+    .brief_send img {
+       display: none;
+    }
+    .brief_send {
+        height: 400px;
+    }
+    .brief-send-text h1 {
+        font-size: 30px;
+        padding: 0;
+    }
+    .brief-send-text {
+        margin: 17px 20px;
+    }
+    .brief-send-text p {
+        width: 55%;
+    }
+    .brief_send button {
+        width: 160px;
+        height: 160px;
     }
 }

@@ -157,6 +157,16 @@ select {
     cursor: pointer;
 }
 
+.require {
+    color: #bf1650;
+}
+
+.require::before {
+    display: inline;
+    content: "⚠ ";
+}
+
+
 @media (max-width: 1300px) {
     .brief_page {
         width: 66%;

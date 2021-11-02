@@ -82,7 +82,6 @@ export const Box = () => {
     );
 }
 
-
 export const BoxTechnologies = () => {
     return (
         <>

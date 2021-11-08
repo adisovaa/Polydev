@@ -11,14 +11,247 @@
     margin-top: 60px;
 }
 
-.casePage_text h2{
+.casePage_text h2 {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     margin: 0
 }
+
 .casePage_text p {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+}
+
+.caseTitleCardOne img,
+.caseTitleCardFour img {
+    margin-left: 15%;
+}
+
+.caseTitleCardThree img {
+    margin: 5% 6%;
+    width: 550px;
+}
+
+.caseTitleCardTwo img {
+    margin: 5% 9%;
+}
+
+.caseTitleCardOne .casePage_text {
+    margin: -21% 7%
+}
+
+.caseTitleCardTwo .casePage_text {
+    margin: -4% 8%
+}
+
+.caseTitleCardThree .casePage_text {
+    margin: -17% 7%
+}
+
+.caseTitleCardFour .casePage_text {
+    margin: -15% 7%
+}
+
+@media (max-width: 1300px) {
+    .caseTitleCardOne img {
+        width: 350px;
+        height: 500px;
+    }
+
+    .caseTitleCardTwo img {
+        width: 395px;
+        height: 300px;
+    }
+
+    .caseTitleCardThree img {
+        width: 415px;
+        height: 280px;
+    }
+
+    .caseTitleCardFour img {
+        width: 380px;
+        height: 450px;
+    }
+
+    .caseTitleCardTwo .casePage_text {
+        margin: 10% 8%
+    }
+}
+
+@media (max-width: 1024px) {
+    .casePage_block {
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .casePage_heading {
+        margin: -30px 0 -25px;
+    }
+
+    .caseTitleCardOne img {
+        width: 316px;
+        height: 400px;
+    }
+
+    .caseTitleCardTwo img {
+        width: 382px;
+        height: 248px;
+    }
+
+    .caseTitleCardThree img {
+        width: 382px;
+        height: 306px;
+    }
+
+    .caseTitleCardFour img {
+        width: 324px;
+        height: 351px;
+    }
+
+    .casePage_text h2 {
+        font-size: 16px;
+    }
+
+    .casePage_text p {
+        font-size: 14px;
+    }
+
+    .caseTitleCardTwo .casePage_text {
+        margin: 10% 8%
+    }
+
+    .caseTitleCardTwo img {
+        margin: 5% 6%;
+    }
+}
+
+@media (max-width: 900px) {
+    .caseTitleCardOne img {
+        width: 300px;
+    }
+
+    .caseTitleCardTwo img {
+        width: 340px;
+    }
+
+    .caseTitleCardThree img {
+        width: 320px;
+    }
+
+    .caseTitleCardFour img {
+        width: 295px;
+    }
+}
+
+@media (max-width: 800px) {
+    .casePage_block {
+        height: 300px;
+    }
+
+    .caseTitleCardOne img {
+        width: 292px;
+        height: 300px;
+        margin-left: 14%;
+    }
+
+    .caseTitleCardTwo img {
+        width: 295px;
+        height: 202px;
+    }
+
+    .caseTitleCardThree img {
+        width: 310px;
+        height: 223px;
+        margin: 5% 1%;
+    }
+
+    .caseTitleCardFour img {
+        width: 254px;
+        height: 275px;
+    }
+
+    .caseTitleCardTwo .casePage_text {
+        margin: 0% 8%;
+    }
+
+    .casePage_block {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .caseTitleCardOne img {
+        width: 220px;
+    }
+
+    .caseTitleCardTwo img {
+        width: 255px;
+    }
+
+    .caseTitleCardThree img {
+        height: 204px;
+        margin: 9% -6%;
+    }
+
+    .caseTitleCardFour img {
+        width: 215px;
+    }
+
+    .caseTitleCardFour .casePage_text {
+        margin: -21% 7%;
+    }
+}
+
+@media (max-width: 600px) {
+    .casePage_block {
+        width: 100%;
+    }
+    .caseTitleCardOne img {
+        width: 260px;
+        margin-left: 25%;
+    }
+
+    .caseTitleCardTwo img {
+        width: 310px;
+        margin-left: 15%;
+    }
+
+    .caseTitleCardThree img {
+        height: 230px;
+        margin-left: 13%;
+    }
+
+    .caseTitleCardFour img {
+        width: 260px;
+        margin-left: 22%;
+    }
+    .caseTitleCardFour .casePage_text {
+        margin: -11% 7%
+    }
+}
+
+@media (max-width: 500px) {
+    .caseTitleCardOne img {
+        width: 220px;
+    }
+
+    .caseTitleCardTwo img {
+        width: 255px;
+        margin-left: 11%;
+    }
+
+    .caseTitleCardThree img {
+        height: 204px;
+        margin: 9% 2%;
+    }
+
+    .caseTitleCardFour img {
+        width: 215px;
+    }
+
+    .caseTitleCardFour .casePage_text {
+        margin: -21% 7%;
+    }
 }

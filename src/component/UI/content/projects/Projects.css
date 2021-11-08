@@ -11,7 +11,8 @@
     height: 500px
 }
 .item_big:hover, .item:hover {
-    opacity: 0.5;
+    background: #1B1B1B;
+    opacity: 0.7;
 }
 .item_big:hover .overlay_up,
 .item:hover .overlay_up,
@@ -471,5 +472,15 @@
 
     .show_more .btn {
         margin-left: 25%
+    }
+}
+
+@media (max-width: 700px) {
+    .show_more_mobile {
+        display: block;
+        text-align: center;
+    }
+    .show_more_mobile .btn {
+        margin-top: 80px;
     }
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Heading.css'
-import Button from "../../../common/Button";
 
 const Heading = () => {
     const heading = [
@@ -25,9 +24,6 @@ const Heading = () => {
                         <h1>современные</h1>
                           <h1> <span className='left'> Digital-продукты</span></h1>
                             <h1 className='right'>для бизнеса</h1>
-                    </div>
-                    <div className="heading_button">
-                        <Button/>
                     </div>
                 </div>
 

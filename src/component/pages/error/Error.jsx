@@ -1,6 +1,5 @@
 import React from 'react'
 import './Error.css'
-import Button from "../../common/Button";
 import {useHistory} from "react-router-dom";
 
 const ErrorPage = () => {
@@ -12,13 +11,10 @@ const ErrorPage = () => {
 
     return (
         <div className="wrapper">
-            <div className="error_btn">
-                <Button/>
-            </div>
             <div className="error">
                 <div className="reason_one">
                     <h1>404</h1>
-                    <h3>ошибка</h3>
+                    <h4>ошибка</h4>
                 </div>
                 <div className="reason_two">
                     <h1>Что-то пошло не так</h1>

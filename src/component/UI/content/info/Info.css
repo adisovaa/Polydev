@@ -79,7 +79,7 @@
         margin-top: 30px;
     }
     .studio_heading {
-        margin-top: 90px;
+        margin-top: 90px!important;
     }
     .studio_heading h2 {
         font-size: 36px;

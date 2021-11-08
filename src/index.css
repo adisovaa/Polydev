@@ -17,9 +17,12 @@
     font-weight: 500;
 }
 
+html, body {
+    position:relative;
+    min-height: 100%;
+}
+
 body {
     margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
 }

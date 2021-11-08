@@ -33,9 +33,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .text {
-        margin-top: 270px
-    }
     .text_block {
         margin: 30px 0;
         line-height: 1.2;
@@ -46,8 +43,5 @@
 }
 
 @media screen and (max-width: 500px) {
-    .text {
-        margin-top: 240px
-    }
 
 }

@@ -3,11 +3,12 @@
 }
 .flexHeader {
     display: flex;
+    justify-content: space-between;
 }
 .navBar {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 176px;
+    margin-left: -15%;
 }
 .navBar p {
     margin: 6px 20px;
@@ -21,17 +22,19 @@
 .navBar a:hover {
     border-bottom: 1px solid #6002FD;
 }
-
-
+.header_button button {
+    width: 180px;
+    height: 180px;
+}
 @media screen and (max-width: 1300px) {
     .navBar {
-        margin-left: 92px;
+        margin-left: -32px;
     }
 }
 
 @media screen and (max-width: 1160px) {
     .navBar {
-        margin-left: 84px;
+        margin-left: -11%;
     }
     .navBar a {
         font-size: 14px;
@@ -197,6 +200,12 @@
         font-size: 14px;
         font-weight: 700;
     }
+    .header_button button {
+        width: 165px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
     @media not all and (min-resolution:.001dpcm) { @media {
         .mobile_button {
             margin-top: 188px;
@@ -208,5 +217,19 @@
     .navBar a:hover {
         border-bottom: none;
         color: #6002FD;
+    }
+    .header_button button {
+        display: none;
+    }
+    .burger {
+        margin-left: 60%;
+    }
+    .heading_block {
+        margin-top: 20px!important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .burger {
+        margin-left: 50%;
     }
 }

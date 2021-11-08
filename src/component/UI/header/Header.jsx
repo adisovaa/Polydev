@@ -106,6 +106,9 @@ const Header = () => {
                         <span></span>
                         <span></span>
                     </div>
+                    <div className="header_button">
+                        <Button/>
+                    </div>
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
                     <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
@@ -141,14 +144,17 @@ const Header = () => {
                             <div className="logo" onClick={mainPage}>
                                 <img src={locationURL() === "/swift-global" ? logoWhite : logo} alt="logo"/>
                             </div>
-                            <div className={active ? "burger" : "burger".concat(' active')}
-                                 onClick={() => openHandle()}>
-                                <span></span>
-                            </div>
                             <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
                                 <div className="navBar">
                                     {showText}
                                 </div>
+                            </div>
+                            <div className={active ? "burger" : "burger".concat(' active')}
+                                 onClick={() => openHandle()}>
+                                <span></span>
+                            </div>
+                            <div className="header_button">
+                                <Button/>
                             </div>
                         </div>
                     </div>

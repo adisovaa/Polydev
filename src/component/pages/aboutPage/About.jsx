@@ -3,7 +3,6 @@ import about1 from './../../../images/about1.svg'
 import about2 from './../../../images/about2.svg'
 import about3 from './../../../images/about3.svg'
 import about4 from './../../../images/about4.svg'
-import Button from "../../common/Button";
 
 import './About.css'
 
@@ -49,9 +48,6 @@ const AboutPage = () => {
                     <div className="heading_block">
                         <div className="case_text">
                             <p>Мы делаем современные Digital-продукты на пользу бизнесу</p>
-                        </div>
-                        <div className="case_button">
-                            <Button/>
                         </div>
                     </div>
                 </div>

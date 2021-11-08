@@ -1,11 +1,11 @@
 .heading_block {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .heading_text {
     width: 60%;
-    margin: 60px 23px
+    margin: -5% 0 61px 10%
 }
 .heading_text h1, .heading_text h1.right {
     margin: 0;
@@ -16,12 +16,6 @@
 
 span {
     color: #6002FD;
-}
-
-.heading_button button {
-    margin-top: -47px;
-    width: 180px;
-    height: 180px;
 }
 
 .blocks {
@@ -46,18 +40,12 @@ span {
 }
 
 @media (max-width: 1300px) {
-    .heading_text {
-        margin: 60px -35px;
-    }
     .heading_text h1 {
         font-size: 48px;
     }
 }
 
 @media (max-width: 1160px) {
-    .heading_text {
-        padding-left: 6.4%;
-    }
     .block h4 {
         width: 236px;
     }
@@ -70,31 +58,20 @@ span {
     button {
         font-size: 14px!important;
     }
-    .heading_text {
-        margin: 60px 6px;
-    }
 }
 
 @media (max-width: 900px) {
+    .heading_block {
+        margin-top: 53px;
+    }
     .heading {
         margin: 76px 0;
     }
     .heading_text {
-        width: 75%;
-        margin: 0;
-        padding: 0;
+        margin-bottom: 0;
     }
     .heading_text h1 {
         font-size: 36px;
-    }
-    .heading_button button {
-        width: 165px;
-        height: 40px;
-        border-radius: 30px;
-        font-size: 14px;
-        position: absolute;
-        top: -44px;
-        left: 300px;
     }
     .heading {
         margin: 57px 0;

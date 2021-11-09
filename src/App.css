@@ -83,7 +83,7 @@ button:hover{
 
 @media (max-width: 1024px) {
     .wrapper {
-        width: 880px!important;
+        width: 890px!important;
     }
     h1 {
         font-size: 48px;

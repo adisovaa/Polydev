@@ -11,7 +11,7 @@
     height: 500px
 }
 .item_big:hover, .item:hover {
-    background: #1B1B1B;
+    /*background: #1B1B1B;*/
     opacity: 0.7;
 }
 .item_big:hover .overlay_up,

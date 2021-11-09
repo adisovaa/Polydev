@@ -1,14 +1,14 @@
 .caseContainer {
     margin: 0 auto;
     padding-bottom: 180px;
-    max-width: 1740px;
 }
 .case_title {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
 .case_text {
-    margin: 150px 44% 115px 25%;
+    margin: 0 0 10% -32%;
+    width: 220px;
 }
 .case_button button,
 .casepage_button button {
@@ -16,23 +16,20 @@
 }
 .case_title h1 {
     font-size: 96px;
-    padding-left: 60px;
-    padding-top: 17px;
+    padding-left: 97px;
     color: #6002FD;
     margin: 0;
+    white-space: nowrap;
+    line-height: 1.6;
 }
 .case_agency, .case_tech {
     width: 75%;
     float: right;
-    margin-top: 85px;
+    margin-top: 13px;
 }
 .case_agency h1,
 .case_tech h1 {
     line-height: 1.1;
-}
-.agency_items{
-    display: flex;
-    justify-content: space-between;
 }
 .agency_text {
     width: 64%;
@@ -46,12 +43,15 @@
     line-height: 1.4;
 }
 .agency_links {
-    width: 20%;
-    margin-top: 13px;
+    width: 63%;
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
 }
 .agency_link {
     border-top: 1px solid gray;
-    padding: 15px 0
+    padding: 15px 0;
+    width: 47%;
 }
 .agency_link p {
     color: #6002FD;
@@ -72,6 +72,7 @@
 }
 .case_block_text {
     width: 40%;
+    position: relative;
 }
 .case_block_text p,
 .case_count_item p,
@@ -88,7 +89,8 @@
     margin-top: 23px;
 }
 .case_tools {
-    margin-top: 41%;
+    position: absolute;
+    bottom: 0;
 }
 .case_tools button {
     width: auto;
@@ -108,6 +110,7 @@
 
 .case_item {
     float: left;
+    margin-top: 40px;
 }
 
 .case_item h1 {
@@ -117,11 +120,11 @@
     width: 90%;
 }
 .case_count {
-    width: 46%;
+    width: 40%;
     color: #fff;
 }
 .case_count_item {
-    width: 100%;
+    width: 430px !important;
     border-color: #fff;
 }
 .case_count_item h1 {
@@ -133,6 +136,92 @@
 }
 .case_count_item h5 {
     color: #fff!important;
+}
+.case_count_two {
+    margin-left: 60px;
+}
+
+.about_address {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media (max-width: 1300px) {
+    .case_title h1 {
+        font-size: 64px;
+        line-height: 2;
+    }
+
+    .case_text {
+        margin: 0 0 10% -27%;
+    }
+
+    .case_text p {
+        font-size: 14px;
+    }
+
+    .agency_text {
+        width: 100%;
+    }
+
+    .agency_text p {
+        font-size: 18px;
+    }
+
+    .case_agency h1, .case_tech h1 {
+        font-size: 48px;
+    }
+
+    .agency_links {
+        width: 100%;
+    }
+
+    .case_block_text h1 {
+        font-size: 24px;
+    }
+
+    .case_block_text p {
+        font-size: 14px;
+    }
+
+    .case_tech_banner {
+        height: 300px;
+    }
+
+    .case_tech_banner img {
+        width: 414px;
+    }
+
+    .case_tools button {
+        font-size: 14px !important;
+        padding: 0 13px;
+    }
+    .case_count p {
+        font-size: 14px ;
+    }
+
+    .case_count {
+        width: 50%;
+    }
+    .case_count_item h5 {
+        font-size: 24px;
+    }
+    .brief_block {
+        height: 490px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .case_tech_banner {
+        height: 250px;
+    }
+    .case_tech_banner img {
+        width: 362px;
+    }
+    .case_block_text {
+        width: 46%;
+    }
 }
 
 @media (max-width: 650px) {

@@ -10,34 +10,34 @@ const AboutPage = () => {
     const cases = [
         {
             title: 'Работа с клиентом и управление',
-            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
-            button1: 'Trello',
-            button2: 'Jira',
-            button3: 'Miro',
+            text: 'Работаем по Agile-методикам, что позволяет быстро адаптироваться к изменениям и ясно видеть процесс работы над продуктом',
+            button1: 'Jira',
+            button2: 'Notion',
+            button3: 'Docs',
             images: about1
         },
         {
-            title: 'Работа с клиентом и управление',
-            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
-            button1: 'Trello',
-            button2: 'Jira',
+            title: 'Дизайн',
+            text: 'Выбираем визуальные решения на основе анализа целевой аудитории и правилам UX и UI',
+            button1: 'Figma',
+            button2: 'Adobe Photoshop',
             button3: 'Miro',
             images: about2
         },
         {
-            title: 'Работа с клиентом и управление',
-            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
-            button1: 'Trello',
-            button2: 'Jira',
-            button3: 'Miro',
+            title: 'Вёрстка и разработка',
+            text: 'Пишем приложения на нативных языках, для Web-разработки используем продвинутые CMS, конструкторы и React',
+            button1: 'React',
+            button2: 'WordPress',
+            button3: 'Tilda',
             images: about3
         },
         {
-            title: 'Работа с клиентом и управление',
-            text: 'Мы используем нативные языки программирования и умеем работать фремворками/библиотеками',
-            button1: 'Trello',
-            button2: 'Jira',
-            button3: 'Miro',
+            title: 'Работа с контентом',
+            text: 'Делаем копирайт, помогаем выбрать релевантные изображения и фото для наполнения сайта',
+            button1: 'Notion',
+            button2: 'Docs',
+            button3: 'Figma',
             images: about4
         }
     ]
@@ -54,7 +54,7 @@ const AboutPage = () => {
             </div>
             <div className="caseContainer">
                 <div className="case_title">
-                    <h1>Дизайн. Верстка. Разра</h1>
+                    <h1>Дизайн. Вёрстка. Разработка. SEO</h1>
                 </div>
             </div>
 
@@ -114,21 +114,20 @@ const AboutPage = () => {
                         </div>
 
                         <div className="brief_text case_process_text case_contact">
-                            <div className="count contacts">
+                            <div className="count about_address">
                                 <div className="case_count">
                                     <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
                                         портфолио</p>
                                     <div className="clients_count contact_count case_count_item">
-                                        <p>Email нашего HR</p>
-                                        <h5>HR@polydev.io</h5>
+                                        <p>Telegram нашего HR</p>
+                                        <h5>https://t.me/polydevHR</h5>
                                     </div>
                                 </div>
-                                <div className="case_count">
-                                    <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
-                                        портфолио</p>
+                                <div className="case_count case_count_two">
+                                    <p>Если у вас есть предложения и вопросы по работе с нами, вы можете написать в телеграм нашему CEO</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Телеграм нашего CEO</p>
-                                        <h5>@polydev.io</h5>
+                                        <h5>https://t.me/polydev_s</h5>
                                     </div>
                                 </div>
                             </div>

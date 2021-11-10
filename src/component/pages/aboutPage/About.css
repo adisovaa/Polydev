@@ -340,8 +340,20 @@
         width: 100% !important;
     }
 
-    .agency_text p {
-        width: 435px;
+    .agency_text p, .agency_links {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .case_count_two {
+        margin-left: 40px;
+    }
+    .case_count_item {
+        width: 250px!important;
+    }
+    .case_countText {
+        margin-bottom: 53px
     }
 }
 
@@ -388,7 +400,12 @@
 
     .agency_links {
         float: right;
-        width: 51%;
+        width: 50%;
+        display: block;
+    }
+
+    .agency_link {
+        width: 100%;
     }
 
     .agency_link p,
@@ -448,11 +465,7 @@
     }
 
     .case_tech_banner img {
-        margin-top: 2px;
-    }
-
-    .agency_text p {
-        width: 361px;
+        margin-top: 30px;
     }
 
     .about_address {
@@ -479,6 +492,9 @@
     .case_count_item {
         width: 100% !important;
     }
+    .about_address {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -488,9 +504,5 @@
 
     .case_item h1 {
         font-size: 30px;
-    }
-
-    .about_address {
-        margin: 10px 0;
     }
 }

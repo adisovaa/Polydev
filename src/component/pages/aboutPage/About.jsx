@@ -108,15 +108,14 @@ const AboutPage = () => {
                 </div>
 
                 <div className="brief_block casepage_block wrapper">
-                    <div className="brief_block_item">
+                    <div className="brief_block_item casePage_brief_item">
                         <div className="block_title case_tech case_item">
                             <h1>Сотрудничество <br/>и вакансии</h1>
                         </div>
-
                         <div className="brief_text case_process_text case_contact">
                             <div className="count about_address">
-                                <div className="case_count">
-                                    <p>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
+                                <div className="case_count case_count_one">
+                                    <p className='case_countText'>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
                                         портфолио</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Telegram нашего HR</p>

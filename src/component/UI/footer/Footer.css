@@ -47,6 +47,7 @@ footer {
     margin-bottom: 56px;
 }
 
+.footer_item ul li a,
 .footer_item ul li {
     list-style-type: none;
     color: #9a9a9a;

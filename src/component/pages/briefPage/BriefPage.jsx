@@ -16,7 +16,6 @@ const BriefPage = () => {
         history.push('./confirm-brief')
     }
 
-
     return (
         <div className="wrapper">
             <div className="brief_page">

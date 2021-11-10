@@ -9,6 +9,10 @@
 .reviewTitle h1 {
     margin: 9% 28% 2%;
 }
+.slick-list {
+    transform: translate3d(0px, 0px, 0px)!important;
+
+}
 .reviewCard {
     width: 770px;
     border-right: 1px solid gray;
@@ -87,6 +91,7 @@
         width: 300px;
     }
 }
+
 @media screen and (max-width: 900px) {
     .reviewCard {
         width: 430px;
@@ -107,6 +112,7 @@
         width: 300px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .reviewText {
         margin: 0

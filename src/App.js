@@ -8,9 +8,9 @@ import ErrorPage from "./component/pages/error/Error";
 import CasePage from "./component/pages/case/Case";
 import BriefPage, {ConfirmBrief} from "./component/pages/briefPage/BriefPage";
 import AboutPage from "./component/pages/aboutPage/About";
-import FirstCase from "./component/pages/case/casePages/firstCasePage/FirstCase";
-import SecondCase from "./component/pages/case/casePages/secondCasePage/SecondCase";
-import ThirdCase from "./component/pages/case/casePages/thirdCasePage/ThirdCase";
+import Canadian from "./component/pages/case/casePages/Canadian/Canadian";
+import SwiftGlobal from "./component/pages/case/casePages/SwiftGlobal/SwiftGlobal";
+import MakeClothes from "./component/pages/case/casePages/MakeClothes/MakeClothes";
 
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
             <BrowserRouter>
                 <Header/>
                 <Switch>
-                    <Route path='/canadian' component={ThirdCase}/>
-                    <Route path='/swift-global' component={FirstCase}/>
-                    <Route path='/make-clothes' component={SecondCase}/>
+                    <Route path='/canadian' component={Canadian}/>
+                    <Route path='/swift-global' component={SwiftGlobal}/>
+                    <Route path='/make-clothes' component={MakeClothes}/>
                     <Route path='/about' component={AboutPage}/>
                     <Route path='/case' component={CasePage}/>
                     <Route path='/confirm-brief' component={ConfirmBrief}/>

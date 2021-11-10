@@ -65,7 +65,7 @@ const Review = () => {
         slidesToShow: !screen9 ? 1 : 2,
         slidesToScroll: 1,
         className: 'eventSlides',
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000
     };
 

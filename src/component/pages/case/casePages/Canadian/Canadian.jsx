@@ -1,39 +1,42 @@
 import React from 'react'
-import swiftLogo from './../../../../../images/swift-logo.svg'
-import CaseHeading from "../../caseComponents/caseHeader/caseHeading";
-import {
-    CaseDescription,
-    CaseProject,
-    CaseTasks,
-    CaseTitle,
-    CustomerReview
-} from "../../caseComponents/caseProjects/CaseProject";
+import canadianLogo from "../../../../../images/canadian.svg";
+import {CaseProject, CaseTasks, CaseTitle} from "../../caseComponents/caseProjects/CaseProject";
+import thirdCaseBanner from './../../../../../images/canadian_1.png'
+import thirdCaseBanner2 from './../../../../../images/canadian_2.png'
+import doAim from "../../../../../images/canadian_transparent.png";
+import doAimTransparent from "../../../../../images/canadian_logo_2.svg";
 import CaseReview from "../../caseComponents/caseReview/caseReview";
-import caseFirst_1 from './../../../../../images/caseFirst-1.jpg'
-import caseFirst_2 from './../../../../../images/caseFirst-2.png'
-import caseFirst_3 from './../../../../../images/caseFirst-3.png'
-import caseFirst_4 from './../../../../../images/caseFirst-4.png'
-import caseFirst_5 from './../../../../../images/caseFirst-5.png'
-import caseFirst_6 from './../../../../../images/caseFirst-6.png'
-import caseFirst_7 from './../../../../../images/caseFirst-7.png'
-import caseFirst_8 from './../../../../../images/caseFirst-8.svg'
-import case_logo_1 from './../../../../../images/case-logo-1.svg'
-import case_logo_2 from './../../../../../images/case-logo-2.svg'
-import case_logo_3 from './../../../../../images/case-logo-3.svg'
-import appStore from './../../../../../images/appStore.png'
 
-import './FirstCase.css'
+import './Canadian.css'
 
-const FirstCase = () => {
-    const btnInfo = ['Лендинг', 'Сайт', 'Брендинг']
+const Canadian = () => {
+    const btnInfo = ['Лендинг']
+
     return (
         <>
-            <CaseHeading title={'Swift Global'}
-                         text={"Хранение и продажа драгоценных металлов"}
-                         caseLogo={swiftLogo}
-                         btnInfo={btnInfo}
-                         backgroundColor={'#01579B'}
-                         appStore={appStore}/>
+            <div className='cases_heading' style={{backgroundColor: '#262626'}}>
+                <div className="wrapper">
+                    <div className="cases_heading_block">
+                        <div className="casesBlock">
+                            <div className="cases_text">
+                                <h1 className='word'>Canadian </h1>
+                                <h1>international sports & education</h1>
+                            </div>
+                        </div>
+                        <div className="canadian_case_logo">
+                            <img src={canadianLogo} alt=""/>
+                            <a href="/">Перейти на сайт</a>
+                        </div>
+                        <div className="cases_block">
+                            <div className="cases_buttons">
+                                {btnInfo.map((btnInfo, i) => {
+                                    return (<button key={i}>{btnInfo}</button>)
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <CaseProject
                 text={'Swift Global LTD – международная компания, предоставляющая услуги по купле, продаже и хранению драгоценных металлов'}/>
@@ -45,108 +48,50 @@ const FirstCase = () => {
                        title3='Многостраничный сайт'
                        text3='Разработали для того, чтобы компания могла на долгосрочной основе работать с лояльными пользователями, но при этом привлекать новых клиентов и в полном объёме информировать их об услугах и продавать эти услуги'/>
 
+            <CaseTitle title='Landing page'
+                       text='Мы взяли спокойные цвета, строгие формы для передачи рабочего настроения надёжной компании. В итоге мы создали минмалистичный дизайн, который решает задачи заказчика  и настраивает его клиентов на деловой лад'/>
+
+            <div className="case_banner wrapper">
+                <img src={thirdCaseBanner} alt=""/>
+            </div>
+
             <CaseTitle title='Лендинг'
                        text='Мы взяли спокойные цвета, строгие формы для передачи рабочего настроения надёжной компании. В итоге мы создали минмалистичный дизайн, который решает задачи заказчика  и настраивает его клиентов на деловой лад'/>
 
             <div className="case_banner wrapper">
-                <img src={caseFirst_1} alt=""/>
-            </div>
-
-            <CaseTitle title='Основной сайт'
-                       text='Сайт создан на основе брендбука и лендинга компании. Основные задачи сайта: долгосрочная работа с лояльными пользователями, а также продажа услуг новым клиентам и создание имиджа надёжности '/>
-
-            <div className="case_banner wrapper">
-                <img src={caseFirst_2} alt=""/>
-            </div>
-
-            <CaseDescription title='Калькулятор экономии'
-                             text='Идея калькулятора экономии – показать клиентам в цифрах, а не на словах, насколько выгодно хранить драгоценные металлы в Swift Global LTD '/>
-
-            <div className="case_banner wrapper">
-                <div className="calcBanner">
-                    <img src={caseFirst_3} alt=""/>
-                    <img src={caseFirst_4} alt=""/>
-                </div>
-            </div>
-
-            <CaseDescription title='Основные услуги'
-                             text='Мы сделали классификацию не только по услугам, но и по выгодам, являющимеся дополнительными услугами, которые клиент может получить при работе со Swift Global LTD'/>
-
-            <div className="case_banner wrapper">
-                <img src={caseFirst_5} alt=""/>
-            </div>
-
-            <CaseDescription title='Покупка металлов онлайн'
-                             text='Наша команда спроектировала сценарий быстрой покупки драгоценных металлов онлайн, руководствуясь законами юзабилити и требованиями к высоко конверсионным формам'/>
-
-            <div className="case_banner wrapper">
-                <img src={caseFirst_6} alt=""/>
-            </div>
-
-            <CaseTitle title='Брендинг'
-                       text='В основе стиля лежит синий цвет. Он передаёт атмосферу надёжности и спокойствия. Также используются прямоугольные формы с острыми углами и круги, которые передают атмосферу работы, но при этом контрастируют друг с другом и привлекают внимание'/>
-
-            <div className="case_banner wrapper">
-                <img src={caseFirst_7} alt=""/>
+                <img src={thirdCaseBanner2} alt=""/>
             </div>
 
             <div className="case wrapper">
-                <div className="caseTitle_block">
-                    <h2>Стилевое решение</h2>
-                </div>
                 <div className="styleSolution_item">
                     <div className="styleSolution_title">
                         <h3>Логотип</h3>
                     </div>
                     <div className="styleSolution_text">
-                        <img src={caseFirst_8} alt=""/>
-                        <p>В основе лого лежит довольно простой шрифт “Montserrat”. Он отлично сочетается со строгими
-                            прямоугольниками без скругления (у букв острые углы) и с кругами (бука “О” стремится по
-                            форме к
-                            кругу). Синий круг в логотипе ассоциируется с планетой или глобусом и говорит о том, что
-                            компания работает не только в России, но и за рубежом</p>
+                        <img src={doAim} alt=""/>
+                        <img src={doAimTransparent} alt="" className='transparentImgCanadian'/>
                     </div>
                 </div>
             </div>
 
-            <div className="wrapper">
-                <div className="grid-container-case">
-                    <div className="grid-item-a">
-                        <img src={case_logo_1} alt=""/>
-                    </div>
-                    <div className="grid-item-b">
-                        <img src={case_logo_2} alt=""/>
-                    </div>
-                    <div className="grid-item-c">
-                        <img src={case_logo_3} alt=""/>
-                    </div>
-                </div>
-            </div>
-
-            <div className="case wrapper">
+            <div className="case wrapper orangeCircleBlock">
                 <div className="styleSolution_item">
                     <div className="styleSolution_title">
                         <h3>Цвет</h3>
                     </div>
                     <div className="styleSolution_text">
-
-                        <div className="circles">
-                            <div className="circle-block">
-                                <div className="circle_one">
-                                    <p>#01579B</p>
-                                </div>
-                                <div className="circle_two">
-                                    <p>#102027</p>
-                                </div>
+                        <div className="orange_blocks">
+                            <div className="blocks">
+                                <div className="orange_circle"><p>#01579B</p></div>
+                                <div className="black_circle"><p>#262626</p></div>
                             </div>
-                            <div className="circle_three">
-                                <p>#F5F5F5</p>
+                            <div className="blocks">
+                                <div className="gray_circle"><p>#F6F6F6</p></div>
+                                <div className="peach_circle"><p>#FFA06D</p></div>
                             </div>
                         </div>
-
-                        <p>Синий цвет в сочетании с тёмно-синим передают спокойствие и при этом настраивают на деловой
-                            лад. Мы используем не чистый белый, а немного затемнённый белый для фона, что позволяет не
-                            перегружать глаз пользователя</p>
+                        <p className='circle_text'>Мы взяли цвета канадского флага и адаптировали их под лендинг,
+                            подобрали дополнительные цвета для фона</p>
                     </div>
                 </div>
             </div>
@@ -244,15 +189,10 @@ const FirstCase = () => {
                 </div>
             </div>
 
-            <CustomerReview title='Отзыв заказчика'
-                            text='Polydev отличается гибкостью и высокой скоростью разработки. В нашем непростом кейсе получилось добиться нужного результата за счет плотного контакта и глубогого погружения студии в нашу специфику. Студией были найдены и успешно протестированы лучшие решения, которые впоследствии привели нас к первым клиентам.'
-                            name='Иван'
-                            position='Руководитель проекта SwiftGlobal'
-            />
-
             <CaseReview/>
+
         </>
     )
 }
 
-export default FirstCase
+export default Canadian

@@ -12,7 +12,7 @@ import Ask from "./ask/Ask";
 
 const MainPage = () => {
     return (
-        <div>
+        <div id='0'>
             <Heading/>
             <Text/>
             <Project/>

@@ -8,9 +8,9 @@ import doAim from '../../../../../images/doAim.svg'
 import doAimTransparent from '../../../../../images/doTransparent.svg'
 import CaseReview from "../../caseComponents/caseReview/caseReview";
 
-import './SecondCase.css'
+import './MakeClothes.css'
 
-const SecondCase = () => {
+const MakeClothes = () => {
     const btnInfo = ['Приложение']
     return (
         <>
@@ -127,4 +127,4 @@ const SecondCase = () => {
     )
 }
 
-export default SecondCase
+export default MakeClothes

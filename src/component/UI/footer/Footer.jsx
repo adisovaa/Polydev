@@ -1,28 +1,52 @@
 import React from "react";
 import './Footer.css'
 import message from '../../../images/message.png'
-import {useHistory} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
+import {openHandle} from "../../../redux/sliceReducer";
+import {useDispatch} from "react-redux";
 
 const Footer = () => {
-    const history = useHistory();
+    const navs = ['Главная', 'О студии', 'Кейсы']
+    const dispatch = useDispatch();
+    let history = useHistory();
 
-    function handleClick() {
+    const clickFooter = e => {
+        dispatch(openHandle());
+        if (e.target.textContent === 'Главная') {
+            history.push('/')
+        } else if (e.target.textContent === 'О студии') {
+            history.push('/about')
+        } else if (e.target.textContent === 'Кейсы') {
+            history.push('/case')
+        }
+    }
+
+    let showTextFooter = navs.map((navs, i) => {
+        return (
+            <li key={i}><a href='#top' onClick={clickFooter}>{navs}</a></li>
+        )
+    });
+
+    const handleClick = () => {
         history.push("/brief");
     }
+
     return (
         <footer>
             <div className="wrapper">
                 <div className="footer_items">
                     <div className="circle">
-                        <button onClick={handleClick}>Заполнить бриф</button>
+                        <a href='#top'>
+                            <button onClick={handleClick}>Запонить бриф</button>
+                        </a>
                     </div>
                     <div className="footer_content">
                         <div className="footer_item">
                             <h3>Разделы сайта</h3>
                             <ul>
-                                <li>Главная</li>
-                                <li>О студии</li>
-                                <li>Кейсы</li>
+                                {
+                                    showTextFooter
+                                }
                             </ul>
                         </div>
 

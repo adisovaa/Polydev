@@ -68,9 +68,9 @@ const Header = () => {
             setMoviesUrlBackgroundColor('#01579B');
         } else if (getMoviesUrl === '/') {
             setMoviesUrlBackgroundColor('#fff');
-        } else if (getMoviesUrl === '/make-clothes'){
+        } else if (getMoviesUrl === '/make-clothes') {
             setMoviesUrlBackgroundColor('#FF5C45');
-        } else if (getMoviesUrl === '/canadian'){
+        } else if (getMoviesUrl === '/canadian') {
             setMoviesUrlBackgroundColor('#262626');
         } else {
             setMoviesUrlBackgroundColor('#fff');
@@ -139,7 +139,7 @@ const Header = () => {
             {
                 screen ? adaptiveHeader()
                     :
-                    <div className="header" style={{backgroundColor: moviesUrlBackgroundColor}}>
+                    <div className="header" style={{backgroundColor: moviesUrlBackgroundColor}} id='top'>
                         <div className="wrapper flexHeader">
                             <div className="logo" onClick={mainPage}>
                                 <img src={locationURL() === "/swift-global" ? logoWhite : logo} alt="logo"/>

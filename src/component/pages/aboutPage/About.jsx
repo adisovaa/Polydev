@@ -41,8 +41,9 @@ const AboutPage = () => {
             images: about4
         }
     ]
+
     return (
-        <>
+        <div id='1'>
             <div className="wrapper">
                 <div className="briefPage">
                     <div className="heading_block">
@@ -63,7 +64,6 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
-
             <div className="wrapper">
                 <div className="case_agency">
                     <h1>Агенство</h1>
@@ -142,7 +142,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 
 }

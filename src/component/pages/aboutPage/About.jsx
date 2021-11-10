@@ -53,8 +53,14 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="caseContainer">
-                <div className="case_title">
-                    <h1>Дизайн. Вёрстка. Разработка. SEO</h1>
+
+                <div className="marquees">
+                    <div className="case_title">
+                        <h1 className='marquee'>Дизайн. Вёрстка. Разработка. SEO. </h1>
+                        <h1 className='marquee'>Дизайн. Вёрстка. Разработка. SEO. </h1>
+                        <h1 className='marquee'>Дизайн. Вёрстка. Разработка. SEO. </h1>
+                        <h1 className='marquee'>Дизайн. Вёрстка. Разработка. SEO. </h1>
+                    </div>
                 </div>
             </div>
 
@@ -115,7 +121,8 @@ const AboutPage = () => {
                         <div className="brief_text case_process_text case_contact">
                             <div className="count about_address">
                                 <div className="case_count case_count_one">
-                                    <p className='case_countText'>Если вы хотите у нас работать – пришлите на почту нашему HR резюме и
+                                    <p className='case_countText'>Если вы хотите у нас работать – пришлите на почту
+                                        нашему HR резюме и
                                         портфолио</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Telegram нашего HR</p>
@@ -123,7 +130,8 @@ const AboutPage = () => {
                                     </div>
                                 </div>
                                 <div className="case_count case_count_two">
-                                    <p>Если у вас есть предложения и вопросы по работе с нами, вы можете написать в телеграм нашему CEO</p>
+                                    <p>Если у вас есть предложения и вопросы по работе с нами, вы можете написать в
+                                        телеграм нашему CEO</p>
                                     <div className="clients_count contact_count case_count_item">
                                         <p>Телеграм нашего CEO</p>
                                         <h5>https://t.me/polydev_s</h5>

@@ -17,6 +17,7 @@ const CasePage = () => {
                     </div>
                 </div>
                 <div className="casePage_blocks">
+
                     <Link to="/" className="casePage_block" style={{backgroundColor: '#6002FD'}}>
                         <div className="caseCard">
                             <div className="caseTitleCardOne">

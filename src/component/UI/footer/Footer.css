@@ -22,7 +22,9 @@ footer {
     color: #fff;
     background: transparent;
 }
+.circle button:hover {
 
+}
 .footer_content {
     width: 75%;
     display: flex;
@@ -80,7 +82,6 @@ footer {
     height: 80px;
     background: #6002FD;
     border-radius: 50%;
-
     position: fixed;
     bottom: 30px;
     right: 7%;

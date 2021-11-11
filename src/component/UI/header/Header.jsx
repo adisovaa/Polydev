@@ -5,9 +5,9 @@ import logo from '../../../images/POLYDEV.svg';
 import logoWhite from './../../../images/logo-white.svg'
 import logo_mobile from '../../../images/Logo_mobile.svg';
 import {openHandle} from "../../../redux/sliceReducer";
-import Button from "../../common/Button";
 
 import './Header.css';
+import BriefModal from "../../pages/briefPage/briefModal/BriefModal";
 
 const Header = () => {
     const [moviesUrlBackgroundColor, setMoviesUrlBackgroundColor] = useState('#fff');
@@ -107,7 +107,7 @@ const Header = () => {
                         <span></span>
                     </div>
                     <div className="header_button">
-                        <Button/>
+                        <BriefModal/>
                     </div>
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
@@ -125,7 +125,7 @@ const Header = () => {
                         </div>
                         <div className="mobile_button">
                             <div className="mobile_wrapper">
-                                <Button/>
+                                <BriefModal/>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ const Header = () => {
                                 <span></span>
                             </div>
                             <div className="header_button">
-                                <Button/>
+                                <BriefModal/>
                             </div>
                         </div>
                     </div>

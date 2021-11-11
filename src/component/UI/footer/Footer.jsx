@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import './Footer.css'
 import message from '../../../images/message.png'
 import {Link, useHistory} from "react-router-dom";
 import {openHandle} from "../../../redux/sliceReducer";
 import {useDispatch} from "react-redux";
+import BriefModal from "../../pages/briefPage/briefModal/BriefModal";
 
 const Footer = () => {
     const navs = ['Главная', 'О студии', 'Кейсы']
@@ -27,17 +28,13 @@ const Footer = () => {
         )
     });
 
-    const handleClick = () => {
-        history.push("/brief");
-    }
-
     return (
         <footer>
             <div className="wrapper">
                 <div className="footer_items">
                     <div className="circle">
                         <a href='#top'>
-                            <button onClick={handleClick}>Запонить бриф</button>
+                            <BriefModal/>
                         </a>
                     </div>
                     <div className="footer_content">

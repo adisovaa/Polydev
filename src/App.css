@@ -61,12 +61,6 @@ button {
     font-weight: 700!important;
     font-family: 'Manrope', sans-serif;
 }
-button:hover{
-    color: #fff;
-    background-color: #6002FD!important;
-    border-color: #6002FD!important;
-    cursor: pointer;
-}
 
 @media (max-width: 1440px) {
     .wrapper {

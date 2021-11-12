@@ -10,56 +10,6 @@
     width: 99%;
     height: 500px
 }
-.item_big:hover, .item:hover {
-    /*background: #1B1B1B;*/
-    opacity: 0.7;
-}
-.item_big:hover .overlay_up,
-.item:hover .overlay_up,
-.item:hover .overlay_bottom {
-    opacity: 1;
-}
-.overlay_up {
-    position: absolute;
-    top: 100px;
-    opacity: 0;
-}
-.overlay_bottom {
-    position: absolute;
-    top: 640px;
-    opacity: 0;
-}
-.item_big .overlay_up h4,
-.item.b .overlay_up h4,
-.item.c .overlay_bottom h4,
-.item.d .overlay_bottom h4 {
-    font-size: 54px !important;
-    color: #fff;
-    margin: 37px 40px;
-    width: 100px
-}
-
-.item_big .overlay_up img {
-    position: absolute;
-    top: 320px;
-    left: 415px;
-}
-.item.b .overlay_up img,
-.item.c .overlay img {
-    position: absolute;
-    top: 285px;
-    left: 280px;
-}
-.item.c .overlay_bottom img {
-    position: absolute;
-    top: 305px;
-    left: 210px;
-}
-.item.d .overlay_bottom img {
-    position: absolute;
-    top: 341px;
-    left: 290px;
-}
 .a {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -103,14 +53,14 @@
 .show_more_mobile {
     display: none;
 }
-.item_big.a img {
+.item_big.a .caseImg {
     margin-left: 162px;
 }
-.item.b img,
-.item.c img {
+.item.b .caseImg,
+.item.c .caseImg {
     margin: 40px
 }
-.item.d img {
+.item.d .caseImg {
     margin: 0 30px
 }
 .item_big.a .item_text {
@@ -125,38 +75,63 @@
 .item.d .item_text {
     margin: 5% 8%
 }
+.projectCard {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+.projectCard a:hover {
+    background-color: rgba(29, 29, 31, 0.8);
+}
+.projectCard a:hover .overlay-project{
+    opacity: 1;
+}
+
+.overlay-project {
+    opacity: 0;
+}
+.overlay-project h4 {
+    color: #fff;
+    font-size: 54px;
+    width: 300px;
+    margin: 37px 40px;
+}
+.overlay-project img{
+    float: right;
+    margin-top: 60px;
+}
 @media (max-width: 1300px) {
     .projects_blocks {
         grid-gap: 30px;
     }
     .a {
         width: 550px;
-        height: 450px;
+        height: 480px;
     }
     .d, .b {
         width: 400px;
-        height: 450px;
+        height: 480px;
     }
     .c {
         width: 300px;
-        height: 450px;
+        height: 480px;
     }
-    .item_big.a img {
+    .item_big.a .caseImg {
         margin-left: 140px;
         width: 316px;
         height: 450px;
     }
-    .item.d img {
+    .item.d .caseImg {
         margin-left: 40px;
         width: 382px;
         height: 248px;
     }
-    .item.c img {
+    .item.c .caseImg {
         margin: 20px 20px;
         width: 262px;
         height: 306px;
     }
-    .item.b img {
+    .item.b .caseImg {
         margin: 40px;
         width: 335px;
         height: 248px;
@@ -176,37 +151,14 @@
     .show_more .project_btn {
         margin-left: 252px;
     }
-    .item_big .overlay_up h4,
-    .item.b .overlay_up h4{
-        font-size: 42px !important;
-        margin: 10px 15px;
-        width: 100px;
+    .projectCard {
+        height: 480px;
     }
-    .item.c .overlay_bottom h4,
-    .item.d .overlay_bottom h4 {
-        font-size: 42px !important;
-        margin: -40px 15px;
-        width: 100px;
+    .overlay-project h4 {
+        font-size: 38px;
     }
-    .item_big .overlay_up img {
-        top: 165px;
-        left: 260px;
-        width: 170px;
-    }
-    .item.b .overlay_up img {
-        top: 225px;
-        left: 210px;
-        width: 170px;
-    }
-    .item.c .overlay_bottom img {
-        width: 130px;
-        top: 172px;
-        left: 165px;
-    }
-    .item.d .overlay_bottom img {
-        width: 170px;
-        top: 205px;
-        left: 211px;
+    .overlay-project img{
+        margin-top: 96px;
     }
 }
 
@@ -221,22 +173,22 @@
         width: 49%;
         height: 400px;
     }
-    .item_big.a img {
+    .item_big.a .caseImg {
         margin-left: 73px;
         width: 316px;
         height: 400px;
     }
-    .item.d img {
+    .item.d .caseImg {
         margin-left: 40px;
         width: 382px;
         height: 248px;
     }
-    .item.c img {
+    .item.c .caseImg {
         margin: 40px 40px;
         width: 382px;
         height: 306px;
     }
-    .item.b img {
+    .item.b .caseImg {
         margin: 40px;
         width: 382px;
         height: 248px;
@@ -256,47 +208,12 @@
     .item.d .item_text {
         margin: 66px 0 0 17px
     }
-    .overlay_bottom {
-        top: 520px;
+    .projectCard {
+        height: 400px;
     }
-    .item_big .overlay_up h4,
-    .item.b .overlay_up h4,
-    .item.c .overlay_bottom h4,
-    .item.d .overlay_bottom h4 {
-        font-size: 36px !important;
-        margin: 10px 15px;
-        width: 100px;
-    }
-    .show_more .project_btn {
-        margin-left: 0
-    }
-    .show_more {
-        margin-top: 40px;
-        text-align: center;
-    }
-    .block_text p {
-        font-size: 18px!important;
-        width: 472px;
-    }
-    .item_big .overlay_up img {
-        top: 130px;
-        left: 235px;
-        width: 170px;
-    }
-    .item.b .overlay_up img {
-        top: 166px;
-        left: 273px;
-        width: 170px;
-    }
-    .item.c .overlay_bottom img {
-        width: 170px;
-        top: 135px;
-        left: 270px;
-    }
-    .item.d .overlay_bottom img {
-        width: 170px;
-        top: 205px;
-        left: 270px;
+    .overlay-project img{
+        margin-top: 60px;
+        width: 150px;
     }
 }
 
@@ -308,32 +225,25 @@
         width: 49%;
         height: 300px;
     }
-    .item_big.a img {
+    .item_big.a .caseImg {
         margin-left: 59px;
         width: 322px;
         height: 300px;
     }
-    .item.d img {
+    .item.d .caseImg {
         margin-left: 76px;
         width: 254px;
         height: 206px;
     }
-    .item.c img {
+    .item.c .caseImg {
         margin: 20px;
         width: 310px;
         height: 248px;
     }
-    .item.b img {
+    .item.b .caseImg {
         margin: 20px;
         width: 310px;
         height: 202px;
-    }
-    .item_big .overlay_up h4,
-    .item.b .overlay_up h4,
-    .item.c .overlay_bottom h4,
-    .item.d .overlay_bottom h4 {
-        font-size: 24px!important;
-        margin: -40px 15px;
     }
     .item_big.a .item_text {
         margin: -24% 3%
@@ -347,28 +257,16 @@
     .item.d .item_text {
         margin: 33px 0 0 17px
     }
-    .item_big .overlay_up img {
-        top: 55px;
-        left: 204px;
-        width: 100px;
+    .projectCard {
+        height: 300px;
     }
-    .item.b .overlay_up img {
-        top: 76px;
-        left: 236px;
-        width: 100px;
+    .overlay-project h4 {
+        font-size: 24px;
+        width: 200px;
     }
-    .item.c .overlay_bottom img {
+    .overlay-project img{
+        margin-top: 50px;
         width: 100px;
-        top: 64px;
-        left: 240px;
-    }
-    .item.d .overlay_bottom img {
-        width: 100px;
-        top: 105px;
-        left: 185px;
-    }
-    .overlay_bottom {
-        top: 414px;
     }
 }
 
@@ -377,7 +275,6 @@
         display: grid;
         grid-gap: 20px;
     }
-
     .projectCard {
         width: 97% !important;
         height: 320px;

@@ -27,8 +27,8 @@ const BriefModal = () => {
 
     const onSubmit = (data) => console.log(data)
 
-    const confirmBrief = () => {
-        history.push('./confirm-brief')
+    const confirmBrief = (e) => {
+        history.push('/confirm-brief')
     }
 
     return (
@@ -128,21 +128,36 @@ export default BriefModal
 
 export const ConfirmBrief = () => {
     let history = useHistory()
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
     const mainPageLink = () => {
         history.push("/");
     }
 
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
     return (
-        <div className="wrapper">
-            <div className="brief_send">
-                <div className="brief-send-text">
-                    <h1>Бриф отправлен</h1>
-                    <p>Мы его прочитаем и свяжемся с вами по Email или по телефону</p>
-                    <button onClick={mainPageLink}>Вернуться на главную</button>
+        <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+            <div className="wrapper">
+                <div className="brief_send">
+                    <div className="brief-send-text">
+                        <h1>Бриф отправлен</h1>
+                        <p>Мы его прочитаем и свяжемся с вами по Email или по телефону</p>
+                        <button onClick={mainPageLink}>Вернуться на главную</button>
+                    </div>
+                    <img src={briefImages} alt=""/>
                 </div>
-                <img src={briefImages} alt=""/>
             </div>
-        </div>
+        </Modal>
     )
 }

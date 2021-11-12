@@ -19,7 +19,7 @@ const CasePage = () => {
                 </div>
                 <div className="casePage_blocks">
 
-                    <Link to="/" className="casePage_block one_caseHover" style={{backgroundColor: '#6002FD'}}>
+                    <div className="casePage_block one_caseHover" style={{backgroundColor: '#6002FD'}}>
                         <div className="caseCard">
                             <div className="caseTitleCardOne">
                                 <img src={case1} alt="case1"/>
@@ -28,14 +28,16 @@ const CasePage = () => {
                                     <p>Хранение рецептов, <br/> поиск и покупка лекарств</p>
                                 </div>
                             </div>
-                            <div className="overlay_up">
-                                <h4>СМОТРЕТЬ КЕЙС</h4>
-                                <img src={hover_line} alt=""/>
-                            </div>
+                            <Link to="/" className='project-link-block'>
+                                <div className="overlay">
+                                    <h4>СМОТРЕТЬ КЕЙС</h4>
+                                    <img src={hover_line} alt=""/>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="/swift-global" className="casePage_block two_caseHover" style={{backgroundColor: '#000'}}>
+                    <div className="casePage_block one_caseHover" style={{backgroundColor: '#000'}}>
                         <div className="caseCard">
                             <div className="caseTitleCardTwo">
                                 <img src={case2} alt="case2"/>
@@ -44,31 +46,34 @@ const CasePage = () => {
                                     <p>Хранение драг. металлов</p>
                                 </div>
                             </div>
+                            <Link to="/swift-global" className='project-link-block'>
+                                <div className="overlay">
+                                    <h4>СМОТРЕТЬ КЕЙС</h4>
+                                    <img src={hover_line} alt=""/>
+                                </div>
+                            </Link>
                         </div>
-                        <div className="overlay_up">
-                            <h4>СМОТРЕТЬ КЕЙС</h4>
-                            <img src={hover_line} alt=""/>
-                        </div>
-                    </Link>
+                    </div>
 
-                    <Link to="/canadian" className="casePage_block three_caseHover" style={{backgroundColor: '#000'}}>
+                    <div className="casePage_block one_caseHover" style={{backgroundColor: '#000'}}>
                         <div className="caseCard">
                             <div className="caseTitleCardThree">
                                 <img src={case3} alt="case3"/>
                                 <div className="casePage_text">
                                     <h2>Караван</h2>
-                                    <p>Сервис продажи билетов при <br/> поддержке Минтранса Республики <br/>Татарстан
-                                    </p>
+                                    <p>Сервис продажи билетов при <br/> поддержке Минтранса Республики <br/>Татарстан</p>
                                 </div>
                             </div>
+                            <Link to="/canadian" className='project-link-block'>
+                                <div className="overlay">
+                                    <h4>СМОТРЕТЬ КЕЙС</h4>
+                                    <img src={hover_line} alt=""/>
+                                </div>
+                            </Link>
                         </div>
-                        <div className="overlay_bottom">
-                            <h4>СМОТРЕТЬ КЕЙС</h4>
-                            <img src={hover_line} alt=""/>
-                        </div>
-                    </Link>
+                    </div>
 
-                    <Link to="/make-clothes" className="casePage_block four_caseHover" style={{backgroundColor: '#6002FD'}}>
+                    <div className="casePage_block one_caseHover" style={{backgroundColor: '#6002FD'}}>
                         <div className="caseCard">
                             <div className="caseTitleCardFour">
                                 <img src={case4} alt="case4"/>
@@ -77,12 +82,14 @@ const CasePage = () => {
                                     <p>Приложение для производства <br/> вещей на заказ </p>
                                 </div>
                             </div>
+                            <Link to="/make-clothes" className='project-link-block'>
+                                <div className="overlay">
+                                    <h4>СМОТРЕТЬ КЕЙС</h4>
+                                    <img src={hover_line} alt=""/>
+                                </div>
+                            </Link>
                         </div>
-                        <div className="overlay_bottom">
-                            <h4>СМОТРЕТЬ КЕЙС</h4>
-                            <img src={hover_line} alt=""/>
-                        </div>
-                    </Link>
+                    </div>
                 </div>
             </div>
         </div>

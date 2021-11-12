@@ -6,7 +6,9 @@
 }
 
 .caseCard {
+    position: relative;
     height: 500px;
+    width: 100%;
 }
 
 .casePage_block {
@@ -58,44 +60,34 @@
     margin: -15% 7%
 }
 
-.caseCard:hover{
-    background: #1B1B1B;
-    opacity: 0.4;
-}
-
-.casePage_block:hover .overlay_up,
-.casePage_block:hover .overlay_bottom {
-    opacity: 10;
-}
-
-.casePage_block .overlay_up img {
+.project-link-block {
     position: absolute;
-    top: 335px;
-    left: 445px;
+    top: 0;
+    bottom: 0;  
+    left: 0;
+    right: 0;
 }
 
-.casePage_block .overlay_up h4 {
-    font-size: 54px !important;
+.caseCard a:hover {
+    background-color: rgba(29, 29, 31, 0.8);
+}
+
+.caseCard a:hover .overlay{
+    opacity: 1;
+}
+
+.overlay {
+    opacity: 0;
+}
+.overlay h4 {
     color: #fff;
+    font-size: 54px;
+    width: 300px;
     margin: 37px 40px;
-    width: 100px;
 }
-
-.casePage_block .overlay_bottom img {
-    position: absolute;
-    top: 335px;
-    left: 445px;
-}
-
-.casePage_block .overlay_bottom h4 {
-    font-size: 54px !important;
-    color: #fff;
-    margin: 37px 40px;
-    width: 100px;
-}
-
-.casePage_block .overlay_bottom {
-    top: 665px;
+.overlay img{
+    float: right;
+    margin-top: 60px;
 }
 
 @media (max-width: 1300px) {
@@ -121,11 +113,6 @@
 
     .caseTitleCardTwo .casePage_text {
         margin: 10% 8%
-    }
-
-    .casePage_block .overlay_up img,
-    .casePage_block .overlay_bottom img {
-        left: 300px;
     }
 }
 
@@ -174,29 +161,15 @@
     .caseTitleCardTwo img {
         margin: 5% 6%;
     }
+
     .caseCard {
         height: 400px;
     }
-    .casePage_block .overlay_up img {
-        top: 175px;
-        left: 245px;
+    .overlay h4 {
+        font-size: 38px;
     }
-
-    .casePage_block .overlay_up h4 {
-        font-size: 44px !important;
-        margin: -5px 30px;
-    }
-
-    .casePage_block .overlay_bottom img {
-        position: absolute;
-        top: 60px;
-        left: 240px;
-    }
-
-    .casePage_block .overlay_bottom h4 {
-        font-size: 44px !important;
-        margin: -137px 30px;
-        width: 100px;
+    .overlay img{
+        width: 150px;
     }
 }
 
@@ -215,28 +188,6 @@
 
     .caseTitleCardFour img {
         width: 295px;
-    }
-    .casePage_block .overlay_up img {
-        top: 285px;
-        left: 220px;
-        width: 170px;
-    }
-    .casePage_block .overlay_up h4 {
-        font-size: 38px !important;
-        margin: 65px 30px;
-    }
-
-    .casePage_block .overlay_bottom img {
-        position: absolute;
-        top: 160px;
-        left: 220px;
-        width: 170px;
-    }
-
-    .casePage_block .overlay_bottom h4 {
-        font-size: 38px !important;
-        margin: -57px 30px;
-        width: 100px;
     }
 }
 
@@ -270,31 +221,22 @@
     .caseTitleCardTwo .casePage_text {
         margin: 0% 8%;
     }
+
     .casePage_block {
         margin-top: 30px;
     }
-    .casePage_block .overlay_up img {
-        top: 215px;
-        left: 210px;
-        width: 120px;
-    }
-    .casePage_block .overlay_up h4 {
-        font-size: 28px !important;
-        margin: 55px 30px;
-    }
 
-    .casePage_block .overlay_bottom img {
-        top: -17px;
-        left: 215px;
-        width: 120px;
-    }
-
-    .casePage_block .overlay_bottom h4 {
-        font-size: 28px !important;
-        margin: -177px 30px;
-    }
     .caseCard {
         height: 302px;
+    }
+
+    .overlay h4 {
+        font-size: 24px;
+        width: 100px;
+        margin: 30px;
+    }
+    .overlay img{
+        width: 100px;
     }
 }
 
@@ -318,16 +260,6 @@
 
     .caseTitleCardFour .casePage_text {
         margin: -21% 7%;
-    }
-    .casePage_block .overlay_up img {
-        top: 215px;
-        left: 170px;
-        width: 120px;
-    }
-    .casePage_block .overlay_bottom img {
-        top: -17px;
-        left: 170px;
-        width: 120px;
     }
 }
 
@@ -359,46 +291,6 @@
     .caseTitleCardFour .casePage_text {
         margin: -11% 7%
     }
-    .one_caseHover .overlay_up h4 {
-        font-size: 28px !important;
-        margin: 50px 30px;
-    }
-    .one_caseHover .overlay_up img {
-        top: 215px;
-        left: 305px!important;
-        width: 120px;
-    }
-    .two_caseHover .overlay_up img {
-        top: 545px;
-        left: 305px!important;
-        width: 120px;
-    }
-    .two_caseHover .overlay_up h4 {
-        font-size: 28px !important;
-        margin: 395px 30px!important;
-    }
-    .overlay_up,.overlay_bottom {
-        width: 0;
-    }
-    .three_caseHover .overlay_bottom img {
-        top: 310px;
-        left: 305px!important;
-        width: 120px;
-    }
-    .three_caseHover .overlay_bottom h4 {
-        font-size: 28px !important;
-        margin: 145px 30px!important;
-    }
-
-    .four_caseHover .overlay_bottom img {
-        top: 62%;
-        left: 305px!important;
-        width: 120px;
-    }
-    .four_caseHover .overlay_bottom h4 {
-        font-size: 28px !important;
-        margin: 470px 30px!important;
-    }
 }
 
 @media (max-width: 500px) {
@@ -422,20 +314,5 @@
 
     .caseTitleCardFour .casePage_text {
         margin: -21% 7%;
-    }
-    .casePage_block .overlay_up h4 {
-        font-size: 24px !important;
-        margin: 45px 30px;
-    }
-    .casePage_block .overlay_bottom h4 {
-        font-size: 24px !important;
-        margin: -177px 30px;
-    }
-    .one_caseHover .overlay_up img,
-    .two_caseHover .overlay_up img,
-    .three_caseHover .overlay_bottom img,
-    .four_caseHover .overlay_bottom img {
-        left: 210px!important;
-        width: 120px;
     }
 }

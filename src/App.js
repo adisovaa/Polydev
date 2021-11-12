@@ -6,7 +6,7 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import MainPage from "./component/UI/content/MainPage";
 import ErrorPage from "./component/pages/error/Error";
 import CasePage from "./component/pages/case/Case";
-import BriefPage, {ConfirmBrief} from "./component/pages/briefPage/BriefPage";
+import BriefPage, {ConfirmBrief} from "./component/pages/briefPage/briefModal/BriefModal";
 import AboutPage from "./component/pages/aboutPage/About";
 import Canadian from "./component/pages/case/casePages/Canadian/Canadian";
 import SwiftGlobal from "./component/pages/case/casePages/SwiftGlobal/SwiftGlobal";

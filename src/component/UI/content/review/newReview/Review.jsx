@@ -2,7 +2,7 @@
 // import Slider from 'react-slick';
 // import {useHistory} from "react-router";
 // import {useSelector} from "react-redux";
-// import './Review.css'
+// import './Slider.css'
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 //

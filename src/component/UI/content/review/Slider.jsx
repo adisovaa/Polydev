@@ -1,10 +1,10 @@
 import React from 'react'
 import Slider from 'react-slick';
-import './../Review.css'
-import user from "../../../../../images/user.svg";
-import companyImg from "../../../../../images/5.svg";
+import './Slider.css'
+import user from "../../../../images/user.svg";
+import companyImg from "../../../../images/5.svg";
 
-class NewReview extends React.Component {
+class ReviewSlider extends React.Component {
 
     constructor(props) {
         super(props);
@@ -141,4 +141,4 @@ class NewReview extends React.Component {
     }
 }
 
-export default NewReview;
+export default ReviewSlider;

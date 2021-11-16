@@ -5,10 +5,9 @@ import Project from "./projects/Projects";
 import {ClientInfo, StudioInfo} from "./info/Info";
 import {Box, BoxTechnologies} from "./box/Box";
 import TabInfo from "./tab/Tab";
-import Review from "./review/Review";
 import {Brief} from "./brief/Brief";
 import Ask from "./ask/Ask";
-import NewReview from "./review/newReview/NewReview";
+import ReviewSlider from "./review/Slider";
 
 
 const MainPage = () => {
@@ -22,7 +21,7 @@ const MainPage = () => {
             <StudioInfo/>
             <BoxTechnologies/>
             <TabInfo/>
-            <NewReview/>
+            <ReviewSlider/>
             <Brief/>
             <Ask/>
         </div>

@@ -8,6 +8,7 @@ import TabInfo from "./tab/Tab";
 import Review from "./review/Review";
 import {Brief} from "./brief/Brief";
 import Ask from "./ask/Ask";
+import NewReview from "./review/newReview/NewReview";
 
 
 const MainPage = () => {
@@ -21,7 +22,7 @@ const MainPage = () => {
             <StudioInfo/>
             <BoxTechnologies/>
             <TabInfo/>
-            <Review/>
+            <NewReview/>
             <Brief/>
             <Ask/>
         </div>

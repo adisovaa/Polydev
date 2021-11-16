@@ -6,8 +6,12 @@
     width: 1320px;
     margin: 0 auto;
     position: relative;
-    display: flow-root  ;
+    display: flow-root;
     min-height: auto;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
 }
 h1 {
     font-size: 64px;
@@ -63,19 +67,19 @@ button {
 }
 
 @media (max-width: 1440px) {
-    .wrapper {
+    .wrapper, .container {
         width: 1280px;
     }
 }
 
 @media (max-width: 1300px) {
-    .wrapper {
+    .wrapper, .container {
         width: 1020px!important;
     }
 }
 
 @media (max-width: 1024px) {
-    .wrapper {
+    .wrapper, .container {
         width: 890px!important;
     }
     h1 {
@@ -103,7 +107,7 @@ button {
 }
 
 @media (max-width: 900px) {
-    .wrapper {
+    .wrapper, .container {
         width: 780px!important;
     }
     button {
@@ -119,7 +123,7 @@ button {
 }
 
 @media (max-width: 800px) {
-    .wrapper {
+    .wrapper, .container {
         width: 680px!important;
     }
     p {
@@ -137,7 +141,7 @@ button {
 }
 
 @media (max-width: 700px) {
-    .wrapper {
+    .wrapper, .container {
         width: 580px!important;
     }
     p {
@@ -155,13 +159,13 @@ button {
 }
 
 @media (max-width: 600px) {
-    .wrapper {
+    .wrapper, .container {
         width: 420px!important;
     }
 }
 
 @media (max-width: 500px) {
-    .wrapper {
+    .wrapper, .container {
         width: 320px!important;
         margin: 0 auto;
     }

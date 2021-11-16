@@ -9,12 +9,8 @@
 .reviewTitle h1 {
     margin: 9% 28% 2%;
 }
-.slick-list {
-    transform: translate3d(0px, 0px, 0px)!important;
-
-}
 .reviewCard {
-    width: 770px;
+    width: 771px!important;
     border-right: 1px solid gray;
 }
 .reviewBlock {
@@ -28,7 +24,6 @@
 .reviewTitleCard p {
     font-size: 24px;
 }
-
 .reviewText {
     margin: 33px 0 0;
 }
@@ -38,7 +33,6 @@
     width: 200px;
     line-height: 1.4;
 }
-
 .reviewParameters {
     font-weight: 600;
     font-size: 16px;
@@ -52,16 +46,27 @@
 }
 
 .slick-list {
-    width: 75.7%;
+    width: 71.7%;
     float: right;
+    display: flex;
 }
+.slick-slide,
+.slick-slide.slick-active,
 .slick-slide.slick-active.slick-current {
     width: 771px!important;
 }
 
+.slick-track {
+    display: flex;
+}
+
+.slick-slide {
+    opacity: 1;
+}
+
 @media screen and (max-width: 1300px) {
     .slick-list {
-        width: 74%;
+        width: 68%;
     }
     .reviewTitle h1 {
         margin: 9% 31% 2%!important;
@@ -69,8 +74,16 @@
 }
 
 @media screen and (max-width: 1160px) {
+    .slick-list {
+        width: 75%;
+    }
     .reviewCard {
-        width: 472px;
+        width: 472px!important;
+    }
+    .slick-slide,
+    .slick-slide.slick-active,
+    .slick-slide.slick-active.slick-current {
+        width: 472px!important;
     }
     .reviewTitleCard p {
         font-size: 18px!important;
@@ -79,13 +92,13 @@
         font-size: 14px!important;
     }
     .reviewTitleCard {
-        padding: 0 13px 0 22px;
+        padding: 0 13px 0 20px;
     }
     .reviewTitle h1 {
         margin: 9% 26% 3% !important;
     }
     .slick-slide.slick-active.slick-current {
-        width: 472px !important;
+        width: 472px !important
     }
     .reviewText p {
         width: 300px;
@@ -94,7 +107,12 @@
 
 @media screen and (max-width: 900px) {
     .reviewCard {
-        width: 430px;
+        width: 430px!important;
+    }
+    .slick-slide,
+    .slick-slide.slick-active,
+    .slick-slide.slick-active.slick-current {
+        width: 430px!important;
     }
     .reviewTitleCard p {
         font-size: 16px!important;
@@ -114,8 +132,14 @@
 }
 
 @media screen and (max-width: 600px) {
+    .slick-list {
+        width: 100%;
+    }
     .reviewText {
         margin: 0
+    }
+    .reviewParameters {
+        width: 225px;
     }
     .reviewTitleCard {
         padding: 0 10px 0 0
@@ -128,8 +152,8 @@
     }
     .reviewCard {
         margin: 0 1px;
-        width: 94%;
         border-right: 1px solid gray;
+        width: 300px!important;
     }
     .review {
         margin-top: 97px;

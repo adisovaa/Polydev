@@ -10,7 +10,7 @@ import './Header.css';
 import BriefModal from "../../pages/briefPage/briefModal/BriefModal";
 
 const Header = () => {
-    const [moviesUrlBackgroundColor, setMoviesUrlBackgroundColor] = useState('#fff');
+    const [moviesUrlBackgroundColor, setMoviesUrlBackgroundColor] = useState();
     const [moviesUrlColor, setMoviesUrlColor] = useState('#000');
     const active = useSelector(state => state.slice.active);
     let history = useHistory();

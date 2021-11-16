@@ -86,7 +86,6 @@
 .projectCard a:hover .overlay-project{
     opacity: 1;
 }
-
 .overlay-project {
     opacity: 0;
 }
@@ -339,10 +338,6 @@
 
     .slick-dots {
         bottom: -370px;
-    }
-
-    .slick-list {
-        width: 100% !important;
     }
 
     .slick-dots li {

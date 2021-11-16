@@ -1,0 +1,12 @@
+.slick-slide img {
+    width: 450px;
+    margin-left: 20px;
+}
+
+.slick-list {
+    display: flex!important;
+}
+
+.slick-track {
+    height: 300px;
+}

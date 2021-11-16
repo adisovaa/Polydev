@@ -285,11 +285,14 @@
         width: 46%;
     }
 
-    .brief_block {
+    .casepage_block {
         height: 404px;
         margin: 0 0 30px;
     }
-
+    /*.brief_block {*/
+    /*    height: 404px;*/
+    /*    margin: 0 0 30px;*/
+    /*}*/
     .casepage_block {
         top: 90px;
     }
@@ -358,15 +361,22 @@
         padding: 0 7px;
         font-weight: 400 !important;
     }
+    .reviewContainer {
+        padding: 0
+    }
 }
 
 @media (max-width: 800px) {
-    .case_agency, .case_tech {
-        width: 100% !important;
-    }
+    /*.case_agency, .case_tech {*/
+    /*    width: 100% !important;*/
+    /*}*/
 
-    .agency_text p, .agency_links {
-        width: 100%;
+    /*.agency_text p, .agency_links {*/
+    /*    width: 100%;*/
+    /*}*/
+
+    .reviewContainer {
+        padding: 0!important;
     }
 }
 

@@ -26,6 +26,7 @@
     width: 180px;
     height: 180px;
 }
+.show_more .project_btn:hover,
 .header_button button:hover,
 .circle button:hover,
 .brief_button button:hover{

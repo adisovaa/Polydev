@@ -105,13 +105,14 @@ const Project = () => {
                     </div>
 
                     <div className="show_more">
-                        <button className='project_btn' onClick={CasePage}>Смотреть все</button>
+                        <a href='#top' onClick={CasePage}>
+                            <button className='project_btn'>Смотреть все</button>
+                        </a>
                     </div>
                 </div>
             </div>
         )
     };
-
 
     const settings = {
         dots: true,

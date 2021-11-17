@@ -4,7 +4,7 @@ import message from '../../../images/message.png'
 import {Link, useHistory} from "react-router-dom";
 import {openHandle} from "../../../redux/sliceReducer";
 import {useDispatch} from "react-redux";
-import BriefModal from "../../pages/briefPage/briefModal/BriefModal";
+import BriefModal from "../../pages/briefPage/BriefPage";
 
 const Footer = () => {
     const navs = ['Главная', 'О студии', 'Кейсы']

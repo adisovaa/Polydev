@@ -2,18 +2,19 @@ import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux';
 import logo from '../../../images/POLYDEV.svg';
+import mobileArrow from '../../../images/arrow-mobile.svg';
 import logoWhite from './../../../images/logo-white.svg'
 import logo_mobile from '../../../images/Logo_mobile.svg';
 import {openHandle} from "../../../redux/sliceReducer";
-
+import BriefModal from "../../pages/briefPage/BriefPage";
 import './Header.css';
-import BriefModal from "../../pages/briefPage/briefModal/BriefModal";
 
 const Header = () => {
     const [moviesUrlBackgroundColor, setMoviesUrlBackgroundColor] = useState();
     const [moviesUrlColor, setMoviesUrlColor] = useState('#000');
     const active = useSelector(state => state.slice.active);
     let history = useHistory();
+
 
     const navText = ['О студии', 'Кейсы', 'Контакты']
     const navTextMobile = ['Главная', 'О студии', 'Портфолио', 'Контакты']
@@ -43,7 +44,7 @@ const Header = () => {
 
     let showTextMobile = navTextMobile.map((text, i) => {
         return (
-            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text}</a></p>
+            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text} <img src={mobileArrow} alt=""/></a></p>
         )
     });
 
@@ -96,13 +97,12 @@ const Header = () => {
             document.body.style.overflow = 'hidden'
         }
         return (
-            <div className='container'>
+            <div className='headerContainer'>
                 <div className="header_mobile wrapper">
                     <div className="logo" onClick={mainPage}>
-                        <img src={active ? logo : logo_mobile} alt="logo"/>
+                        <img src={logo} alt="logo"/>
                     </div>
-                    <div className={active ? "burger" : "burger".concat(' active')}
-                         onClick={() => dispatch(openHandle())}>
+                    <div className='burger' onClick={() => dispatch(openHandle())}>
                         <span></span>
                         <span></span>
                     </div>
@@ -110,8 +110,22 @@ const Header = () => {
                         <BriefModal/>
                     </div>
                 </div>
+
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
-                    <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                    <div className={active ? "menu-burger" : "menu-burger".concat(' active')} >
+                       <div className="wrapper mobile_header_items">
+                           <div className="logo" onClick={mainPage}>
+                               <img src={logo_mobile} alt="logo"/>
+                           </div>
+                           <div className={active ? "burger" : "burger".concat(' active')}
+                                onClick={() => dispatch(openHandle())}>
+                               <span></span>
+                               <span></span>
+                           </div>
+                           <div className="mobile_button">
+                               <BriefModal/>
+                           </div>
+                       </div>
                         <div className="navBar wrapper">
                             {
                                 showTextMobile
@@ -121,11 +135,6 @@ const Header = () => {
                             <div className="headerLink">
                                 <a href="https://www.instagram.com/">Instagram</a>
                                 <a href="https://dribbble.com/">Dribble</a>
-                            </div>
-                        </div>
-                        <div className="mobile_button">
-                            <div className="mobile_wrapper">
-                                <BriefModal/>
                             </div>
                         </div>
                     </div>

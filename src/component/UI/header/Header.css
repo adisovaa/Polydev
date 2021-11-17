@@ -52,20 +52,21 @@
 }
 
 @media screen and (max-width: 900px) {
-    .container {
+    .mobile_header_items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navBar a:hover {
+        border-bottom: none!important;
+        color: #6002FD;
+    }
+    .headerContainer {
         position: relative;
         margin-top: 40px;
-    }
-    .logo {
-        z-index: 2;
     }
     .header_mobile {
         display: flex;
         justify-content: space-between;
-    }
-    .mobile_wrapper {
-        width: 90%;
-        margin: 0 auto;
     }
     .item_wrapper {
         width: 100%;
@@ -77,7 +78,6 @@
         height: 20px;
         position: relative;
         float: right;
-        z-index: 5;
     }
     .burger span {
         width: 100%;
@@ -124,10 +124,9 @@
     .menu-burger.active {
         display: block;
         width: 100%;
-        height: 76%;
+        height: 60%;
         margin: 0;
-        padding: 72px 0 0 0;
-
+        padding: 40px 0 0 0;
         position: fixed;
         background-color: #000;
         transition: all 0.3s ease 0s;
@@ -136,7 +135,6 @@
         width: 100%;
         height: 100%;
         margin: 0;
-
         position: fixed;
         display: block;
         top: -150%;
@@ -156,8 +154,9 @@
     .navBar p {
         border-top: 1px solid #fff;
         line-height: 3;
-        width: 100% ;
+        width: 70% ;
         margin: 0;
+        float: right;
     }
 
     .navBar p:last-of-type {
@@ -171,10 +170,11 @@
         color: #fff;
         display: flex;
         justify-content: space-between;
+        text-decoration: none;
     }
 
     .headerLink {
-        margin-top: 50px;
+        margin-top: -21px;
     }
 
     .headerLink a {
@@ -192,29 +192,30 @@
     .headerLink a:last-of-type{
         margin-left: 30px;
     }
-
-    .mobile_button {
-        height: 80px;
-        background: #6002FD;
-        margin-top: 138px;
-    }
-
     .mobile_button button {
-        width: 100%;
-        height: 48px;
+        height: 40px;
+        width: 165px;
         border-radius: 24px;
         border: 1px solid #fff;
         background: transparent;
-        margin-top: 16px;
         color: #fff;
-        font-size: 14px;
         font-weight: 700;
+    }
+    .mobile_button {
+        margin: 0 0 44px;
     }
     .header_button button {
         width: 165px;
         height: 40px;
         border-radius: 30px;
         font-size: 14px;
+    }
+    .desktop_logo{
+        display: none;
+    }
+    .mobile_button button:hover{
+        background-color: #6002FD;
+        border-color: #6002FD;
     }
     @media not all and (min-resolution:.001dpcm) { @media {
         .mobile_button {
@@ -224,10 +225,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .navBar a:hover {
-        border-bottom: none;
-        color: #6002FD;
-    }
     .header_button button {
         display: none;
     }
@@ -236,6 +233,33 @@
     }
     .heading_block {
         margin-top: 20px!important;
+    }
+    .navBar {
+        margin-top: 40px;
+    }
+    .navBar p {
+        width: 100%;
+    }
+    .headerLink {
+        margin-top: 56px;
+    }
+    .menu-burger.active {
+        height: 75%;
+    }
+    .mobile_button {
+        position: absolute;
+        width: 100%!important;
+        height: 80px;
+        margin-top: 500px;
+    }
+    .mobile_button button{
+        width: 100%;
+        margin: 0;
+        height: 50px;
+    }
+    .header_button button:hover{
+        background-color: #6002FD;
+        border-color: #6002FD;
     }
 }
 

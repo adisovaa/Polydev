@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import './Footer.css'
 import message from '../../../images/message.png'
-import {Link, useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import {openHandle} from "../../../redux/sliceReducer";
 import {useDispatch} from "react-redux";
 import BriefModal from "../../pages/briefPage/BriefPage";
@@ -33,9 +33,7 @@ const Footer = () => {
             <div className="wrapper">
                 <div className="footer_items">
                     <div className="circle">
-                        <a href='#top'>
-                            <BriefModal/>
-                        </a>
+                        <BriefModal/>
                     </div>
                     <div className="footer_content">
                         <div className="footer_item">

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useHistory} from "react-router-dom";
+import {useHistory, useLocation} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux';
 import logo from '../../../images/POLYDEV.svg';
 import mobileArrow from '../../../images/arrow-mobile.svg';
@@ -10,13 +10,9 @@ import BriefModal from "../../pages/briefPage/BriefPage";
 import './Header.css';
 
 const Header = () => {
-    const [moviesUrlBackgroundColor, setMoviesUrlBackgroundColor] = useState();
-    const [moviesUrlColor, setMoviesUrlColor] = useState('#000');
     const active = useSelector(state => state.slice.active);
     let history = useHistory();
 
-
-    const navText = ['О студии', 'Кейсы', 'Контакты']
     const navTextMobile = ['Главная', 'О студии', 'Портфолио', 'Контакты']
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 900px)').matches);
     const dispatch = useDispatch();
@@ -35,12 +31,6 @@ const Header = () => {
             history.push('/')
         }
     }
-
-    let showText = navText.map((text, i) => {
-        return (
-            <p key={i}><a href={`#${i}`} onClick={clickHeader} style={{color: moviesUrlColor}}>{text}</a></p>
-        )
-    });
 
     let showTextMobile = navTextMobile.map((text, i) => {
         return (
@@ -61,34 +51,6 @@ const Header = () => {
     const mainPage = () => {
         history.push('/')
     };
-
-    const getMoviesUrl = window.location.pathname;
-
-    useEffect(() => {
-        if (getMoviesUrl === '/swift-global') {
-            setMoviesUrlBackgroundColor('#01579B');
-        } else if (getMoviesUrl === '/') {
-            setMoviesUrlBackgroundColor('#fff');
-        } else if (getMoviesUrl === '/make-clothes') {
-            setMoviesUrlBackgroundColor('#FF5C45');
-        } else if (getMoviesUrl === '/canadian') {
-            setMoviesUrlBackgroundColor('#262626');
-        } else {
-            setMoviesUrlBackgroundColor('#fff');
-        }
-    }, [getMoviesUrl]);
-
-    useEffect(() => {
-        if (getMoviesUrl === '/swift-global') {
-            setMoviesUrlColor('#fff');
-        } else if (getMoviesUrl === '/make-clothes') {
-            setMoviesUrlColor('#fff');
-        } else if (getMoviesUrl === '/canadian') {
-            setMoviesUrlColor('#fff');
-        } else {
-            setMoviesUrlColor('#000');
-        }
-    }, [getMoviesUrl]);
 
     const adaptiveHeader = () => {
         if (active) {
@@ -144,18 +106,22 @@ const Header = () => {
     };
 
     return (
-        <div>
+        <div style={{
+            background: useLocation().pathname !== "/swift-global" ? "#fff" : "#01579B"
+        }}>
             {
                 screen ? adaptiveHeader()
                     :
-                    <div className="header" style={{backgroundColor: moviesUrlBackgroundColor}} id='top'>
+                    <div className="header" id='top'>
                         <div className="wrapper flexHeader">
                             <div className="logo" onClick={mainPage}>
                                 <img src={locationURL() === "/swift-global" ? logoWhite : logo} alt="logo"/>
                             </div>
                             <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
                                 <div className="navBar">
-                                    {showText}
+                                  <p><a href="/about">О студии</a></p>
+                                    <p><a href="/case">Кейсы</a></p>
+                                    <p><a href="/contact">Контакты</a></p>
                                 </div>
                             </div>
                             <div className={active ? "burger" : "burger".concat(' active')}

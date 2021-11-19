@@ -107,34 +107,36 @@ class ReviewSlider extends React.Component {
 
         return (
             <div className="review">
-                <div className="reviewContainer">
-                    <div className="reviewTitle">
-                        <h1>Отзывы</h1>
-                    </div>
-                    <Slider {...settings} ref={slider => this.slider = slider && slider['innerSlider']}>
-                        {
-                            review.map((review, i) => {
-                                return (
-                                    <div className="reviewCard" id={i}>
-                                        <div className="reviewTitleCard">
-                                            <p>{review.title}</p>
-                                            <div className="reviewBlock">
-                                                <div className="reviewParameters">
-                                                    <div className="reviewText">
-                                                        <h6>{review.name}</h6>
-                                                        <p>{review.position}</p>
-                                                        <p>{review.companyName}</p>
+                <div className="review_block">
+                    <div className="reviewContainer">
+                        <div className="reviewTitle">
+                            <h1>Отзывы</h1>
+                        </div>
+                        <Slider {...settings} ref={slider => this.slider = slider && slider['innerSlider']}>
+                            {
+                                review.map((review, i) => {
+                                    return (
+                                        <div className="reviewCard" id={i} key={i}>
+                                            <div className="reviewTitleCard">
+                                                <p>{review.title}</p>
+                                                <div className="reviewBlock">
+                                                    <div className="reviewParameters">
+                                                        <div className="reviewText">
+                                                            <h6>{review.name}</h6>
+                                                            <p>{review.position}</p>
+                                                            <p>{review.companyName}</p>
+                                                        </div>
                                                     </div>
+                                                    <img className='companyImg' src={review.companyImg} alt=""/>
                                                 </div>
-                                                <img className='companyImg' src={review.companyImg} alt=""/>
                                             </div>
                                         </div>
-                                    </div>
-                                )
-                            })
+                                    )
+                                })
+                            }
+                        </Slider>
                         }
-                    </Slider>
-                    }
+                    </div>
                 </div>
             </div>
         );

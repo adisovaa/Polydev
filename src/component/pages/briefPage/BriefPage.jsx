@@ -1,20 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import Modal from 'react-modal';
 import './BriefPage.css'
 import plus from "../../../images/plus.svg";
-import Header from "../../UI/header/Header";
+import {useHistory} from "react-router-dom";
+import briefImages from './../../../images/briefImages.svg'
 
 class BriefModal extends React.Component {
     constructor() {
         super();
         this.state = {
             isOpen: false,
-            username: "",
-            company: "",
-            email: "",
-            number: "",
-            task: "",
+            username: " ",
+            company: " ",
+            email: " ",
+            number: " ",
+            text: " ",
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,7 +34,6 @@ class BriefModal extends React.Component {
     toggleModal = () => {
         this.setState(prevState => ({
             isOpen: !prevState.isOpen,
-            // isOpen: !<Header/>,
         }));
     };
 
@@ -58,6 +58,7 @@ class BriefModal extends React.Component {
                         closeTimeoutMS={500}
                         isOpen={this.state.isOpen}
                         style={modalStyles}
+                        ariaHideApp={false}
                     >
                         <div className="wrapper">
                             <div className="briefPageFlex">
@@ -151,7 +152,7 @@ class BriefModal extends React.Component {
                                                 <label htmlFor="task"><h5>О задаче и сроках <span>*</span></h5></label>
                                                 <input
                                                     type="text"
-                                                    value={this.state.task}
+                                                    value={this.state.text}
                                                     name="text"
                                                     onChange={this.handleChange}
                                                     className="input"
@@ -193,38 +194,39 @@ class BriefModal extends React.Component {
 export default BriefModal
 
 
-// export const ConfirmBrief = () => {
-//     let history = useHistory()
-//     const [isModalVisible, setIsModalVisible] = useState(false);
-//
-//     const mainPageLink = () => {
-//         history.push("/");
-//     }
-//
-//     const showModal = () => {
-//         setIsModalVisible(true);
-//     };
-//
-//     const handleOk = () => {
-//         setIsModalVisible(false);
-//     };
-//
-//     const handleCancel = () => {
-//         setIsModalVisible(false);
-//     };
-//
-//     return (
-//         <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-//             <div className="wrapper">
-//                 <div className="brief_send">
-//                     <div className="brief-send-text">
-//                         <h1>Бриф отправлен</h1>
-//                         <p>Мы его прочитаем и свяжемся с вами по Email или по телефону</p>
-//                         <button onClick={mainPageLink}>Вернуться на главную</button>
-//                     </div>
-//                     <img src={briefImages} alt=""/>
-//                 </div>
-//             </div>
-//         </Modal>
-//     )
-// }
+
+export const ConfirmBrief = () => {
+    let history = useHistory()
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const mainPageLink = () => {
+        history.push("/");
+    }
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
+    return (
+        <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+            <div className="wrapper">
+                <div className="brief_send">
+                    <div className="brief-send-text">
+                        <h1>Бриф отправлен</h1>
+                        <p>Мы его прочитаем и свяжемся с вами по Email или по телефону</p>
+                        <button onClick={mainPageLink}>Вернуться на главную</button>
+                    </div>
+                    <img src={briefImages} alt=""/>
+                </div>
+            </div>
+        </Modal>
+    )
+}

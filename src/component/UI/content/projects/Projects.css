@@ -102,6 +102,7 @@
     float: right;
     margin-top: 60px;
 }
+
 @media (max-width: 1300px) {
     .projects_blocks {
         grid-gap: 30px;

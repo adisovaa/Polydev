@@ -130,3 +130,8 @@
     margin-top: 105px;
     float: right;
 }
+@media screen and (max-width: 1300px) {
+    /*.cases_heading {*/
+    /*    height: 500px;*/
+    /*}*/
+}

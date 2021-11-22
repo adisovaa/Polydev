@@ -37,15 +37,17 @@
 }
 .caseTasks_text p{
     font-size: 16px;
-    width: 48%;
+    width: 45%;
+    line-height: 1.7;
 }
 .caseTasks_text h6{
     font-size: 32px;
-    width: 30%;
+    width: 35%;
+    font-weight: 400;
 }
 .caseProject_heading h2 {
     margin-left: 0;
-    width: 45%;
+    width: 65%;
 }
 .caseProject_heading {
     width: 75%;
@@ -136,4 +138,20 @@
     font-size: 18px;
     font-weight: 400;
     color: #6002FD;
+}
+.caseProject_heading .right {
+    margin: 47px 0 0 340px;
+    width: 306px;
+    font-size: 16px;
+}
+@media screen and (max-width: 1300px) {
+    .caseProject_text {
+        width: 67%;
+    }
+    .caseTasks_text p{
+        width: 53%;
+    }
+    .caseTasks_text h6{
+        width: 43%;
+    }
 }

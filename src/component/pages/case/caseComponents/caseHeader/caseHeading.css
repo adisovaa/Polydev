@@ -7,10 +7,10 @@
     justify-content: space-between;
 }
 .cases_heading {
-    height: 700px;
+    height: 476px;
 }
 .cases_text {
-    margin-top: 120px;
+    margin-top: -40px;
 }
 .cases_text h1{
     color: #fff;
@@ -34,7 +34,7 @@
 .cases_buttons {
     margin-top: 5%;
 }
-.cases_buttons button {
+.cases_buttons button{
     width: auto;
     height: 39px;
     background: #fff;
@@ -53,10 +53,18 @@
     text-decoration: underline;
 }
 .case_logo {
-    margin-top: 17%;
+    margin-top: 119px;
     display: flex;
     justify-content: space-between;
 }
 .appStore {
     margin-top: 18px;
+}
+@media screen and (max-width: 1300px) {
+    .cases_heading {
+        height: 470px;
+    }
+    .cases_text {
+        margin-top: -30px;
+    }
 }

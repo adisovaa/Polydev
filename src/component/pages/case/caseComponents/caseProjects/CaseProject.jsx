@@ -57,6 +57,7 @@ export const CaseTitle = (props) => {
                 <h2>{props.title}</h2>
                 <div className="caseProject_heading">
                     <p>{props.text}</p>
+                    <p className={'right'}>{props.text2}</p>
                 </div>
             </div>
         </div>

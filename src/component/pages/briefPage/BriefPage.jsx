@@ -193,8 +193,6 @@ class BriefModal extends React.Component {
 
 export default BriefModal
 
-
-
 export const ConfirmBrief = () => {
     let history = useHistory()
     const [isModalVisible, setIsModalVisible] = useState(false);
